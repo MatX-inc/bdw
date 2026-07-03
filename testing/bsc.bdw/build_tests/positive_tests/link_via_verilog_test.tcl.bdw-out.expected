@@ -315,4 +315,8 @@ RESULT: Elaborated module file created: mult4/mkMult4Tb.ba
 RESULT: All packages are up to date.
 Executing: bsc -e mkMult4Tb -verilog -o ./out -vdir mult4  -vsim iverilog  -keep-fires mult4/mkMult4Tb.v
 WARNING: + bsc -e mkMult4Tb -verilog -o ./out -vdir mult4 -vsim iverilog -keep-fires mult4/mkMult4Tb.v
+WARNING: Warning: Command line: (S0099)
+WARNING:   No elaboration file (.ba) was found for module `mkMult4Tb' or one of its
+WARNING:   submodules, so BSC cannot check whether the generated Verilog is up to date;
+WARNING:   linking will use the Verilog files found on the search path.
 RESULT: Verilog binary file created: ./out
