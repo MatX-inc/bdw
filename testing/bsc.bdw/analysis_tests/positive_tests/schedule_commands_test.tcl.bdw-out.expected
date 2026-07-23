@@ -1058,8 +1058,8 @@ predicates are not disjoint
     calls to
       product.write vs. product.read
       mcand.write vs. mcand.read
-      available.write vs. available.write
       available.read vs. available.write
+      available.write vs. available.write
     <
     conflict:
     calls to
@@ -1076,8 +1076,8 @@ predicates are not disjoint
     calls to
       product.write vs. product.read
       mcand.write vs. mcand.read
-      available.write vs. available.write
       available.read vs. available.write
+      available.write vs. available.write
     <
     conflict:
     calls to
@@ -1102,8 +1102,8 @@ predicates are not disjoint
     calls to
       product.write vs. product.read
       mcand.write vs. mcand.read
-      available.write vs. available.write
       available.read vs. available.write
+      available.write vs. available.write
     <
     conflict:
     calls to
@@ -1121,9 +1121,9 @@ predicates are not disjoint
       product.write vs. product.write
       mcand.write vs. mcand.write
       mplr.write vs. mplr.write
-      available.write vs. available.write
-      available.write vs. available.read
       available.read vs. available.write
+      available.write vs. available.read
+      available.write vs. available.write
     < conflict: calls to available.write vs. available.read
     no resource conflict
     no cycle conflict
@@ -1134,12 +1134,12 @@ predicates are not disjoint
     <>
     conflict:
     calls to
-      product.write vs. product.write
       product.write vs. product.read
-      mcand.write vs. mcand.write
+      product.write vs. product.write
       mcand.write vs. mcand.read
-      mplr.write vs. mplr.write
+      mcand.write vs. mcand.write
       mplr.write vs. mplr.read
+      mplr.write vs. mplr.write
     <
     conflict:
     calls to
@@ -1165,8 +1165,8 @@ predicates are not disjoint
     calls to
       product.read vs. product.write
       mcand.read vs. mcand.write
-      available.write vs. available.write
       available.write vs. available.read
+      available.write vs. available.write
     < conflict: calls to available.write vs. available.read
     no resource conflict
     no cycle conflict

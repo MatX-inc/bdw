@@ -1058,8 +1058,8 @@ predicates are not disjoint
     calls to
       product.write vs. product.read
       mcand.write vs. mcand.read
-      available.write vs. available.write
       available.read vs. available.write
+      available.write vs. available.write
     <
     conflict:
     calls to
