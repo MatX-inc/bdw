@@ -7,6 +7,9 @@ f5 = / /iv /mi /r1 /r2
 f6 = 
 Command: inst filter *
 /
+/iv
+/mb
+/mi
 /r1
 /r1/ptr
 /r1/r1
@@ -19,17 +22,14 @@ Command: inst filter *
 /r2/r2
 /r2/rHello
 /r2/rWorld
-/mi
-/mb
-/iv
 ---------
 Command: inst filter /*
 /
+/iv
+/mb
+/mi
 /r1
 /r2
-/mi
-/mb
-/iv
 ---------
 Command: inst filter r* g*
 Caught error:  inst filter: Expected a search expression, found `r* g*'
@@ -109,487 +109,487 @@ Command: signal filter
 Caught error:  signal filter: Expected a search expression, found `'
 ---------
 Command: signal filter *
-/i
 /CLK
-/RST_N
-/r__write_1
 /EN_r__write
-/RDY_r__write
-/r__read
 /RDY_r__read
+/RDY_r__write
+/RST_N
 /b
-/r1/CLK
-/r1/RST_N
-/r1/_write_1
-/r1/EN__write
-/r1/RDY__write
-/r1/_read
-/r1/RDY__read
-/r1/ptr/CLK
-/r1/ptr/RST
-/r1/ptr/D_IN
-/r1/ptr/EN
-/r1/ptr/Q_OUT
-/r1/r1/CLK
-/r1/r1/RST
-/r1/r1/D_IN
-/r1/r1/EN
-/r1/r1/Q_OUT
-/r1/r2/CLK
-/r1/r2/RST
-/r1/r2/D_IN
-/r1/r2/EN
-/r1/r2/Q_OUT
-/r1/rHello/WILL_FIRE_RL_rHello
-/r1/rHello/CAN_FIRE_RL_rHello
-/r1/rWorld/WILL_FIRE_RL_rWorld
-/r1/rWorld/CAN_FIRE_RL_rWorld
-/r2/CLK
-/r2/RST_N
-/r2/_write_1
-/r2/EN__write
-/r2/RDY__write
-/r2/_read
-/r2/RDY__read
-/r2/ptr/CLK
-/r2/ptr/RST
-/r2/ptr/D_IN
-/r2/ptr/EN
-/r2/ptr/Q_OUT
-/r2/r1/CLK
-/r2/r1/RST
-/r2/r1/D_IN
-/r2/r1/EN
-/r2/r1/Q_OUT
-/r2/r2/CLK
-/r2/r2/RST
-/r2/r2/D_IN
-/r2/r2/EN
-/r2/r2/Q_OUT
-/r2/rHello/WILL_FIRE_RL_rHello
-/r2/rHello/CAN_FIRE_RL_rHello
-/r2/rWorld/WILL_FIRE_RL_rWorld
-/r2/rWorld/CAN_FIRE_RL_rWorld
-/mi/i
+/i
+/iv/CLK
+/iv/CLK_GATE_clks1_0
+/iv/CLK_GATE_clks1_1
+/iv/CLK_clks1_0
+/iv/CLK_clks1_1
+/iv/EN_vec1_0__write
+/iv/EN_vec1_1__write
+/iv/EN_vec2_0_0__write
+/iv/EN_vec2_0_1__write
+/iv/EN_vec2_1_0__write
+/iv/EN_vec2_1_1__write
+/iv/EN_vec3_0_0_0__write
+/iv/EN_vec3_0_0_1__write
+/iv/EN_vec3_0_1_0__write
+/iv/EN_vec3_0_1_1__write
+/iv/EN_vec3_1_0_0__write
+/iv/EN_vec3_1_0_1__write
+/iv/EN_vec3_1_1_0__write
+/iv/EN_vec3_1_1_1__write
+/iv/RDY_data1
+/iv/RDY_data2
+/iv/RDY_data3
+/iv/RDY_vec1_0__read
+/iv/RDY_vec1_0__write
+/iv/RDY_vec1_1__read
+/iv/RDY_vec1_1__write
+/iv/RDY_vec2_0_0__read
+/iv/RDY_vec2_0_0__write
+/iv/RDY_vec2_0_1__read
+/iv/RDY_vec2_0_1__write
+/iv/RDY_vec2_1_0__read
+/iv/RDY_vec2_1_0__write
+/iv/RDY_vec2_1_1__read
+/iv/RDY_vec2_1_1__write
+/iv/RDY_vec3_0_0_0__read
+/iv/RDY_vec3_0_0_0__write
+/iv/RDY_vec3_0_0_1__read
+/iv/RDY_vec3_0_0_1__write
+/iv/RDY_vec3_0_1_0__read
+/iv/RDY_vec3_0_1_0__write
+/iv/RDY_vec3_0_1_1__read
+/iv/RDY_vec3_0_1_1__write
+/iv/RDY_vec3_1_0_0__read
+/iv/RDY_vec3_1_0_0__write
+/iv/RDY_vec3_1_0_1__read
+/iv/RDY_vec3_1_0_1__write
+/iv/RDY_vec3_1_1_0__read
+/iv/RDY_vec3_1_1_0__write
+/iv/RDY_vec3_1_1_1__read
+/iv/RDY_vec3_1_1_1__write
+/iv/RST_N
+/iv/RST_N_rsts1_0
+/iv/RST_N_rsts1_1
+/iv/data1
+/iv/data2
+/iv/data3
+/iv/io
+/iv/ios1_0
+/iv/ios1_1
+/iv/vec1_0__read
+/iv/vec1_0__write_1
+/iv/vec1_1__read
+/iv/vec1_1__write_1
+/iv/vec2_0_0__read
+/iv/vec2_0_0__write_1
+/iv/vec2_0_1__read
+/iv/vec2_0_1__write_1
+/iv/vec2_1_0__read
+/iv/vec2_1_0__write_1
+/iv/vec2_1_1__read
+/iv/vec2_1_1__write_1
+/iv/vec3_0_0_0__read
+/iv/vec3_0_0_0__write_1
+/iv/vec3_0_0_1__read
+/iv/vec3_0_0_1__write_1
+/iv/vec3_0_1_0__read
+/iv/vec3_0_1_0__write_1
+/iv/vec3_0_1_1__read
+/iv/vec3_0_1_1__write_1
+/iv/vec3_1_0_0__read
+/iv/vec3_1_0_0__write_1
+/iv/vec3_1_0_1__read
+/iv/vec3_1_0_1__write_1
+/iv/vec3_1_1_0__read
+/iv/vec3_1_1_0__write_1
+/iv/vec3_1_1_1__read
+/iv/vec3_1_1_1__write_1
+/mb/I_IN
+/mb/I_OUT
+/mb/V
+/mb/WGET
+/mb/WHAS
+/mb/WSET
+/mb/WVAL
 /mi/CLK
 /mi/RST_N
 /mi/b
-/mb/V
-/mb/I_IN
-/mb/WVAL
-/mb/WSET
-/mb/WGET
-/mb/WHAS
-/mb/I_OUT
-/iv/io
-/iv/CLK
-/iv/RST_N
-/iv/vec1_0__write_1
-/iv/EN_vec1_0__write
-/iv/RDY_vec1_0__write
-/iv/vec1_0__read
-/iv/RDY_vec1_0__read
-/iv/vec1_1__write_1
-/iv/EN_vec1_1__write
-/iv/RDY_vec1_1__write
-/iv/vec1_1__read
-/iv/RDY_vec1_1__read
-/iv/vec2_0_0__write_1
-/iv/EN_vec2_0_0__write
-/iv/RDY_vec2_0_0__write
-/iv/vec2_0_0__read
-/iv/RDY_vec2_0_0__read
-/iv/vec2_0_1__write_1
-/iv/EN_vec2_0_1__write
-/iv/RDY_vec2_0_1__write
-/iv/vec2_0_1__read
-/iv/RDY_vec2_0_1__read
-/iv/vec2_1_0__write_1
-/iv/EN_vec2_1_0__write
-/iv/RDY_vec2_1_0__write
-/iv/vec2_1_0__read
-/iv/RDY_vec2_1_0__read
-/iv/vec2_1_1__write_1
-/iv/EN_vec2_1_1__write
-/iv/RDY_vec2_1_1__write
-/iv/vec2_1_1__read
-/iv/RDY_vec2_1_1__read
-/iv/vec3_0_0_0__write_1
-/iv/EN_vec3_0_0_0__write
-/iv/RDY_vec3_0_0_0__write
-/iv/vec3_0_0_0__read
-/iv/RDY_vec3_0_0_0__read
-/iv/vec3_0_0_1__write_1
-/iv/EN_vec3_0_0_1__write
-/iv/RDY_vec3_0_0_1__write
-/iv/vec3_0_0_1__read
-/iv/RDY_vec3_0_0_1__read
-/iv/vec3_0_1_0__write_1
-/iv/EN_vec3_0_1_0__write
-/iv/RDY_vec3_0_1_0__write
-/iv/vec3_0_1_0__read
-/iv/RDY_vec3_0_1_0__read
-/iv/vec3_0_1_1__write_1
-/iv/EN_vec3_0_1_1__write
-/iv/RDY_vec3_0_1_1__write
-/iv/vec3_0_1_1__read
-/iv/RDY_vec3_0_1_1__read
-/iv/vec3_1_0_0__write_1
-/iv/EN_vec3_1_0_0__write
-/iv/RDY_vec3_1_0_0__write
-/iv/vec3_1_0_0__read
-/iv/RDY_vec3_1_0_0__read
-/iv/vec3_1_0_1__write_1
-/iv/EN_vec3_1_0_1__write
-/iv/RDY_vec3_1_0_1__write
-/iv/vec3_1_0_1__read
-/iv/RDY_vec3_1_0_1__read
-/iv/vec3_1_1_0__write_1
-/iv/EN_vec3_1_1_0__write
-/iv/RDY_vec3_1_1_0__write
-/iv/vec3_1_1_0__read
-/iv/RDY_vec3_1_1_0__read
-/iv/vec3_1_1_1__write_1
-/iv/EN_vec3_1_1_1__write
-/iv/RDY_vec3_1_1_1__write
-/iv/vec3_1_1_1__read
-/iv/RDY_vec3_1_1_1__read
-/iv/data1
-/iv/RDY_data1
-/iv/data2
-/iv/RDY_data2
-/iv/data3
-/iv/RDY_data3
-/iv/CLK_clks1_0
-/iv/CLK_GATE_clks1_0
-/iv/CLK_clks1_1
-/iv/CLK_GATE_clks1_1
-/iv/RST_N_rsts1_0
-/iv/RST_N_rsts1_1
-/iv/ios1_0
-/iv/ios1_1
+/mi/i
+/r1/CLK
+/r1/EN__write
+/r1/RDY__read
+/r1/RDY__write
+/r1/RST_N
+/r1/_read
+/r1/_write_1
+/r1/ptr/CLK
+/r1/ptr/D_IN
+/r1/ptr/EN
+/r1/ptr/Q_OUT
+/r1/ptr/RST
+/r1/r1/CLK
+/r1/r1/D_IN
+/r1/r1/EN
+/r1/r1/Q_OUT
+/r1/r1/RST
+/r1/r2/CLK
+/r1/r2/D_IN
+/r1/r2/EN
+/r1/r2/Q_OUT
+/r1/r2/RST
+/r1/rHello/CAN_FIRE_RL_rHello
+/r1/rHello/WILL_FIRE_RL_rHello
+/r1/rWorld/CAN_FIRE_RL_rWorld
+/r1/rWorld/WILL_FIRE_RL_rWorld
+/r2/CLK
+/r2/EN__write
+/r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
+/r2/ptr/CLK
+/r2/ptr/D_IN
+/r2/ptr/EN
+/r2/ptr/Q_OUT
+/r2/ptr/RST
+/r2/r1/CLK
+/r2/r1/D_IN
+/r2/r1/EN
+/r2/r1/Q_OUT
+/r2/r1/RST
+/r2/r2/CLK
+/r2/r2/D_IN
+/r2/r2/EN
+/r2/r2/Q_OUT
+/r2/r2/RST
+/r2/rHello/CAN_FIRE_RL_rHello
+/r2/rHello/WILL_FIRE_RL_rHello
+/r2/rWorld/CAN_FIRE_RL_rWorld
+/r2/rWorld/WILL_FIRE_RL_rWorld
+/r__read
+/r__write_1
 ---------
 Command: signal filter */*
-/i
 /CLK
-/RST_N
-/r__write_1
 /EN_r__write
-/RDY_r__write
-/r__read
 /RDY_r__read
+/RDY_r__write
+/RST_N
 /b
-/r1/CLK
-/r1/RST_N
-/r1/_write_1
-/r1/EN__write
-/r1/RDY__write
-/r1/_read
-/r1/RDY__read
-/r1/ptr/CLK
-/r1/ptr/RST
-/r1/ptr/D_IN
-/r1/ptr/EN
-/r1/ptr/Q_OUT
-/r1/r1/CLK
-/r1/r1/RST
-/r1/r1/D_IN
-/r1/r1/EN
-/r1/r1/Q_OUT
-/r1/r2/CLK
-/r1/r2/RST
-/r1/r2/D_IN
-/r1/r2/EN
-/r1/r2/Q_OUT
-/r1/rHello/WILL_FIRE_RL_rHello
-/r1/rHello/CAN_FIRE_RL_rHello
-/r1/rWorld/WILL_FIRE_RL_rWorld
-/r1/rWorld/CAN_FIRE_RL_rWorld
-/r2/CLK
-/r2/RST_N
-/r2/_write_1
-/r2/EN__write
-/r2/RDY__write
-/r2/_read
-/r2/RDY__read
-/r2/ptr/CLK
-/r2/ptr/RST
-/r2/ptr/D_IN
-/r2/ptr/EN
-/r2/ptr/Q_OUT
-/r2/r1/CLK
-/r2/r1/RST
-/r2/r1/D_IN
-/r2/r1/EN
-/r2/r1/Q_OUT
-/r2/r2/CLK
-/r2/r2/RST
-/r2/r2/D_IN
-/r2/r2/EN
-/r2/r2/Q_OUT
-/r2/rHello/WILL_FIRE_RL_rHello
-/r2/rHello/CAN_FIRE_RL_rHello
-/r2/rWorld/WILL_FIRE_RL_rWorld
-/r2/rWorld/CAN_FIRE_RL_rWorld
-/mi/i
+/i
+/iv/CLK
+/iv/CLK_GATE_clks1_0
+/iv/CLK_GATE_clks1_1
+/iv/CLK_clks1_0
+/iv/CLK_clks1_1
+/iv/EN_vec1_0__write
+/iv/EN_vec1_1__write
+/iv/EN_vec2_0_0__write
+/iv/EN_vec2_0_1__write
+/iv/EN_vec2_1_0__write
+/iv/EN_vec2_1_1__write
+/iv/EN_vec3_0_0_0__write
+/iv/EN_vec3_0_0_1__write
+/iv/EN_vec3_0_1_0__write
+/iv/EN_vec3_0_1_1__write
+/iv/EN_vec3_1_0_0__write
+/iv/EN_vec3_1_0_1__write
+/iv/EN_vec3_1_1_0__write
+/iv/EN_vec3_1_1_1__write
+/iv/RDY_data1
+/iv/RDY_data2
+/iv/RDY_data3
+/iv/RDY_vec1_0__read
+/iv/RDY_vec1_0__write
+/iv/RDY_vec1_1__read
+/iv/RDY_vec1_1__write
+/iv/RDY_vec2_0_0__read
+/iv/RDY_vec2_0_0__write
+/iv/RDY_vec2_0_1__read
+/iv/RDY_vec2_0_1__write
+/iv/RDY_vec2_1_0__read
+/iv/RDY_vec2_1_0__write
+/iv/RDY_vec2_1_1__read
+/iv/RDY_vec2_1_1__write
+/iv/RDY_vec3_0_0_0__read
+/iv/RDY_vec3_0_0_0__write
+/iv/RDY_vec3_0_0_1__read
+/iv/RDY_vec3_0_0_1__write
+/iv/RDY_vec3_0_1_0__read
+/iv/RDY_vec3_0_1_0__write
+/iv/RDY_vec3_0_1_1__read
+/iv/RDY_vec3_0_1_1__write
+/iv/RDY_vec3_1_0_0__read
+/iv/RDY_vec3_1_0_0__write
+/iv/RDY_vec3_1_0_1__read
+/iv/RDY_vec3_1_0_1__write
+/iv/RDY_vec3_1_1_0__read
+/iv/RDY_vec3_1_1_0__write
+/iv/RDY_vec3_1_1_1__read
+/iv/RDY_vec3_1_1_1__write
+/iv/RST_N
+/iv/RST_N_rsts1_0
+/iv/RST_N_rsts1_1
+/iv/data1
+/iv/data2
+/iv/data3
+/iv/io
+/iv/ios1_0
+/iv/ios1_1
+/iv/vec1_0__read
+/iv/vec1_0__write_1
+/iv/vec1_1__read
+/iv/vec1_1__write_1
+/iv/vec2_0_0__read
+/iv/vec2_0_0__write_1
+/iv/vec2_0_1__read
+/iv/vec2_0_1__write_1
+/iv/vec2_1_0__read
+/iv/vec2_1_0__write_1
+/iv/vec2_1_1__read
+/iv/vec2_1_1__write_1
+/iv/vec3_0_0_0__read
+/iv/vec3_0_0_0__write_1
+/iv/vec3_0_0_1__read
+/iv/vec3_0_0_1__write_1
+/iv/vec3_0_1_0__read
+/iv/vec3_0_1_0__write_1
+/iv/vec3_0_1_1__read
+/iv/vec3_0_1_1__write_1
+/iv/vec3_1_0_0__read
+/iv/vec3_1_0_0__write_1
+/iv/vec3_1_0_1__read
+/iv/vec3_1_0_1__write_1
+/iv/vec3_1_1_0__read
+/iv/vec3_1_1_0__write_1
+/iv/vec3_1_1_1__read
+/iv/vec3_1_1_1__write_1
+/mb/I_IN
+/mb/I_OUT
+/mb/V
+/mb/WGET
+/mb/WHAS
+/mb/WSET
+/mb/WVAL
 /mi/CLK
 /mi/RST_N
 /mi/b
-/mb/V
-/mb/I_IN
-/mb/WVAL
-/mb/WSET
-/mb/WGET
-/mb/WHAS
-/mb/I_OUT
-/iv/io
-/iv/CLK
-/iv/RST_N
-/iv/vec1_0__write_1
-/iv/EN_vec1_0__write
-/iv/RDY_vec1_0__write
-/iv/vec1_0__read
-/iv/RDY_vec1_0__read
-/iv/vec1_1__write_1
-/iv/EN_vec1_1__write
-/iv/RDY_vec1_1__write
-/iv/vec1_1__read
-/iv/RDY_vec1_1__read
-/iv/vec2_0_0__write_1
-/iv/EN_vec2_0_0__write
-/iv/RDY_vec2_0_0__write
-/iv/vec2_0_0__read
-/iv/RDY_vec2_0_0__read
-/iv/vec2_0_1__write_1
-/iv/EN_vec2_0_1__write
-/iv/RDY_vec2_0_1__write
-/iv/vec2_0_1__read
-/iv/RDY_vec2_0_1__read
-/iv/vec2_1_0__write_1
-/iv/EN_vec2_1_0__write
-/iv/RDY_vec2_1_0__write
-/iv/vec2_1_0__read
-/iv/RDY_vec2_1_0__read
-/iv/vec2_1_1__write_1
-/iv/EN_vec2_1_1__write
-/iv/RDY_vec2_1_1__write
-/iv/vec2_1_1__read
-/iv/RDY_vec2_1_1__read
-/iv/vec3_0_0_0__write_1
-/iv/EN_vec3_0_0_0__write
-/iv/RDY_vec3_0_0_0__write
-/iv/vec3_0_0_0__read
-/iv/RDY_vec3_0_0_0__read
-/iv/vec3_0_0_1__write_1
-/iv/EN_vec3_0_0_1__write
-/iv/RDY_vec3_0_0_1__write
-/iv/vec3_0_0_1__read
-/iv/RDY_vec3_0_0_1__read
-/iv/vec3_0_1_0__write_1
-/iv/EN_vec3_0_1_0__write
-/iv/RDY_vec3_0_1_0__write
-/iv/vec3_0_1_0__read
-/iv/RDY_vec3_0_1_0__read
-/iv/vec3_0_1_1__write_1
-/iv/EN_vec3_0_1_1__write
-/iv/RDY_vec3_0_1_1__write
-/iv/vec3_0_1_1__read
-/iv/RDY_vec3_0_1_1__read
-/iv/vec3_1_0_0__write_1
-/iv/EN_vec3_1_0_0__write
-/iv/RDY_vec3_1_0_0__write
-/iv/vec3_1_0_0__read
-/iv/RDY_vec3_1_0_0__read
-/iv/vec3_1_0_1__write_1
-/iv/EN_vec3_1_0_1__write
-/iv/RDY_vec3_1_0_1__write
-/iv/vec3_1_0_1__read
-/iv/RDY_vec3_1_0_1__read
-/iv/vec3_1_1_0__write_1
-/iv/EN_vec3_1_1_0__write
-/iv/RDY_vec3_1_1_0__write
-/iv/vec3_1_1_0__read
-/iv/RDY_vec3_1_1_0__read
-/iv/vec3_1_1_1__write_1
-/iv/EN_vec3_1_1_1__write
-/iv/RDY_vec3_1_1_1__write
-/iv/vec3_1_1_1__read
-/iv/RDY_vec3_1_1_1__read
-/iv/data1
-/iv/RDY_data1
-/iv/data2
-/iv/RDY_data2
-/iv/data3
-/iv/RDY_data3
-/iv/CLK_clks1_0
-/iv/CLK_GATE_clks1_0
-/iv/CLK_clks1_1
-/iv/CLK_GATE_clks1_1
-/iv/RST_N_rsts1_0
-/iv/RST_N_rsts1_1
-/iv/ios1_0
-/iv/ios1_1
+/mi/i
+/r1/CLK
+/r1/EN__write
+/r1/RDY__read
+/r1/RDY__write
+/r1/RST_N
+/r1/_read
+/r1/_write_1
+/r1/ptr/CLK
+/r1/ptr/D_IN
+/r1/ptr/EN
+/r1/ptr/Q_OUT
+/r1/ptr/RST
+/r1/r1/CLK
+/r1/r1/D_IN
+/r1/r1/EN
+/r1/r1/Q_OUT
+/r1/r1/RST
+/r1/r2/CLK
+/r1/r2/D_IN
+/r1/r2/EN
+/r1/r2/Q_OUT
+/r1/r2/RST
+/r1/rHello/CAN_FIRE_RL_rHello
+/r1/rHello/WILL_FIRE_RL_rHello
+/r1/rWorld/CAN_FIRE_RL_rWorld
+/r1/rWorld/WILL_FIRE_RL_rWorld
+/r2/CLK
+/r2/EN__write
+/r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
+/r2/ptr/CLK
+/r2/ptr/D_IN
+/r2/ptr/EN
+/r2/ptr/Q_OUT
+/r2/ptr/RST
+/r2/r1/CLK
+/r2/r1/D_IN
+/r2/r1/EN
+/r2/r1/Q_OUT
+/r2/r1/RST
+/r2/r2/CLK
+/r2/r2/D_IN
+/r2/r2/EN
+/r2/r2/Q_OUT
+/r2/r2/RST
+/r2/rHello/CAN_FIRE_RL_rHello
+/r2/rHello/WILL_FIRE_RL_rHello
+/r2/rWorld/CAN_FIRE_RL_rWorld
+/r2/rWorld/WILL_FIRE_RL_rWorld
+/r__read
+/r__write_1
 ---------
 Command: signal filter */
 ---------
 Command: signal filter /*/
 ---------
 Command: signal filter /*/*
-/i
 /CLK
-/RST_N
-/r__write_1
 /EN_r__write
-/RDY_r__write
-/r__read
 /RDY_r__read
+/RDY_r__write
+/RST_N
 /b
-/r1/CLK
-/r1/RST_N
-/r1/_write_1
-/r1/EN__write
-/r1/RDY__write
-/r1/_read
-/r1/RDY__read
-/r2/CLK
-/r2/RST_N
-/r2/_write_1
-/r2/EN__write
-/r2/RDY__write
-/r2/_read
-/r2/RDY__read
-/mi/i
+/i
+/iv/CLK
+/iv/CLK_GATE_clks1_0
+/iv/CLK_GATE_clks1_1
+/iv/CLK_clks1_0
+/iv/CLK_clks1_1
+/iv/EN_vec1_0__write
+/iv/EN_vec1_1__write
+/iv/EN_vec2_0_0__write
+/iv/EN_vec2_0_1__write
+/iv/EN_vec2_1_0__write
+/iv/EN_vec2_1_1__write
+/iv/EN_vec3_0_0_0__write
+/iv/EN_vec3_0_0_1__write
+/iv/EN_vec3_0_1_0__write
+/iv/EN_vec3_0_1_1__write
+/iv/EN_vec3_1_0_0__write
+/iv/EN_vec3_1_0_1__write
+/iv/EN_vec3_1_1_0__write
+/iv/EN_vec3_1_1_1__write
+/iv/RDY_data1
+/iv/RDY_data2
+/iv/RDY_data3
+/iv/RDY_vec1_0__read
+/iv/RDY_vec1_0__write
+/iv/RDY_vec1_1__read
+/iv/RDY_vec1_1__write
+/iv/RDY_vec2_0_0__read
+/iv/RDY_vec2_0_0__write
+/iv/RDY_vec2_0_1__read
+/iv/RDY_vec2_0_1__write
+/iv/RDY_vec2_1_0__read
+/iv/RDY_vec2_1_0__write
+/iv/RDY_vec2_1_1__read
+/iv/RDY_vec2_1_1__write
+/iv/RDY_vec3_0_0_0__read
+/iv/RDY_vec3_0_0_0__write
+/iv/RDY_vec3_0_0_1__read
+/iv/RDY_vec3_0_0_1__write
+/iv/RDY_vec3_0_1_0__read
+/iv/RDY_vec3_0_1_0__write
+/iv/RDY_vec3_0_1_1__read
+/iv/RDY_vec3_0_1_1__write
+/iv/RDY_vec3_1_0_0__read
+/iv/RDY_vec3_1_0_0__write
+/iv/RDY_vec3_1_0_1__read
+/iv/RDY_vec3_1_0_1__write
+/iv/RDY_vec3_1_1_0__read
+/iv/RDY_vec3_1_1_0__write
+/iv/RDY_vec3_1_1_1__read
+/iv/RDY_vec3_1_1_1__write
+/iv/RST_N
+/iv/RST_N_rsts1_0
+/iv/RST_N_rsts1_1
+/iv/data1
+/iv/data2
+/iv/data3
+/iv/io
+/iv/ios1_0
+/iv/ios1_1
+/iv/vec1_0__read
+/iv/vec1_0__write_1
+/iv/vec1_1__read
+/iv/vec1_1__write_1
+/iv/vec2_0_0__read
+/iv/vec2_0_0__write_1
+/iv/vec2_0_1__read
+/iv/vec2_0_1__write_1
+/iv/vec2_1_0__read
+/iv/vec2_1_0__write_1
+/iv/vec2_1_1__read
+/iv/vec2_1_1__write_1
+/iv/vec3_0_0_0__read
+/iv/vec3_0_0_0__write_1
+/iv/vec3_0_0_1__read
+/iv/vec3_0_0_1__write_1
+/iv/vec3_0_1_0__read
+/iv/vec3_0_1_0__write_1
+/iv/vec3_0_1_1__read
+/iv/vec3_0_1_1__write_1
+/iv/vec3_1_0_0__read
+/iv/vec3_1_0_0__write_1
+/iv/vec3_1_0_1__read
+/iv/vec3_1_0_1__write_1
+/iv/vec3_1_1_0__read
+/iv/vec3_1_1_0__write_1
+/iv/vec3_1_1_1__read
+/iv/vec3_1_1_1__write_1
+/mb/I_IN
+/mb/I_OUT
+/mb/V
+/mb/WGET
+/mb/WHAS
+/mb/WSET
+/mb/WVAL
 /mi/CLK
 /mi/RST_N
 /mi/b
-/mb/V
-/mb/I_IN
-/mb/WVAL
-/mb/WSET
-/mb/WGET
-/mb/WHAS
-/mb/I_OUT
-/iv/io
-/iv/CLK
-/iv/RST_N
-/iv/vec1_0__write_1
-/iv/EN_vec1_0__write
-/iv/RDY_vec1_0__write
-/iv/vec1_0__read
-/iv/RDY_vec1_0__read
-/iv/vec1_1__write_1
-/iv/EN_vec1_1__write
-/iv/RDY_vec1_1__write
-/iv/vec1_1__read
-/iv/RDY_vec1_1__read
-/iv/vec2_0_0__write_1
-/iv/EN_vec2_0_0__write
-/iv/RDY_vec2_0_0__write
-/iv/vec2_0_0__read
-/iv/RDY_vec2_0_0__read
-/iv/vec2_0_1__write_1
-/iv/EN_vec2_0_1__write
-/iv/RDY_vec2_0_1__write
-/iv/vec2_0_1__read
-/iv/RDY_vec2_0_1__read
-/iv/vec2_1_0__write_1
-/iv/EN_vec2_1_0__write
-/iv/RDY_vec2_1_0__write
-/iv/vec2_1_0__read
-/iv/RDY_vec2_1_0__read
-/iv/vec2_1_1__write_1
-/iv/EN_vec2_1_1__write
-/iv/RDY_vec2_1_1__write
-/iv/vec2_1_1__read
-/iv/RDY_vec2_1_1__read
-/iv/vec3_0_0_0__write_1
-/iv/EN_vec3_0_0_0__write
-/iv/RDY_vec3_0_0_0__write
-/iv/vec3_0_0_0__read
-/iv/RDY_vec3_0_0_0__read
-/iv/vec3_0_0_1__write_1
-/iv/EN_vec3_0_0_1__write
-/iv/RDY_vec3_0_0_1__write
-/iv/vec3_0_0_1__read
-/iv/RDY_vec3_0_0_1__read
-/iv/vec3_0_1_0__write_1
-/iv/EN_vec3_0_1_0__write
-/iv/RDY_vec3_0_1_0__write
-/iv/vec3_0_1_0__read
-/iv/RDY_vec3_0_1_0__read
-/iv/vec3_0_1_1__write_1
-/iv/EN_vec3_0_1_1__write
-/iv/RDY_vec3_0_1_1__write
-/iv/vec3_0_1_1__read
-/iv/RDY_vec3_0_1_1__read
-/iv/vec3_1_0_0__write_1
-/iv/EN_vec3_1_0_0__write
-/iv/RDY_vec3_1_0_0__write
-/iv/vec3_1_0_0__read
-/iv/RDY_vec3_1_0_0__read
-/iv/vec3_1_0_1__write_1
-/iv/EN_vec3_1_0_1__write
-/iv/RDY_vec3_1_0_1__write
-/iv/vec3_1_0_1__read
-/iv/RDY_vec3_1_0_1__read
-/iv/vec3_1_1_0__write_1
-/iv/EN_vec3_1_1_0__write
-/iv/RDY_vec3_1_1_0__write
-/iv/vec3_1_1_0__read
-/iv/RDY_vec3_1_1_0__read
-/iv/vec3_1_1_1__write_1
-/iv/EN_vec3_1_1_1__write
-/iv/RDY_vec3_1_1_1__write
-/iv/vec3_1_1_1__read
-/iv/RDY_vec3_1_1_1__read
-/iv/data1
-/iv/RDY_data1
-/iv/data2
-/iv/RDY_data2
-/iv/data3
-/iv/RDY_data3
-/iv/CLK_clks1_0
-/iv/CLK_GATE_clks1_0
-/iv/CLK_clks1_1
-/iv/CLK_GATE_clks1_1
-/iv/RST_N_rsts1_0
-/iv/RST_N_rsts1_1
-/iv/ios1_0
-/iv/ios1_1
+/mi/i
+/r1/CLK
+/r1/EN__write
+/r1/RDY__read
+/r1/RDY__write
+/r1/RST_N
+/r1/_read
+/r1/_write_1
+/r2/CLK
+/r2/EN__write
+/r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
+/r__read
+/r__write_1
 ---------
 Command: signal filter /r2/*
 /r2/CLK
-/r2/RST_N
-/r2/_write_1
 /r2/EN__write
-/r2/RDY__write
-/r2/_read
 /r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
 ---------
 Command: signal filter /r2/* -nametype synth
 /r2/CLK
-/r2/RST_N
-/r2/_write_1
 /r2/EN__write
-/r2/RDY__write
-/r2/_read
 /r2/RDY__read
-/r2/rHello/WILL_FIRE_RL_rHello
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
 /r2/rHello/CAN_FIRE_RL_rHello
-/r2/rWorld/WILL_FIRE_RL_rWorld
+/r2/rHello/WILL_FIRE_RL_rHello
 /r2/rWorld/CAN_FIRE_RL_rWorld
+/r2/rWorld/WILL_FIRE_RL_rWorld
 ---------
 Command: signal filter /*/r2/*
 /r1/r2/CLK
-/r1/r2/RST
 /r1/r2/D_IN
 /r1/r2/EN
 /r1/r2/Q_OUT
+/r1/r2/RST
 /r2/r2/CLK
-/r2/r2/RST
 /r2/r2/D_IN
 /r2/r2/EN
 /r2/r2/Q_OUT
+/r2/r2/RST
 ---------
 starting insttest
 got path INST /
@@ -597,9 +597,8 @@ INST / . kind = Synth
 INST / . position = 
 INST / . module = mkT
 INST / . class = VInst
-INST / . hiertree = vInst0 mkT {synth branch}
 INST / . wave_format = {Inout#(Test::Bar) /i} {Bool /r__write_1} {Bool /EN_r__write} {Bool /RDY_r__write} {Bool /r__read} {Bool /RDY_r__read} {Inout#(Test::Bar) /b}
-INST / . key = 1
+INST / . hiertree = / mkT {synth branch}
 INST / . ancestors = /
 INST / . name bsv = mkT
 INST / . name synth = 
@@ -616,9 +615,8 @@ INST /iv . kind = Synth
 INST /iv . position = Test.bsv 93 15
 INST /iv . module = mkIfcWithVec
 INST /iv . class = VInst
-INST /iv . hiertree = vInst5 {iv  IfcWithVec} {synth branch}
 INST /iv . wave_format = {Inout#(Test::Bar) /iv/io} {Bool /iv/vec1_0__write_1} {Bool /iv/EN_vec1_0__write} {Bool /iv/RDY_vec1_0__write} {Bool /iv/vec1_0__read} {Bool /iv/RDY_vec1_0__read} {Bool /iv/vec1_1__write_1} {Bool /iv/EN_vec1_1__write} {Bool /iv/RDY_vec1_1__write} {Bool /iv/vec1_1__read} {Bool /iv/RDY_vec1_1__read} {Bool /iv/vec2_0_0__write_1} {Bool /iv/EN_vec2_0_0__write} {Bool /iv/RDY_vec2_0_0__write} {Bool /iv/vec2_0_0__read} {Bool /iv/RDY_vec2_0_0__read} {Bool /iv/vec2_0_1__write_1} {Bool /iv/EN_vec2_0_1__write} {Bool /iv/RDY_vec2_0_1__write} {Bool /iv/vec2_0_1__read} {Bool /iv/RDY_vec2_0_1__read} {Bool /iv/vec2_1_0__write_1} {Bool /iv/EN_vec2_1_0__write} {Bool /iv/RDY_vec2_1_0__write} {Bool /iv/vec2_1_0__read} {Bool /iv/RDY_vec2_1_0__read} {Bool /iv/vec2_1_1__write_1} {Bool /iv/EN_vec2_1_1__write} {Bool /iv/RDY_vec2_1_1__write} {Bool /iv/vec2_1_1__read} {Bool /iv/RDY_vec2_1_1__read} {Bool /iv/vec3_0_0_0__write_1} {Bool /iv/EN_vec3_0_0_0__write} {Bool /iv/RDY_vec3_0_0_0__write} {Bool /iv/vec3_0_0_0__read} {Bool /iv/RDY_vec3_0_0_0__read} {Bool /iv/vec3_0_0_1__write_1} {Bool /iv/EN_vec3_0_0_1__write} {Bool /iv/RDY_vec3_0_0_1__write} {Bool /iv/vec3_0_0_1__read} {Bool /iv/RDY_vec3_0_0_1__read} {Bool /iv/vec3_0_1_0__write_1} {Bool /iv/EN_vec3_0_1_0__write} {Bool /iv/RDY_vec3_0_1_0__write} {Bool /iv/vec3_0_1_0__read} {Bool /iv/RDY_vec3_0_1_0__read} {Bool /iv/vec3_0_1_1__write_1} {Bool /iv/EN_vec3_0_1_1__write} {Bool /iv/RDY_vec3_0_1_1__write} {Bool /iv/vec3_0_1_1__read} {Bool /iv/RDY_vec3_0_1_1__read} {Bool /iv/vec3_1_0_0__write_1} {Bool /iv/EN_vec3_1_0_0__write} {Bool /iv/RDY_vec3_1_0_0__write} {Bool /iv/vec3_1_0_0__read} {Bool /iv/RDY_vec3_1_0_0__read} {Bool /iv/vec3_1_0_1__write_1} {Bool /iv/EN_vec3_1_0_1__write} {Bool /iv/RDY_vec3_1_0_1__write} {Bool /iv/vec3_1_0_1__read} {Bool /iv/RDY_vec3_1_0_1__read} {Bool /iv/vec3_1_1_0__write_1} {Bool /iv/EN_vec3_1_1_0__write} {Bool /iv/RDY_vec3_1_1_0__write} {Bool /iv/vec3_1_1_0__read} {Bool /iv/RDY_vec3_1_1_0__read} {Bool /iv/vec3_1_1_1__write_1} {Bool /iv/EN_vec3_1_1_1__write} {Bool /iv/RDY_vec3_1_1_1__write} {Bool /iv/vec3_1_1_1__read} {Bool /iv/RDY_vec3_1_1_1__read} {{Vector::Vector#(2, Bool)} /iv/data1} {Bool /iv/RDY_data1} {{Vector::Vector#(2, Vector::Vector#(2, Bool))} /iv/data2} {Bool /iv/RDY_data2} {{Vector::Vector#(2, Vector::Vector#(2, Vector::Vector#(2, Bool)))} /iv/data3} {Bool /iv/RDY_data3} {Bool /iv/CLK_GATE_clks1_0} {Bool /iv/CLK_GATE_clks1_1} {Inout#(Test::Bar) /iv/ios1_0} {Inout#(Test::Bar) /iv/ios1_1}
-INST /iv . key = 6
+INST /iv . hiertree = /iv {iv  IfcWithVec} {synth branch}
 INST /iv . ancestors = / /iv
 INST /iv . name bsv = iv
 INST /iv . name synth = iv
@@ -636,9 +634,8 @@ INST /mb . kind = Prim
 INST /mb . position = Test.bsv 92 18
 INST /mb . module = mkT
 INST /mb . class = VInst
-INST /mb . hiertree = vInst4 {mb  Foo#(Bit#(4))} {prim leaf}
 INST /mb . wave_format = {Int#(32) /mb/V} {Inout#(Test::Bar) /mb/I_IN} {Bit#(4) /mb/WVAL} {Bool /mb/WSET} {Bit#(4) /mb/WGET} {Bool /mb/WHAS} {Inout#(Bool) /mb/I_OUT}
-INST /mb . key = 5
+INST /mb . hiertree = /mb {mb  Foo#(Bit#(4))} {prim leaf}
 INST /mb . ancestors = / /mb
 INST /mb . name bsv = mb
 INST /mb . name synth = mb
@@ -656,9 +653,8 @@ INST /mi . kind = Synth
 INST /mi . position = Test.bsv 91 13
 INST /mi . module = mkI
 INST /mi . class = VInst
-INST /mi . hiertree = vInst3 {mi  InoutIFC} {synth branch}
 INST /mi . wave_format = {Inout#(Test::Bar) /mi/i} {Inout#(Test::Bar) /mi/b}
-INST /mi . key = 4
+INST /mi . hiertree = /mi {mi  InoutIFC} {synth branch}
 INST /mi . ancestors = / /mi
 INST /mi . name bsv = mi
 INST /mi . name synth = mi
@@ -676,9 +672,8 @@ INST /r1 . kind = Synth
 INST /r1 . position = Test.bsv 89 15
 INST /r1 . module = mkM
 INST /r1 . class = VInst
-INST /r1 . hiertree = vInst1 {r1  Reg#(Bool)} {synth branch}
 INST /r1 . wave_format = {Bool /r1/_write_1} {Bool /r1/EN__write} {Bool /r1/RDY__write} {Bool /r1/_read} {Bool /r1/RDY__read}
-INST /r1 . key = 2
+INST /r1 . hiertree = /r1 {r1  Reg#(Bool)} {synth branch}
 INST /r1 . ancestors = / /r1
 INST /r1 . name bsv = r1
 INST /r1 . name synth = r1
@@ -696,9 +691,8 @@ INST /r1/ptr . kind = Prim
 INST /r1/ptr . position = Test.bsv 103 15
 INST /r1/ptr . module = mkM
 INST /r1/ptr . class = VInst
-INST /r1/ptr . hiertree = vInst6 {ptr  Reg#(Bool)} {prim leaf}
 INST /r1/ptr . wave_format = {Bool {/r1/ptr$D_IN}} {Bool {/r1/ptr$EN}} {Bool /r1/ptr}
-INST /r1/ptr . key = 7
+INST /r1/ptr . hiertree = /r1/ptr {ptr  Reg#(Bool)} {prim leaf}
 INST /r1/ptr . ancestors = / /r1 /r1/ptr
 INST /r1/ptr . name bsv = ptr
 INST /r1/ptr . name synth = ptr
@@ -716,9 +710,8 @@ INST /r1/r1 . kind = Prim
 INST /r1/r1 . position = Test.bsv 104 15
 INST /r1/r1 . module = mkM
 INST /r1/r1 . class = VInst
-INST /r1/r1 . hiertree = vInst7 {r1  Reg#(Bool)} {prim leaf}
 INST /r1/r1 . wave_format = {Bool {/r1/r1$D_IN}} {Bool {/r1/r1$EN}} {Bool /r1/r1}
-INST /r1/r1 . key = 8
+INST /r1/r1 . hiertree = /r1/r1 {r1  Reg#(Bool)} {prim leaf}
 INST /r1/r1 . ancestors = / /r1 /r1/r1
 INST /r1/r1 . name bsv = r1
 INST /r1/r1 . name synth = r1
@@ -736,9 +729,8 @@ INST /r1/r2 . kind = Prim
 INST /r1/r2 . position = Test.bsv 105 15
 INST /r1/r2 . module = mkM
 INST /r1/r2 . class = VInst
-INST /r1/r2 . hiertree = vInst8 {r2  Reg#(Bool)} {prim leaf}
 INST /r1/r2 . wave_format = {Bool {/r1/r2$D_IN}} {Bool {/r1/r2$EN}} {Bool /r1/r2}
-INST /r1/r2 . key = 9
+INST /r1/r2 . hiertree = /r1/r2 {r2  Reg#(Bool)} {prim leaf}
 INST /r1/r2 . ancestors = / /r1 /r1/r2
 INST /r1/r2 . name bsv = r2
 INST /r1/r2 . name synth = r2
@@ -756,9 +748,8 @@ INST /r1/rHello . kind = Rule
 INST /r1/rHello . position = Test.bsv 109 9
 INST /r1/rHello . module = mkM
 INST /r1/rHello . class = VInst
-INST /r1/rHello . hiertree = vInst9 rHello {rule leaf}
 INST /r1/rHello . wave_format = {Bool /r1/CAN_FIRE_RL_rHello} {Bool /r1/WILL_FIRE_RL_rHello}
-INST /r1/rHello . key = 10
+INST /r1/rHello . hiertree = /r1/rHello rHello {rule leaf}
 INST /r1/rHello . ancestors = / /r1 /r1/rHello
 INST /r1/rHello . name bsv = rHello
 INST /r1/rHello . name synth = RL_rHello
@@ -776,9 +767,8 @@ INST /r1/rWorld . kind = Rule
 INST /r1/rWorld . position = Test.bsv 113 9
 INST /r1/rWorld . module = mkM
 INST /r1/rWorld . class = VInst
-INST /r1/rWorld . hiertree = vInst10 rWorld {rule leaf}
 INST /r1/rWorld . wave_format = {Bool /r1/CAN_FIRE_RL_rWorld} {Bool /r1/WILL_FIRE_RL_rWorld}
-INST /r1/rWorld . key = 11
+INST /r1/rWorld . hiertree = /r1/rWorld rWorld {rule leaf}
 INST /r1/rWorld . ancestors = / /r1 /r1/rWorld
 INST /r1/rWorld . name bsv = rWorld
 INST /r1/rWorld . name synth = RL_rWorld
@@ -796,9 +786,8 @@ INST /r2 . kind = Synth
 INST /r2 . position = Test.bsv 90 15
 INST /r2 . module = mkM
 INST /r2 . class = VInst
-INST /r2 . hiertree = vInst2 {r2  Reg#(Bool)} {synth branch}
 INST /r2 . wave_format = {Bool /r2/_write_1} {Bool /r2/EN__write} {Bool /r2/RDY__write} {Bool /r2/_read} {Bool /r2/RDY__read}
-INST /r2 . key = 3
+INST /r2 . hiertree = /r2 {r2  Reg#(Bool)} {synth branch}
 INST /r2 . ancestors = / /r2
 INST /r2 . name bsv = r2
 INST /r2 . name synth = r2
@@ -816,9 +805,8 @@ INST /r2/ptr . kind = Prim
 INST /r2/ptr . position = Test.bsv 103 15
 INST /r2/ptr . module = mkM
 INST /r2/ptr . class = VInst
-INST /r2/ptr . hiertree = vInst11 {ptr  Reg#(Bool)} {prim leaf}
 INST /r2/ptr . wave_format = {Bool {/r2/ptr$D_IN}} {Bool {/r2/ptr$EN}} {Bool /r2/ptr}
-INST /r2/ptr . key = 12
+INST /r2/ptr . hiertree = /r2/ptr {ptr  Reg#(Bool)} {prim leaf}
 INST /r2/ptr . ancestors = / /r2 /r2/ptr
 INST /r2/ptr . name bsv = ptr
 INST /r2/ptr . name synth = ptr
@@ -836,9 +824,8 @@ INST /r2/r1 . kind = Prim
 INST /r2/r1 . position = Test.bsv 104 15
 INST /r2/r1 . module = mkM
 INST /r2/r1 . class = VInst
-INST /r2/r1 . hiertree = vInst12 {r1  Reg#(Bool)} {prim leaf}
 INST /r2/r1 . wave_format = {Bool {/r2/r1$D_IN}} {Bool {/r2/r1$EN}} {Bool /r2/r1}
-INST /r2/r1 . key = 13
+INST /r2/r1 . hiertree = /r2/r1 {r1  Reg#(Bool)} {prim leaf}
 INST /r2/r1 . ancestors = / /r2 /r2/r1
 INST /r2/r1 . name bsv = r1
 INST /r2/r1 . name synth = r1
@@ -856,9 +843,8 @@ INST /r2/r2 . kind = Prim
 INST /r2/r2 . position = Test.bsv 105 15
 INST /r2/r2 . module = mkM
 INST /r2/r2 . class = VInst
-INST /r2/r2 . hiertree = vInst13 {r2  Reg#(Bool)} {prim leaf}
 INST /r2/r2 . wave_format = {Bool {/r2/r2$D_IN}} {Bool {/r2/r2$EN}} {Bool /r2/r2}
-INST /r2/r2 . key = 14
+INST /r2/r2 . hiertree = /r2/r2 {r2  Reg#(Bool)} {prim leaf}
 INST /r2/r2 . ancestors = / /r2 /r2/r2
 INST /r2/r2 . name bsv = r2
 INST /r2/r2 . name synth = r2
@@ -876,9 +862,8 @@ INST /r2/rHello . kind = Rule
 INST /r2/rHello . position = Test.bsv 109 9
 INST /r2/rHello . module = mkM
 INST /r2/rHello . class = VInst
-INST /r2/rHello . hiertree = vInst14 rHello {rule leaf}
 INST /r2/rHello . wave_format = {Bool /r2/CAN_FIRE_RL_rHello} {Bool /r2/WILL_FIRE_RL_rHello}
-INST /r2/rHello . key = 15
+INST /r2/rHello . hiertree = /r2/rHello rHello {rule leaf}
 INST /r2/rHello . ancestors = / /r2 /r2/rHello
 INST /r2/rHello . name bsv = rHello
 INST /r2/rHello . name synth = RL_rHello
@@ -896,9 +881,8 @@ INST /r2/rWorld . kind = Rule
 INST /r2/rWorld . position = Test.bsv 113 9
 INST /r2/rWorld . module = mkM
 INST /r2/rWorld . class = VInst
-INST /r2/rWorld . hiertree = vInst15 rWorld {rule leaf}
 INST /r2/rWorld . wave_format = {Bool /r2/CAN_FIRE_RL_rWorld} {Bool /r2/WILL_FIRE_RL_rWorld}
-INST /r2/rWorld . key = 16
+INST /r2/rWorld . hiertree = /r2/rWorld rWorld {rule leaf}
 INST /r2/rWorld . ancestors = / /r2 /r2/rWorld
 INST /r2/rWorld . name bsv = rWorld
 INST /r2/rWorld . name synth = RL_rWorld
@@ -3510,6 +3494,9 @@ f5 = / /iv /mi /r1 /r2
 f6 = 
 Command: inst filter *
 /
+/iv
+/mb
+/mi
 /r1
 /r1/ptr
 /r1/r1
@@ -3522,17 +3509,14 @@ Command: inst filter *
 /r2/r2
 /r2/rHello
 /r2/rWorld
-/mi
-/mb
-/iv
 ---------
 Command: inst filter /*
 /
+/iv
+/mb
+/mi
 /r1
 /r2
-/mi
-/mb
-/iv
 ---------
 Command: inst filter r* g*
 Caught error:  inst filter: Expected a search expression, found `r* g*'
@@ -3612,487 +3596,487 @@ Command: signal filter
 Caught error:  signal filter: Expected a search expression, found `'
 ---------
 Command: signal filter *
-/i
 /CLK
-/RST_N
-/r__write_1
 /EN_r__write
-/RDY_r__write
-/r__read
 /RDY_r__read
+/RDY_r__write
+/RST_N
 /b
-/r1/CLK
-/r1/RST_N
-/r1/_write_1
-/r1/EN__write
-/r1/RDY__write
-/r1/_read
-/r1/RDY__read
-/r1/ptr/CLK
-/r1/ptr/RST
-/r1/ptr/D_IN
-/r1/ptr/EN
-/r1/ptr/Q_OUT
-/r1/r1/CLK
-/r1/r1/RST
-/r1/r1/D_IN
-/r1/r1/EN
-/r1/r1/Q_OUT
-/r1/r2/CLK
-/r1/r2/RST
-/r1/r2/D_IN
-/r1/r2/EN
-/r1/r2/Q_OUT
-/r1/rHello/WILL_FIRE_RL_rHello
-/r1/rHello/CAN_FIRE_RL_rHello
-/r1/rWorld/WILL_FIRE_RL_rWorld
-/r1/rWorld/CAN_FIRE_RL_rWorld
-/r2/CLK
-/r2/RST_N
-/r2/_write_1
-/r2/EN__write
-/r2/RDY__write
-/r2/_read
-/r2/RDY__read
-/r2/ptr/CLK
-/r2/ptr/RST
-/r2/ptr/D_IN
-/r2/ptr/EN
-/r2/ptr/Q_OUT
-/r2/r1/CLK
-/r2/r1/RST
-/r2/r1/D_IN
-/r2/r1/EN
-/r2/r1/Q_OUT
-/r2/r2/CLK
-/r2/r2/RST
-/r2/r2/D_IN
-/r2/r2/EN
-/r2/r2/Q_OUT
-/r2/rHello/WILL_FIRE_RL_rHello
-/r2/rHello/CAN_FIRE_RL_rHello
-/r2/rWorld/WILL_FIRE_RL_rWorld
-/r2/rWorld/CAN_FIRE_RL_rWorld
-/mi/i
+/i
+/iv/CLK
+/iv/CLK_GATE_clks1_0
+/iv/CLK_GATE_clks1_1
+/iv/CLK_clks1_0
+/iv/CLK_clks1_1
+/iv/EN_vec1_0__write
+/iv/EN_vec1_1__write
+/iv/EN_vec2_0_0__write
+/iv/EN_vec2_0_1__write
+/iv/EN_vec2_1_0__write
+/iv/EN_vec2_1_1__write
+/iv/EN_vec3_0_0_0__write
+/iv/EN_vec3_0_0_1__write
+/iv/EN_vec3_0_1_0__write
+/iv/EN_vec3_0_1_1__write
+/iv/EN_vec3_1_0_0__write
+/iv/EN_vec3_1_0_1__write
+/iv/EN_vec3_1_1_0__write
+/iv/EN_vec3_1_1_1__write
+/iv/RDY_data1
+/iv/RDY_data2
+/iv/RDY_data3
+/iv/RDY_vec1_0__read
+/iv/RDY_vec1_0__write
+/iv/RDY_vec1_1__read
+/iv/RDY_vec1_1__write
+/iv/RDY_vec2_0_0__read
+/iv/RDY_vec2_0_0__write
+/iv/RDY_vec2_0_1__read
+/iv/RDY_vec2_0_1__write
+/iv/RDY_vec2_1_0__read
+/iv/RDY_vec2_1_0__write
+/iv/RDY_vec2_1_1__read
+/iv/RDY_vec2_1_1__write
+/iv/RDY_vec3_0_0_0__read
+/iv/RDY_vec3_0_0_0__write
+/iv/RDY_vec3_0_0_1__read
+/iv/RDY_vec3_0_0_1__write
+/iv/RDY_vec3_0_1_0__read
+/iv/RDY_vec3_0_1_0__write
+/iv/RDY_vec3_0_1_1__read
+/iv/RDY_vec3_0_1_1__write
+/iv/RDY_vec3_1_0_0__read
+/iv/RDY_vec3_1_0_0__write
+/iv/RDY_vec3_1_0_1__read
+/iv/RDY_vec3_1_0_1__write
+/iv/RDY_vec3_1_1_0__read
+/iv/RDY_vec3_1_1_0__write
+/iv/RDY_vec3_1_1_1__read
+/iv/RDY_vec3_1_1_1__write
+/iv/RST_N
+/iv/RST_N_rsts1_0
+/iv/RST_N_rsts1_1
+/iv/data1
+/iv/data2
+/iv/data3
+/iv/io
+/iv/ios1_0
+/iv/ios1_1
+/iv/vec1_0__read
+/iv/vec1_0__write_1
+/iv/vec1_1__read
+/iv/vec1_1__write_1
+/iv/vec2_0_0__read
+/iv/vec2_0_0__write_1
+/iv/vec2_0_1__read
+/iv/vec2_0_1__write_1
+/iv/vec2_1_0__read
+/iv/vec2_1_0__write_1
+/iv/vec2_1_1__read
+/iv/vec2_1_1__write_1
+/iv/vec3_0_0_0__read
+/iv/vec3_0_0_0__write_1
+/iv/vec3_0_0_1__read
+/iv/vec3_0_0_1__write_1
+/iv/vec3_0_1_0__read
+/iv/vec3_0_1_0__write_1
+/iv/vec3_0_1_1__read
+/iv/vec3_0_1_1__write_1
+/iv/vec3_1_0_0__read
+/iv/vec3_1_0_0__write_1
+/iv/vec3_1_0_1__read
+/iv/vec3_1_0_1__write_1
+/iv/vec3_1_1_0__read
+/iv/vec3_1_1_0__write_1
+/iv/vec3_1_1_1__read
+/iv/vec3_1_1_1__write_1
+/mb/I_IN
+/mb/I_OUT
+/mb/V
+/mb/WGET
+/mb/WHAS
+/mb/WSET
+/mb/WVAL
 /mi/CLK
 /mi/RST_N
 /mi/b
-/mb/V
-/mb/I_IN
-/mb/WVAL
-/mb/WSET
-/mb/WGET
-/mb/WHAS
-/mb/I_OUT
-/iv/io
-/iv/CLK
-/iv/RST_N
-/iv/vec1_0__write_1
-/iv/EN_vec1_0__write
-/iv/RDY_vec1_0__write
-/iv/vec1_0__read
-/iv/RDY_vec1_0__read
-/iv/vec1_1__write_1
-/iv/EN_vec1_1__write
-/iv/RDY_vec1_1__write
-/iv/vec1_1__read
-/iv/RDY_vec1_1__read
-/iv/vec2_0_0__write_1
-/iv/EN_vec2_0_0__write
-/iv/RDY_vec2_0_0__write
-/iv/vec2_0_0__read
-/iv/RDY_vec2_0_0__read
-/iv/vec2_0_1__write_1
-/iv/EN_vec2_0_1__write
-/iv/RDY_vec2_0_1__write
-/iv/vec2_0_1__read
-/iv/RDY_vec2_0_1__read
-/iv/vec2_1_0__write_1
-/iv/EN_vec2_1_0__write
-/iv/RDY_vec2_1_0__write
-/iv/vec2_1_0__read
-/iv/RDY_vec2_1_0__read
-/iv/vec2_1_1__write_1
-/iv/EN_vec2_1_1__write
-/iv/RDY_vec2_1_1__write
-/iv/vec2_1_1__read
-/iv/RDY_vec2_1_1__read
-/iv/vec3_0_0_0__write_1
-/iv/EN_vec3_0_0_0__write
-/iv/RDY_vec3_0_0_0__write
-/iv/vec3_0_0_0__read
-/iv/RDY_vec3_0_0_0__read
-/iv/vec3_0_0_1__write_1
-/iv/EN_vec3_0_0_1__write
-/iv/RDY_vec3_0_0_1__write
-/iv/vec3_0_0_1__read
-/iv/RDY_vec3_0_0_1__read
-/iv/vec3_0_1_0__write_1
-/iv/EN_vec3_0_1_0__write
-/iv/RDY_vec3_0_1_0__write
-/iv/vec3_0_1_0__read
-/iv/RDY_vec3_0_1_0__read
-/iv/vec3_0_1_1__write_1
-/iv/EN_vec3_0_1_1__write
-/iv/RDY_vec3_0_1_1__write
-/iv/vec3_0_1_1__read
-/iv/RDY_vec3_0_1_1__read
-/iv/vec3_1_0_0__write_1
-/iv/EN_vec3_1_0_0__write
-/iv/RDY_vec3_1_0_0__write
-/iv/vec3_1_0_0__read
-/iv/RDY_vec3_1_0_0__read
-/iv/vec3_1_0_1__write_1
-/iv/EN_vec3_1_0_1__write
-/iv/RDY_vec3_1_0_1__write
-/iv/vec3_1_0_1__read
-/iv/RDY_vec3_1_0_1__read
-/iv/vec3_1_1_0__write_1
-/iv/EN_vec3_1_1_0__write
-/iv/RDY_vec3_1_1_0__write
-/iv/vec3_1_1_0__read
-/iv/RDY_vec3_1_1_0__read
-/iv/vec3_1_1_1__write_1
-/iv/EN_vec3_1_1_1__write
-/iv/RDY_vec3_1_1_1__write
-/iv/vec3_1_1_1__read
-/iv/RDY_vec3_1_1_1__read
-/iv/data1
-/iv/RDY_data1
-/iv/data2
-/iv/RDY_data2
-/iv/data3
-/iv/RDY_data3
-/iv/CLK_clks1_0
-/iv/CLK_GATE_clks1_0
-/iv/CLK_clks1_1
-/iv/CLK_GATE_clks1_1
-/iv/RST_N_rsts1_0
-/iv/RST_N_rsts1_1
-/iv/ios1_0
-/iv/ios1_1
+/mi/i
+/r1/CLK
+/r1/EN__write
+/r1/RDY__read
+/r1/RDY__write
+/r1/RST_N
+/r1/_read
+/r1/_write_1
+/r1/ptr/CLK
+/r1/ptr/D_IN
+/r1/ptr/EN
+/r1/ptr/Q_OUT
+/r1/ptr/RST
+/r1/r1/CLK
+/r1/r1/D_IN
+/r1/r1/EN
+/r1/r1/Q_OUT
+/r1/r1/RST
+/r1/r2/CLK
+/r1/r2/D_IN
+/r1/r2/EN
+/r1/r2/Q_OUT
+/r1/r2/RST
+/r1/rHello/CAN_FIRE_RL_rHello
+/r1/rHello/WILL_FIRE_RL_rHello
+/r1/rWorld/CAN_FIRE_RL_rWorld
+/r1/rWorld/WILL_FIRE_RL_rWorld
+/r2/CLK
+/r2/EN__write
+/r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
+/r2/ptr/CLK
+/r2/ptr/D_IN
+/r2/ptr/EN
+/r2/ptr/Q_OUT
+/r2/ptr/RST
+/r2/r1/CLK
+/r2/r1/D_IN
+/r2/r1/EN
+/r2/r1/Q_OUT
+/r2/r1/RST
+/r2/r2/CLK
+/r2/r2/D_IN
+/r2/r2/EN
+/r2/r2/Q_OUT
+/r2/r2/RST
+/r2/rHello/CAN_FIRE_RL_rHello
+/r2/rHello/WILL_FIRE_RL_rHello
+/r2/rWorld/CAN_FIRE_RL_rWorld
+/r2/rWorld/WILL_FIRE_RL_rWorld
+/r__read
+/r__write_1
 ---------
 Command: signal filter */*
-/i
 /CLK
-/RST_N
-/r__write_1
 /EN_r__write
-/RDY_r__write
-/r__read
 /RDY_r__read
+/RDY_r__write
+/RST_N
 /b
-/r1/CLK
-/r1/RST_N
-/r1/_write_1
-/r1/EN__write
-/r1/RDY__write
-/r1/_read
-/r1/RDY__read
-/r1/ptr/CLK
-/r1/ptr/RST
-/r1/ptr/D_IN
-/r1/ptr/EN
-/r1/ptr/Q_OUT
-/r1/r1/CLK
-/r1/r1/RST
-/r1/r1/D_IN
-/r1/r1/EN
-/r1/r1/Q_OUT
-/r1/r2/CLK
-/r1/r2/RST
-/r1/r2/D_IN
-/r1/r2/EN
-/r1/r2/Q_OUT
-/r1/rHello/WILL_FIRE_RL_rHello
-/r1/rHello/CAN_FIRE_RL_rHello
-/r1/rWorld/WILL_FIRE_RL_rWorld
-/r1/rWorld/CAN_FIRE_RL_rWorld
-/r2/CLK
-/r2/RST_N
-/r2/_write_1
-/r2/EN__write
-/r2/RDY__write
-/r2/_read
-/r2/RDY__read
-/r2/ptr/CLK
-/r2/ptr/RST
-/r2/ptr/D_IN
-/r2/ptr/EN
-/r2/ptr/Q_OUT
-/r2/r1/CLK
-/r2/r1/RST
-/r2/r1/D_IN
-/r2/r1/EN
-/r2/r1/Q_OUT
-/r2/r2/CLK
-/r2/r2/RST
-/r2/r2/D_IN
-/r2/r2/EN
-/r2/r2/Q_OUT
-/r2/rHello/WILL_FIRE_RL_rHello
-/r2/rHello/CAN_FIRE_RL_rHello
-/r2/rWorld/WILL_FIRE_RL_rWorld
-/r2/rWorld/CAN_FIRE_RL_rWorld
-/mi/i
+/i
+/iv/CLK
+/iv/CLK_GATE_clks1_0
+/iv/CLK_GATE_clks1_1
+/iv/CLK_clks1_0
+/iv/CLK_clks1_1
+/iv/EN_vec1_0__write
+/iv/EN_vec1_1__write
+/iv/EN_vec2_0_0__write
+/iv/EN_vec2_0_1__write
+/iv/EN_vec2_1_0__write
+/iv/EN_vec2_1_1__write
+/iv/EN_vec3_0_0_0__write
+/iv/EN_vec3_0_0_1__write
+/iv/EN_vec3_0_1_0__write
+/iv/EN_vec3_0_1_1__write
+/iv/EN_vec3_1_0_0__write
+/iv/EN_vec3_1_0_1__write
+/iv/EN_vec3_1_1_0__write
+/iv/EN_vec3_1_1_1__write
+/iv/RDY_data1
+/iv/RDY_data2
+/iv/RDY_data3
+/iv/RDY_vec1_0__read
+/iv/RDY_vec1_0__write
+/iv/RDY_vec1_1__read
+/iv/RDY_vec1_1__write
+/iv/RDY_vec2_0_0__read
+/iv/RDY_vec2_0_0__write
+/iv/RDY_vec2_0_1__read
+/iv/RDY_vec2_0_1__write
+/iv/RDY_vec2_1_0__read
+/iv/RDY_vec2_1_0__write
+/iv/RDY_vec2_1_1__read
+/iv/RDY_vec2_1_1__write
+/iv/RDY_vec3_0_0_0__read
+/iv/RDY_vec3_0_0_0__write
+/iv/RDY_vec3_0_0_1__read
+/iv/RDY_vec3_0_0_1__write
+/iv/RDY_vec3_0_1_0__read
+/iv/RDY_vec3_0_1_0__write
+/iv/RDY_vec3_0_1_1__read
+/iv/RDY_vec3_0_1_1__write
+/iv/RDY_vec3_1_0_0__read
+/iv/RDY_vec3_1_0_0__write
+/iv/RDY_vec3_1_0_1__read
+/iv/RDY_vec3_1_0_1__write
+/iv/RDY_vec3_1_1_0__read
+/iv/RDY_vec3_1_1_0__write
+/iv/RDY_vec3_1_1_1__read
+/iv/RDY_vec3_1_1_1__write
+/iv/RST_N
+/iv/RST_N_rsts1_0
+/iv/RST_N_rsts1_1
+/iv/data1
+/iv/data2
+/iv/data3
+/iv/io
+/iv/ios1_0
+/iv/ios1_1
+/iv/vec1_0__read
+/iv/vec1_0__write_1
+/iv/vec1_1__read
+/iv/vec1_1__write_1
+/iv/vec2_0_0__read
+/iv/vec2_0_0__write_1
+/iv/vec2_0_1__read
+/iv/vec2_0_1__write_1
+/iv/vec2_1_0__read
+/iv/vec2_1_0__write_1
+/iv/vec2_1_1__read
+/iv/vec2_1_1__write_1
+/iv/vec3_0_0_0__read
+/iv/vec3_0_0_0__write_1
+/iv/vec3_0_0_1__read
+/iv/vec3_0_0_1__write_1
+/iv/vec3_0_1_0__read
+/iv/vec3_0_1_0__write_1
+/iv/vec3_0_1_1__read
+/iv/vec3_0_1_1__write_1
+/iv/vec3_1_0_0__read
+/iv/vec3_1_0_0__write_1
+/iv/vec3_1_0_1__read
+/iv/vec3_1_0_1__write_1
+/iv/vec3_1_1_0__read
+/iv/vec3_1_1_0__write_1
+/iv/vec3_1_1_1__read
+/iv/vec3_1_1_1__write_1
+/mb/I_IN
+/mb/I_OUT
+/mb/V
+/mb/WGET
+/mb/WHAS
+/mb/WSET
+/mb/WVAL
 /mi/CLK
 /mi/RST_N
 /mi/b
-/mb/V
-/mb/I_IN
-/mb/WVAL
-/mb/WSET
-/mb/WGET
-/mb/WHAS
-/mb/I_OUT
-/iv/io
-/iv/CLK
-/iv/RST_N
-/iv/vec1_0__write_1
-/iv/EN_vec1_0__write
-/iv/RDY_vec1_0__write
-/iv/vec1_0__read
-/iv/RDY_vec1_0__read
-/iv/vec1_1__write_1
-/iv/EN_vec1_1__write
-/iv/RDY_vec1_1__write
-/iv/vec1_1__read
-/iv/RDY_vec1_1__read
-/iv/vec2_0_0__write_1
-/iv/EN_vec2_0_0__write
-/iv/RDY_vec2_0_0__write
-/iv/vec2_0_0__read
-/iv/RDY_vec2_0_0__read
-/iv/vec2_0_1__write_1
-/iv/EN_vec2_0_1__write
-/iv/RDY_vec2_0_1__write
-/iv/vec2_0_1__read
-/iv/RDY_vec2_0_1__read
-/iv/vec2_1_0__write_1
-/iv/EN_vec2_1_0__write
-/iv/RDY_vec2_1_0__write
-/iv/vec2_1_0__read
-/iv/RDY_vec2_1_0__read
-/iv/vec2_1_1__write_1
-/iv/EN_vec2_1_1__write
-/iv/RDY_vec2_1_1__write
-/iv/vec2_1_1__read
-/iv/RDY_vec2_1_1__read
-/iv/vec3_0_0_0__write_1
-/iv/EN_vec3_0_0_0__write
-/iv/RDY_vec3_0_0_0__write
-/iv/vec3_0_0_0__read
-/iv/RDY_vec3_0_0_0__read
-/iv/vec3_0_0_1__write_1
-/iv/EN_vec3_0_0_1__write
-/iv/RDY_vec3_0_0_1__write
-/iv/vec3_0_0_1__read
-/iv/RDY_vec3_0_0_1__read
-/iv/vec3_0_1_0__write_1
-/iv/EN_vec3_0_1_0__write
-/iv/RDY_vec3_0_1_0__write
-/iv/vec3_0_1_0__read
-/iv/RDY_vec3_0_1_0__read
-/iv/vec3_0_1_1__write_1
-/iv/EN_vec3_0_1_1__write
-/iv/RDY_vec3_0_1_1__write
-/iv/vec3_0_1_1__read
-/iv/RDY_vec3_0_1_1__read
-/iv/vec3_1_0_0__write_1
-/iv/EN_vec3_1_0_0__write
-/iv/RDY_vec3_1_0_0__write
-/iv/vec3_1_0_0__read
-/iv/RDY_vec3_1_0_0__read
-/iv/vec3_1_0_1__write_1
-/iv/EN_vec3_1_0_1__write
-/iv/RDY_vec3_1_0_1__write
-/iv/vec3_1_0_1__read
-/iv/RDY_vec3_1_0_1__read
-/iv/vec3_1_1_0__write_1
-/iv/EN_vec3_1_1_0__write
-/iv/RDY_vec3_1_1_0__write
-/iv/vec3_1_1_0__read
-/iv/RDY_vec3_1_1_0__read
-/iv/vec3_1_1_1__write_1
-/iv/EN_vec3_1_1_1__write
-/iv/RDY_vec3_1_1_1__write
-/iv/vec3_1_1_1__read
-/iv/RDY_vec3_1_1_1__read
-/iv/data1
-/iv/RDY_data1
-/iv/data2
-/iv/RDY_data2
-/iv/data3
-/iv/RDY_data3
-/iv/CLK_clks1_0
-/iv/CLK_GATE_clks1_0
-/iv/CLK_clks1_1
-/iv/CLK_GATE_clks1_1
-/iv/RST_N_rsts1_0
-/iv/RST_N_rsts1_1
-/iv/ios1_0
-/iv/ios1_1
+/mi/i
+/r1/CLK
+/r1/EN__write
+/r1/RDY__read
+/r1/RDY__write
+/r1/RST_N
+/r1/_read
+/r1/_write_1
+/r1/ptr/CLK
+/r1/ptr/D_IN
+/r1/ptr/EN
+/r1/ptr/Q_OUT
+/r1/ptr/RST
+/r1/r1/CLK
+/r1/r1/D_IN
+/r1/r1/EN
+/r1/r1/Q_OUT
+/r1/r1/RST
+/r1/r2/CLK
+/r1/r2/D_IN
+/r1/r2/EN
+/r1/r2/Q_OUT
+/r1/r2/RST
+/r1/rHello/CAN_FIRE_RL_rHello
+/r1/rHello/WILL_FIRE_RL_rHello
+/r1/rWorld/CAN_FIRE_RL_rWorld
+/r1/rWorld/WILL_FIRE_RL_rWorld
+/r2/CLK
+/r2/EN__write
+/r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
+/r2/ptr/CLK
+/r2/ptr/D_IN
+/r2/ptr/EN
+/r2/ptr/Q_OUT
+/r2/ptr/RST
+/r2/r1/CLK
+/r2/r1/D_IN
+/r2/r1/EN
+/r2/r1/Q_OUT
+/r2/r1/RST
+/r2/r2/CLK
+/r2/r2/D_IN
+/r2/r2/EN
+/r2/r2/Q_OUT
+/r2/r2/RST
+/r2/rHello/CAN_FIRE_RL_rHello
+/r2/rHello/WILL_FIRE_RL_rHello
+/r2/rWorld/CAN_FIRE_RL_rWorld
+/r2/rWorld/WILL_FIRE_RL_rWorld
+/r__read
+/r__write_1
 ---------
 Command: signal filter */
 ---------
 Command: signal filter /*/
 ---------
 Command: signal filter /*/*
-/i
 /CLK
-/RST_N
-/r__write_1
 /EN_r__write
-/RDY_r__write
-/r__read
 /RDY_r__read
+/RDY_r__write
+/RST_N
 /b
-/r1/CLK
-/r1/RST_N
-/r1/_write_1
-/r1/EN__write
-/r1/RDY__write
-/r1/_read
-/r1/RDY__read
-/r2/CLK
-/r2/RST_N
-/r2/_write_1
-/r2/EN__write
-/r2/RDY__write
-/r2/_read
-/r2/RDY__read
-/mi/i
+/i
+/iv/CLK
+/iv/CLK_GATE_clks1_0
+/iv/CLK_GATE_clks1_1
+/iv/CLK_clks1_0
+/iv/CLK_clks1_1
+/iv/EN_vec1_0__write
+/iv/EN_vec1_1__write
+/iv/EN_vec2_0_0__write
+/iv/EN_vec2_0_1__write
+/iv/EN_vec2_1_0__write
+/iv/EN_vec2_1_1__write
+/iv/EN_vec3_0_0_0__write
+/iv/EN_vec3_0_0_1__write
+/iv/EN_vec3_0_1_0__write
+/iv/EN_vec3_0_1_1__write
+/iv/EN_vec3_1_0_0__write
+/iv/EN_vec3_1_0_1__write
+/iv/EN_vec3_1_1_0__write
+/iv/EN_vec3_1_1_1__write
+/iv/RDY_data1
+/iv/RDY_data2
+/iv/RDY_data3
+/iv/RDY_vec1_0__read
+/iv/RDY_vec1_0__write
+/iv/RDY_vec1_1__read
+/iv/RDY_vec1_1__write
+/iv/RDY_vec2_0_0__read
+/iv/RDY_vec2_0_0__write
+/iv/RDY_vec2_0_1__read
+/iv/RDY_vec2_0_1__write
+/iv/RDY_vec2_1_0__read
+/iv/RDY_vec2_1_0__write
+/iv/RDY_vec2_1_1__read
+/iv/RDY_vec2_1_1__write
+/iv/RDY_vec3_0_0_0__read
+/iv/RDY_vec3_0_0_0__write
+/iv/RDY_vec3_0_0_1__read
+/iv/RDY_vec3_0_0_1__write
+/iv/RDY_vec3_0_1_0__read
+/iv/RDY_vec3_0_1_0__write
+/iv/RDY_vec3_0_1_1__read
+/iv/RDY_vec3_0_1_1__write
+/iv/RDY_vec3_1_0_0__read
+/iv/RDY_vec3_1_0_0__write
+/iv/RDY_vec3_1_0_1__read
+/iv/RDY_vec3_1_0_1__write
+/iv/RDY_vec3_1_1_0__read
+/iv/RDY_vec3_1_1_0__write
+/iv/RDY_vec3_1_1_1__read
+/iv/RDY_vec3_1_1_1__write
+/iv/RST_N
+/iv/RST_N_rsts1_0
+/iv/RST_N_rsts1_1
+/iv/data1
+/iv/data2
+/iv/data3
+/iv/io
+/iv/ios1_0
+/iv/ios1_1
+/iv/vec1_0__read
+/iv/vec1_0__write_1
+/iv/vec1_1__read
+/iv/vec1_1__write_1
+/iv/vec2_0_0__read
+/iv/vec2_0_0__write_1
+/iv/vec2_0_1__read
+/iv/vec2_0_1__write_1
+/iv/vec2_1_0__read
+/iv/vec2_1_0__write_1
+/iv/vec2_1_1__read
+/iv/vec2_1_1__write_1
+/iv/vec3_0_0_0__read
+/iv/vec3_0_0_0__write_1
+/iv/vec3_0_0_1__read
+/iv/vec3_0_0_1__write_1
+/iv/vec3_0_1_0__read
+/iv/vec3_0_1_0__write_1
+/iv/vec3_0_1_1__read
+/iv/vec3_0_1_1__write_1
+/iv/vec3_1_0_0__read
+/iv/vec3_1_0_0__write_1
+/iv/vec3_1_0_1__read
+/iv/vec3_1_0_1__write_1
+/iv/vec3_1_1_0__read
+/iv/vec3_1_1_0__write_1
+/iv/vec3_1_1_1__read
+/iv/vec3_1_1_1__write_1
+/mb/I_IN
+/mb/I_OUT
+/mb/V
+/mb/WGET
+/mb/WHAS
+/mb/WSET
+/mb/WVAL
 /mi/CLK
 /mi/RST_N
 /mi/b
-/mb/V
-/mb/I_IN
-/mb/WVAL
-/mb/WSET
-/mb/WGET
-/mb/WHAS
-/mb/I_OUT
-/iv/io
-/iv/CLK
-/iv/RST_N
-/iv/vec1_0__write_1
-/iv/EN_vec1_0__write
-/iv/RDY_vec1_0__write
-/iv/vec1_0__read
-/iv/RDY_vec1_0__read
-/iv/vec1_1__write_1
-/iv/EN_vec1_1__write
-/iv/RDY_vec1_1__write
-/iv/vec1_1__read
-/iv/RDY_vec1_1__read
-/iv/vec2_0_0__write_1
-/iv/EN_vec2_0_0__write
-/iv/RDY_vec2_0_0__write
-/iv/vec2_0_0__read
-/iv/RDY_vec2_0_0__read
-/iv/vec2_0_1__write_1
-/iv/EN_vec2_0_1__write
-/iv/RDY_vec2_0_1__write
-/iv/vec2_0_1__read
-/iv/RDY_vec2_0_1__read
-/iv/vec2_1_0__write_1
-/iv/EN_vec2_1_0__write
-/iv/RDY_vec2_1_0__write
-/iv/vec2_1_0__read
-/iv/RDY_vec2_1_0__read
-/iv/vec2_1_1__write_1
-/iv/EN_vec2_1_1__write
-/iv/RDY_vec2_1_1__write
-/iv/vec2_1_1__read
-/iv/RDY_vec2_1_1__read
-/iv/vec3_0_0_0__write_1
-/iv/EN_vec3_0_0_0__write
-/iv/RDY_vec3_0_0_0__write
-/iv/vec3_0_0_0__read
-/iv/RDY_vec3_0_0_0__read
-/iv/vec3_0_0_1__write_1
-/iv/EN_vec3_0_0_1__write
-/iv/RDY_vec3_0_0_1__write
-/iv/vec3_0_0_1__read
-/iv/RDY_vec3_0_0_1__read
-/iv/vec3_0_1_0__write_1
-/iv/EN_vec3_0_1_0__write
-/iv/RDY_vec3_0_1_0__write
-/iv/vec3_0_1_0__read
-/iv/RDY_vec3_0_1_0__read
-/iv/vec3_0_1_1__write_1
-/iv/EN_vec3_0_1_1__write
-/iv/RDY_vec3_0_1_1__write
-/iv/vec3_0_1_1__read
-/iv/RDY_vec3_0_1_1__read
-/iv/vec3_1_0_0__write_1
-/iv/EN_vec3_1_0_0__write
-/iv/RDY_vec3_1_0_0__write
-/iv/vec3_1_0_0__read
-/iv/RDY_vec3_1_0_0__read
-/iv/vec3_1_0_1__write_1
-/iv/EN_vec3_1_0_1__write
-/iv/RDY_vec3_1_0_1__write
-/iv/vec3_1_0_1__read
-/iv/RDY_vec3_1_0_1__read
-/iv/vec3_1_1_0__write_1
-/iv/EN_vec3_1_1_0__write
-/iv/RDY_vec3_1_1_0__write
-/iv/vec3_1_1_0__read
-/iv/RDY_vec3_1_1_0__read
-/iv/vec3_1_1_1__write_1
-/iv/EN_vec3_1_1_1__write
-/iv/RDY_vec3_1_1_1__write
-/iv/vec3_1_1_1__read
-/iv/RDY_vec3_1_1_1__read
-/iv/data1
-/iv/RDY_data1
-/iv/data2
-/iv/RDY_data2
-/iv/data3
-/iv/RDY_data3
-/iv/CLK_clks1_0
-/iv/CLK_GATE_clks1_0
-/iv/CLK_clks1_1
-/iv/CLK_GATE_clks1_1
-/iv/RST_N_rsts1_0
-/iv/RST_N_rsts1_1
-/iv/ios1_0
-/iv/ios1_1
+/mi/i
+/r1/CLK
+/r1/EN__write
+/r1/RDY__read
+/r1/RDY__write
+/r1/RST_N
+/r1/_read
+/r1/_write_1
+/r2/CLK
+/r2/EN__write
+/r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
+/r__read
+/r__write_1
 ---------
 Command: signal filter /r2/*
 /r2/CLK
-/r2/RST_N
-/r2/_write_1
 /r2/EN__write
-/r2/RDY__write
-/r2/_read
 /r2/RDY__read
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
 ---------
 Command: signal filter /r2/* -nametype synth
 /r2/CLK
-/r2/RST_N
-/r2/_write_1
 /r2/EN__write
-/r2/RDY__write
-/r2/_read
 /r2/RDY__read
-/r2/rHello/WILL_FIRE_RL_rHello
+/r2/RDY__write
+/r2/RST_N
+/r2/_read
+/r2/_write_1
 /r2/rHello/CAN_FIRE_RL_rHello
-/r2/rWorld/WILL_FIRE_RL_rWorld
+/r2/rHello/WILL_FIRE_RL_rHello
 /r2/rWorld/CAN_FIRE_RL_rWorld
+/r2/rWorld/WILL_FIRE_RL_rWorld
 ---------
 Command: signal filter /*/r2/*
 /r1/r2/CLK
-/r1/r2/RST
 /r1/r2/D_IN
 /r1/r2/EN
 /r1/r2/Q_OUT
+/r1/r2/RST
 /r2/r2/CLK
-/r2/r2/RST
 /r2/r2/D_IN
 /r2/r2/EN
 /r2/r2/Q_OUT
+/r2/r2/RST
 ---------
 starting insttest
 got path INST /
@@ -4100,9 +4084,8 @@ INST / . kind = Synth
 INST / . position = 
 INST / . module = mkT
 INST / . class = VInst
-INST / . hiertree = vInst16 mkT {synth branch}
 INST / . wave_format = {Inout#(Test::Bar) /i} {Bool /r__write_1} {Bool /EN_r__write} {Bool /RDY_r__write} {Bool /r__read} {Bool /RDY_r__read} {Inout#(Test::Bar) /b}
-INST / . key = 1
+INST / . hiertree = / mkT {synth branch}
 INST / . ancestors = /
 INST / . name bsv = mkT
 INST / . name synth = 
@@ -4119,9 +4102,8 @@ INST /iv . kind = Synth
 INST /iv . position = Test.bsv 93 15
 INST /iv . module = mkIfcWithVec
 INST /iv . class = VInst
-INST /iv . hiertree = vInst21 {iv  IfcWithVec} {synth branch}
 INST /iv . wave_format = {Inout#(Test::Bar) /iv/io} {Bool /iv/vec1_0__write_1} {Bool /iv/EN_vec1_0__write} {Bool /iv/RDY_vec1_0__write} {Bool /iv/vec1_0__read} {Bool /iv/RDY_vec1_0__read} {Bool /iv/vec1_1__write_1} {Bool /iv/EN_vec1_1__write} {Bool /iv/RDY_vec1_1__write} {Bool /iv/vec1_1__read} {Bool /iv/RDY_vec1_1__read} {Bool /iv/vec2_0_0__write_1} {Bool /iv/EN_vec2_0_0__write} {Bool /iv/RDY_vec2_0_0__write} {Bool /iv/vec2_0_0__read} {Bool /iv/RDY_vec2_0_0__read} {Bool /iv/vec2_0_1__write_1} {Bool /iv/EN_vec2_0_1__write} {Bool /iv/RDY_vec2_0_1__write} {Bool /iv/vec2_0_1__read} {Bool /iv/RDY_vec2_0_1__read} {Bool /iv/vec2_1_0__write_1} {Bool /iv/EN_vec2_1_0__write} {Bool /iv/RDY_vec2_1_0__write} {Bool /iv/vec2_1_0__read} {Bool /iv/RDY_vec2_1_0__read} {Bool /iv/vec2_1_1__write_1} {Bool /iv/EN_vec2_1_1__write} {Bool /iv/RDY_vec2_1_1__write} {Bool /iv/vec2_1_1__read} {Bool /iv/RDY_vec2_1_1__read} {Bool /iv/vec3_0_0_0__write_1} {Bool /iv/EN_vec3_0_0_0__write} {Bool /iv/RDY_vec3_0_0_0__write} {Bool /iv/vec3_0_0_0__read} {Bool /iv/RDY_vec3_0_0_0__read} {Bool /iv/vec3_0_0_1__write_1} {Bool /iv/EN_vec3_0_0_1__write} {Bool /iv/RDY_vec3_0_0_1__write} {Bool /iv/vec3_0_0_1__read} {Bool /iv/RDY_vec3_0_0_1__read} {Bool /iv/vec3_0_1_0__write_1} {Bool /iv/EN_vec3_0_1_0__write} {Bool /iv/RDY_vec3_0_1_0__write} {Bool /iv/vec3_0_1_0__read} {Bool /iv/RDY_vec3_0_1_0__read} {Bool /iv/vec3_0_1_1__write_1} {Bool /iv/EN_vec3_0_1_1__write} {Bool /iv/RDY_vec3_0_1_1__write} {Bool /iv/vec3_0_1_1__read} {Bool /iv/RDY_vec3_0_1_1__read} {Bool /iv/vec3_1_0_0__write_1} {Bool /iv/EN_vec3_1_0_0__write} {Bool /iv/RDY_vec3_1_0_0__write} {Bool /iv/vec3_1_0_0__read} {Bool /iv/RDY_vec3_1_0_0__read} {Bool /iv/vec3_1_0_1__write_1} {Bool /iv/EN_vec3_1_0_1__write} {Bool /iv/RDY_vec3_1_0_1__write} {Bool /iv/vec3_1_0_1__read} {Bool /iv/RDY_vec3_1_0_1__read} {Bool /iv/vec3_1_1_0__write_1} {Bool /iv/EN_vec3_1_1_0__write} {Bool /iv/RDY_vec3_1_1_0__write} {Bool /iv/vec3_1_1_0__read} {Bool /iv/RDY_vec3_1_1_0__read} {Bool /iv/vec3_1_1_1__write_1} {Bool /iv/EN_vec3_1_1_1__write} {Bool /iv/RDY_vec3_1_1_1__write} {Bool /iv/vec3_1_1_1__read} {Bool /iv/RDY_vec3_1_1_1__read} {{Vector::Vector#(2, Bool)} /iv/data1} {Bool /iv/RDY_data1} {{Vector::Vector#(2, Vector::Vector#(2, Bool))} /iv/data2} {Bool /iv/RDY_data2} {{Vector::Vector#(2, Vector::Vector#(2, Vector::Vector#(2, Bool)))} /iv/data3} {Bool /iv/RDY_data3} {Bool /iv/CLK_GATE_clks1_0} {Bool /iv/CLK_GATE_clks1_1} {Inout#(Test::Bar) /iv/ios1_0} {Inout#(Test::Bar) /iv/ios1_1}
-INST /iv . key = 6
+INST /iv . hiertree = /iv {iv  IfcWithVec} {synth branch}
 INST /iv . ancestors = / /iv
 INST /iv . name bsv = iv
 INST /iv . name synth = iv
@@ -4139,9 +4121,8 @@ INST /mb . kind = Prim
 INST /mb . position = Test.bsv 92 18
 INST /mb . module = mkT
 INST /mb . class = VInst
-INST /mb . hiertree = vInst20 {mb  Foo#(Bit#(4))} {prim leaf}
 INST /mb . wave_format = {Int#(32) /mb/V} {Inout#(Test::Bar) /mb/I_IN} {Bit#(4) /mb/WVAL} {Bool /mb/WSET} {Bit#(4) /mb/WGET} {Bool /mb/WHAS} {Inout#(Bool) /mb/I_OUT}
-INST /mb . key = 5
+INST /mb . hiertree = /mb {mb  Foo#(Bit#(4))} {prim leaf}
 INST /mb . ancestors = / /mb
 INST /mb . name bsv = mb
 INST /mb . name synth = mb
@@ -4159,9 +4140,8 @@ INST /mi . kind = Synth
 INST /mi . position = Test.bsv 91 13
 INST /mi . module = mkI
 INST /mi . class = VInst
-INST /mi . hiertree = vInst19 {mi  InoutIFC} {synth branch}
 INST /mi . wave_format = {Inout#(Test::Bar) /mi/i} {Inout#(Test::Bar) /mi/b}
-INST /mi . key = 4
+INST /mi . hiertree = /mi {mi  InoutIFC} {synth branch}
 INST /mi . ancestors = / /mi
 INST /mi . name bsv = mi
 INST /mi . name synth = mi
@@ -4179,9 +4159,8 @@ INST /r1 . kind = Synth
 INST /r1 . position = Test.bsv 89 15
 INST /r1 . module = mkM
 INST /r1 . class = VInst
-INST /r1 . hiertree = vInst17 {r1  Reg#(Bool)} {synth branch}
 INST /r1 . wave_format = {Bool /r1/_write_1} {Bool /r1/EN__write} {Bool /r1/RDY__write} {Bool /r1/_read} {Bool /r1/RDY__read}
-INST /r1 . key = 2
+INST /r1 . hiertree = /r1 {r1  Reg#(Bool)} {synth branch}
 INST /r1 . ancestors = / /r1
 INST /r1 . name bsv = r1
 INST /r1 . name synth = r1
@@ -4199,9 +4178,8 @@ INST /r1/ptr . kind = Prim
 INST /r1/ptr . position = Test.bsv 103 15
 INST /r1/ptr . module = mkM
 INST /r1/ptr . class = VInst
-INST /r1/ptr . hiertree = vInst22 {ptr  Reg#(Bool)} {prim leaf}
 INST /r1/ptr . wave_format = {Bool {/r1/ptr$D_IN}} {Bool {/r1/ptr$EN}} {Bool /r1/ptr}
-INST /r1/ptr . key = 7
+INST /r1/ptr . hiertree = /r1/ptr {ptr  Reg#(Bool)} {prim leaf}
 INST /r1/ptr . ancestors = / /r1 /r1/ptr
 INST /r1/ptr . name bsv = ptr
 INST /r1/ptr . name synth = ptr
@@ -4219,9 +4197,8 @@ INST /r1/r1 . kind = Prim
 INST /r1/r1 . position = Test.bsv 104 15
 INST /r1/r1 . module = mkM
 INST /r1/r1 . class = VInst
-INST /r1/r1 . hiertree = vInst23 {r1  Reg#(Bool)} {prim leaf}
 INST /r1/r1 . wave_format = {Bool {/r1/r1$D_IN}} {Bool {/r1/r1$EN}} {Bool /r1/r1}
-INST /r1/r1 . key = 8
+INST /r1/r1 . hiertree = /r1/r1 {r1  Reg#(Bool)} {prim leaf}
 INST /r1/r1 . ancestors = / /r1 /r1/r1
 INST /r1/r1 . name bsv = r1
 INST /r1/r1 . name synth = r1
@@ -4239,9 +4216,8 @@ INST /r1/r2 . kind = Prim
 INST /r1/r2 . position = Test.bsv 105 15
 INST /r1/r2 . module = mkM
 INST /r1/r2 . class = VInst
-INST /r1/r2 . hiertree = vInst24 {r2  Reg#(Bool)} {prim leaf}
 INST /r1/r2 . wave_format = {Bool {/r1/r2$D_IN}} {Bool {/r1/r2$EN}} {Bool /r1/r2}
-INST /r1/r2 . key = 9
+INST /r1/r2 . hiertree = /r1/r2 {r2  Reg#(Bool)} {prim leaf}
 INST /r1/r2 . ancestors = / /r1 /r1/r2
 INST /r1/r2 . name bsv = r2
 INST /r1/r2 . name synth = r2
@@ -4259,9 +4235,8 @@ INST /r1/rHello . kind = Rule
 INST /r1/rHello . position = Test.bsv 109 9
 INST /r1/rHello . module = mkM
 INST /r1/rHello . class = VInst
-INST /r1/rHello . hiertree = vInst25 rHello {rule leaf}
 INST /r1/rHello . wave_format = {Bool /r1/CAN_FIRE_RL_rHello} {Bool /r1/WILL_FIRE_RL_rHello}
-INST /r1/rHello . key = 10
+INST /r1/rHello . hiertree = /r1/rHello rHello {rule leaf}
 INST /r1/rHello . ancestors = / /r1 /r1/rHello
 INST /r1/rHello . name bsv = rHello
 INST /r1/rHello . name synth = RL_rHello
@@ -4279,9 +4254,8 @@ INST /r1/rWorld . kind = Rule
 INST /r1/rWorld . position = Test.bsv 113 9
 INST /r1/rWorld . module = mkM
 INST /r1/rWorld . class = VInst
-INST /r1/rWorld . hiertree = vInst26 rWorld {rule leaf}
 INST /r1/rWorld . wave_format = {Bool /r1/CAN_FIRE_RL_rWorld} {Bool /r1/WILL_FIRE_RL_rWorld}
-INST /r1/rWorld . key = 11
+INST /r1/rWorld . hiertree = /r1/rWorld rWorld {rule leaf}
 INST /r1/rWorld . ancestors = / /r1 /r1/rWorld
 INST /r1/rWorld . name bsv = rWorld
 INST /r1/rWorld . name synth = RL_rWorld
@@ -4299,9 +4273,8 @@ INST /r2 . kind = Synth
 INST /r2 . position = Test.bsv 90 15
 INST /r2 . module = mkM
 INST /r2 . class = VInst
-INST /r2 . hiertree = vInst18 {r2  Reg#(Bool)} {synth branch}
 INST /r2 . wave_format = {Bool /r2/_write_1} {Bool /r2/EN__write} {Bool /r2/RDY__write} {Bool /r2/_read} {Bool /r2/RDY__read}
-INST /r2 . key = 3
+INST /r2 . hiertree = /r2 {r2  Reg#(Bool)} {synth branch}
 INST /r2 . ancestors = / /r2
 INST /r2 . name bsv = r2
 INST /r2 . name synth = r2
@@ -4319,9 +4292,8 @@ INST /r2/ptr . kind = Prim
 INST /r2/ptr . position = Test.bsv 103 15
 INST /r2/ptr . module = mkM
 INST /r2/ptr . class = VInst
-INST /r2/ptr . hiertree = vInst27 {ptr  Reg#(Bool)} {prim leaf}
 INST /r2/ptr . wave_format = {Bool {/r2/ptr$D_IN}} {Bool {/r2/ptr$EN}} {Bool /r2/ptr}
-INST /r2/ptr . key = 12
+INST /r2/ptr . hiertree = /r2/ptr {ptr  Reg#(Bool)} {prim leaf}
 INST /r2/ptr . ancestors = / /r2 /r2/ptr
 INST /r2/ptr . name bsv = ptr
 INST /r2/ptr . name synth = ptr
@@ -4339,9 +4311,8 @@ INST /r2/r1 . kind = Prim
 INST /r2/r1 . position = Test.bsv 104 15
 INST /r2/r1 . module = mkM
 INST /r2/r1 . class = VInst
-INST /r2/r1 . hiertree = vInst28 {r1  Reg#(Bool)} {prim leaf}
 INST /r2/r1 . wave_format = {Bool {/r2/r1$D_IN}} {Bool {/r2/r1$EN}} {Bool /r2/r1}
-INST /r2/r1 . key = 13
+INST /r2/r1 . hiertree = /r2/r1 {r1  Reg#(Bool)} {prim leaf}
 INST /r2/r1 . ancestors = / /r2 /r2/r1
 INST /r2/r1 . name bsv = r1
 INST /r2/r1 . name synth = r1
@@ -4359,9 +4330,8 @@ INST /r2/r2 . kind = Prim
 INST /r2/r2 . position = Test.bsv 105 15
 INST /r2/r2 . module = mkM
 INST /r2/r2 . class = VInst
-INST /r2/r2 . hiertree = vInst29 {r2  Reg#(Bool)} {prim leaf}
 INST /r2/r2 . wave_format = {Bool {/r2/r2$D_IN}} {Bool {/r2/r2$EN}} {Bool /r2/r2}
-INST /r2/r2 . key = 14
+INST /r2/r2 . hiertree = /r2/r2 {r2  Reg#(Bool)} {prim leaf}
 INST /r2/r2 . ancestors = / /r2 /r2/r2
 INST /r2/r2 . name bsv = r2
 INST /r2/r2 . name synth = r2
@@ -4379,9 +4349,8 @@ INST /r2/rHello . kind = Rule
 INST /r2/rHello . position = Test.bsv 109 9
 INST /r2/rHello . module = mkM
 INST /r2/rHello . class = VInst
-INST /r2/rHello . hiertree = vInst30 rHello {rule leaf}
 INST /r2/rHello . wave_format = {Bool /r2/CAN_FIRE_RL_rHello} {Bool /r2/WILL_FIRE_RL_rHello}
-INST /r2/rHello . key = 15
+INST /r2/rHello . hiertree = /r2/rHello rHello {rule leaf}
 INST /r2/rHello . ancestors = / /r2 /r2/rHello
 INST /r2/rHello . name bsv = rHello
 INST /r2/rHello . name synth = RL_rHello
@@ -4399,9 +4368,8 @@ INST /r2/rWorld . kind = Rule
 INST /r2/rWorld . position = Test.bsv 113 9
 INST /r2/rWorld . module = mkM
 INST /r2/rWorld . class = VInst
-INST /r2/rWorld . hiertree = vInst31 rWorld {rule leaf}
 INST /r2/rWorld . wave_format = {Bool /r2/CAN_FIRE_RL_rWorld} {Bool /r2/WILL_FIRE_RL_rWorld}
-INST /r2/rWorld . key = 16
+INST /r2/rWorld . hiertree = /r2/rWorld rWorld {rule leaf}
 INST /r2/rWorld . ancestors = / /r2 /r2/rWorld
 INST /r2/rWorld . name bsv = rWorld
 INST /r2/rWorld . name synth = RL_rWorld
