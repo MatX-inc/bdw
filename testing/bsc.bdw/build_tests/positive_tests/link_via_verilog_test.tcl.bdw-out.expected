@@ -313,6 +313,8 @@ WARNING:       calls to farm2_ifc_cbuff_buff.upd vs. farm2_ifc_cbuff_buff.upd
 RESULT: Verilog file created: mult4/mkMult4Tb.v
 RESULT: Elaborated module file created: mult4/mkMult4Tb.ba
 RESULT: All packages are up to date.
-Executing: bsc -e mkMult4Tb -verilog -o ./out -vdir mult4  -vsim iverilog  -keep-fires mult4/mkMult4Tb.v
-WARNING: + bsc -e mkMult4Tb -verilog -o ./out -vdir mult4 -vsim iverilog -keep-fires mult4/mkMult4Tb.v
+Executing: bsc -e mkMult4Tb -verilog -o ./out -vdir mult4  -bdir mult4  -vsim iverilog  -keep-fires mult4/mkMult4Tb.v
+WARNING: + bsc -e mkMult4Tb -verilog -o ./out -vdir mult4 -bdir mult4 -vsim iverilog -keep-fires mult4/mkMult4Tb.v
+RESULT: Verilog file reused: mult4/mkMult2.v
+RESULT: Verilog file reused: mult4/mkMult1.v
 RESULT: Verilog binary file created: ./out
