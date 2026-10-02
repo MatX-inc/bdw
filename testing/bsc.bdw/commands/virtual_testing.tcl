@@ -80,10 +80,13 @@ proc insttest {insts} {
         puts "got path $path"
         #dont test "key" because it might be nondeterministic
         foreach methodd {
-            kind position module class hiertree wave_format key
+            kind position module class wave_format
         } {
             inst_test_one_method $path $o $methodd
         }
+        # hiertree's first element is the object's own handle, an allocation
+        # counter; the line already identifies the instance by path
+        puts "$path . hiertree = [lreplace [$o hiertree] 0 0 [$o path bsv]]"
         foreach m [list ancestors] {
             puts "$path . $m = [showinsts [$o $m]]"
         }
@@ -181,8 +184,14 @@ proc testCmd { displayf args }  {
         puts "Caught error:  $err"
         set err [list]
     } else {
+        # $displayf is handed one element at a time, so its own sort never has
+        # anything to order; sort what it renders instead
+        set rendered [list]
         foreach e $err {
-            puts [$displayf $e]
+            lappend rendered [$displayf $e]
+        }
+        foreach line [lsort $rendered] {
+            puts $line
         }
     }
     puts "---------"
@@ -270,9 +279,9 @@ proc outputtest_one {prefix wave typed} {
     set viewer [Waves::create_viewer $wave -ScriptFile $prefix.$wave.$typed.dump]
     set  unty 0
     if { $typed eq "bits" } { set unty 1 }
-    $viewer send_objects [signal filter *] $unty
-    $viewer send_objects [inst filter *] $unty
-    $viewer send_instance [inst filter *]
+    $viewer send_objects [sort_signals [signal filter *]] $unty
+    $viewer send_objects [sort_insts [inst filter *]] $unty
+    $viewer send_instance [sort_insts [inst filter *]]
 
     $viewer save_history "$prefix.$wave.$typed.tcl-out"
 

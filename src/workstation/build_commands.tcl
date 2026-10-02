@@ -315,6 +315,7 @@ proc set_link_verilog_options {} {
         set vdir $PROJECT(COMP_VDIR)
         set topv $vdir/$PROJECT(TOP_MODULE).v
         set exe "bsc -e $PROJECT(TOP_MODULE) -verilog -o $out -vdir $vdir \
+                -bdir $PROJECT(COMP_BDIR) \
                 -vsim $PROJECT(SIM_NAME) \
                 $PROJECT(LINK_BSC_OPTIONS) $topv"
         return $exe

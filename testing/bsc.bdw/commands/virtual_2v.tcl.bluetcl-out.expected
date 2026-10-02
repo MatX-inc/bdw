@@ -7,25 +7,7 @@ f5 = / /subis/_element_0 /subis/_element_1
 f6 = /Loop /Loop /Loop/Body_0 /Loop/Body_1 /Loop/Body_2 /Loop/Body_3 /subis /xx /y /zw
 Command: inst filter *
 /
-/y
-/y/_element_0
-/y/_element_1
-/y/_element_2
-/y/_element_3
-/zw
-/zw/_element_0
-/zw/_element_1
-/zw/_element_2
-/zw/_element_3
-/zw/_element_4
-/xx
-/xx/_element_0
-/xx/_element_1
 /Loop
-/Loop/x_0
-/Loop/x_1
-/Loop/x_2
-/Loop/x_3
 /Loop
 /Loop/Body_0
 /Loop/Body_0/aa_0
@@ -39,22 +21,40 @@ Command: inst filter *
 /Loop/Body_3
 /Loop/Body_3/aa_3
 /Loop/Body_3/bb_3
+/Loop/x_0
+/Loop/x_1
+/Loop/x_2
+/Loop/x_3
 /subis
 /subis/_element_0
-/subis/_element_0/foo2
 /subis/_element_0/barx
+/subis/_element_0/foo2
 /subis/_element_1
-/subis/_element_1/foo2
 /subis/_element_1/barx
+/subis/_element_1/foo2
+/xx
+/xx/_element_0
+/xx/_element_1
+/y
+/y/_element_0
+/y/_element_1
+/y/_element_2
+/y/_element_3
+/zw
+/zw/_element_0
+/zw/_element_1
+/zw/_element_2
+/zw/_element_3
+/zw/_element_4
 ---------
 Command: inst filter /*
 /
-/y
-/zw
-/xx
 /Loop
 /Loop
 /subis
+/xx
+/y
+/zw
 ---------
 Command: inst filter r* g*
 Caught error:  inst filter: Expected a search expression, found `r* g*'
@@ -89,80 +89,7 @@ Command: signal filter
 Caught error:  signal filter: Expected a search expression, found `'
 ---------
 Command: signal filter *
-/i
 /CLK
-/RST_N
-/y/_element_0/CLK
-/y/_element_0/D_IN
-/y/_element_0/EN
-/y/_element_0/Q_OUT
-/y/_element_1/CLK
-/y/_element_1/D_IN
-/y/_element_1/EN
-/y/_element_1/Q_OUT
-/y/_element_2/CLK
-/y/_element_2/D_IN
-/y/_element_2/EN
-/y/_element_2/Q_OUT
-/y/_element_3/CLK
-/y/_element_3/D_IN
-/y/_element_3/EN
-/y/_element_3/Q_OUT
-/zw/_element_0/CLK
-/zw/_element_0/RST
-/zw/_element_0/D_IN
-/zw/_element_0/EN
-/zw/_element_0/Q_OUT
-/zw/_element_1/CLK
-/zw/_element_1/RST
-/zw/_element_1/D_IN
-/zw/_element_1/EN
-/zw/_element_1/Q_OUT
-/zw/_element_2/CLK
-/zw/_element_2/RST
-/zw/_element_2/D_IN
-/zw/_element_2/EN
-/zw/_element_2/Q_OUT
-/zw/_element_3/CLK
-/zw/_element_3/RST
-/zw/_element_3/D_IN
-/zw/_element_3/EN
-/zw/_element_3/Q_OUT
-/zw/_element_4/CLK
-/zw/_element_4/RST
-/zw/_element_4/D_IN
-/zw/_element_4/EN
-/zw/_element_4/Q_OUT
-/xx/_element_0/V
-/xx/_element_0/I_IN
-/xx/_element_0/WVAL
-/xx/_element_0/WSET
-/xx/_element_0/WGET
-/xx/_element_0/WHAS
-/xx/_element_0/I_OUT
-/xx/_element_1/V
-/xx/_element_1/I_IN
-/xx/_element_1/WVAL
-/xx/_element_1/WSET
-/xx/_element_1/WGET
-/xx/_element_1/WHAS
-/xx/_element_1/I_OUT
-/Loop/x_0/CLK
-/Loop/x_0/D_IN
-/Loop/x_0/EN
-/Loop/x_0/Q_OUT
-/Loop/x_1/CLK
-/Loop/x_1/D_IN
-/Loop/x_1/EN
-/Loop/x_1/Q_OUT
-/Loop/x_2/CLK
-/Loop/x_2/D_IN
-/Loop/x_2/EN
-/Loop/x_2/Q_OUT
-/Loop/x_3/CLK
-/Loop/x_3/D_IN
-/Loop/x_3/EN
-/Loop/x_3/Q_OUT
 /Loop/Body_0/aa_0/CLK
 /Loop/Body_0/aa_0/D_IN
 /Loop/Body_0/aa_0/EN
@@ -195,116 +122,116 @@ Command: signal filter *
 /Loop/Body_3/bb_3/D_IN
 /Loop/Body_3/bb_3/EN
 /Loop/Body_3/bb_3/Q_OUT
-/subis/_element_0/ax
+/Loop/x_0/CLK
+/Loop/x_0/D_IN
+/Loop/x_0/EN
+/Loop/x_0/Q_OUT
+/Loop/x_1/CLK
+/Loop/x_1/D_IN
+/Loop/x_1/EN
+/Loop/x_1/Q_OUT
+/Loop/x_2/CLK
+/Loop/x_2/D_IN
+/Loop/x_2/EN
+/Loop/x_2/Q_OUT
+/Loop/x_3/CLK
+/Loop/x_3/D_IN
+/Loop/x_3/EN
+/Loop/x_3/Q_OUT
+/RST_N
+/i
 /subis/_element_0/CLK
-/subis/_element_0/RST_N
-/subis/_element_0/foo_x
 /subis/_element_0/EN_foo
-/subis/_element_0/bar
+/subis/_element_0/RST_N
 /subis/_element_0/RadyOnTheReadMethod
-/subis/_element_0/foo2/CLK
-/subis/_element_0/foo2/RST
-/subis/_element_0/foo2/D_IN
-/subis/_element_0/foo2/EN
-/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/ax
+/subis/_element_0/bar
 /subis/_element_0/barx/CLK
-/subis/_element_0/barx/RST
 /subis/_element_0/barx/D_IN
 /subis/_element_0/barx/EN
 /subis/_element_0/barx/Q_OUT
-/subis/_element_1/ax
+/subis/_element_0/barx/RST
+/subis/_element_0/foo2/CLK
+/subis/_element_0/foo2/D_IN
+/subis/_element_0/foo2/EN
+/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/foo2/RST
+/subis/_element_0/foo_x
 /subis/_element_1/CLK
-/subis/_element_1/RST_N
-/subis/_element_1/foo_x
 /subis/_element_1/EN_foo
-/subis/_element_1/bar
+/subis/_element_1/RST_N
 /subis/_element_1/RadyOnTheReadMethod
-/subis/_element_1/foo2/CLK
-/subis/_element_1/foo2/RST
-/subis/_element_1/foo2/D_IN
-/subis/_element_1/foo2/EN
-/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/ax
+/subis/_element_1/bar
 /subis/_element_1/barx/CLK
-/subis/_element_1/barx/RST
 /subis/_element_1/barx/D_IN
 /subis/_element_1/barx/EN
 /subis/_element_1/barx/Q_OUT
+/subis/_element_1/barx/RST
+/subis/_element_1/foo2/CLK
+/subis/_element_1/foo2/D_IN
+/subis/_element_1/foo2/EN
+/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/foo2/RST
+/subis/_element_1/foo_x
+/xx/_element_0/I_IN
+/xx/_element_0/I_OUT
+/xx/_element_0/V
+/xx/_element_0/WGET
+/xx/_element_0/WHAS
+/xx/_element_0/WSET
+/xx/_element_0/WVAL
+/xx/_element_1/I_IN
+/xx/_element_1/I_OUT
+/xx/_element_1/V
+/xx/_element_1/WGET
+/xx/_element_1/WHAS
+/xx/_element_1/WSET
+/xx/_element_1/WVAL
+/y/_element_0/CLK
+/y/_element_0/D_IN
+/y/_element_0/EN
+/y/_element_0/Q_OUT
+/y/_element_1/CLK
+/y/_element_1/D_IN
+/y/_element_1/EN
+/y/_element_1/Q_OUT
+/y/_element_2/CLK
+/y/_element_2/D_IN
+/y/_element_2/EN
+/y/_element_2/Q_OUT
+/y/_element_3/CLK
+/y/_element_3/D_IN
+/y/_element_3/EN
+/y/_element_3/Q_OUT
+/zw/_element_0/CLK
+/zw/_element_0/D_IN
+/zw/_element_0/EN
+/zw/_element_0/Q_OUT
+/zw/_element_0/RST
+/zw/_element_1/CLK
+/zw/_element_1/D_IN
+/zw/_element_1/EN
+/zw/_element_1/Q_OUT
+/zw/_element_1/RST
+/zw/_element_2/CLK
+/zw/_element_2/D_IN
+/zw/_element_2/EN
+/zw/_element_2/Q_OUT
+/zw/_element_2/RST
+/zw/_element_3/CLK
+/zw/_element_3/D_IN
+/zw/_element_3/EN
+/zw/_element_3/Q_OUT
+/zw/_element_3/RST
+/zw/_element_4/CLK
+/zw/_element_4/D_IN
+/zw/_element_4/EN
+/zw/_element_4/Q_OUT
+/zw/_element_4/RST
 ---------
 Command: signal filter */*
-/i
 /CLK
-/RST_N
-/y/_element_0/CLK
-/y/_element_0/D_IN
-/y/_element_0/EN
-/y/_element_0/Q_OUT
-/y/_element_1/CLK
-/y/_element_1/D_IN
-/y/_element_1/EN
-/y/_element_1/Q_OUT
-/y/_element_2/CLK
-/y/_element_2/D_IN
-/y/_element_2/EN
-/y/_element_2/Q_OUT
-/y/_element_3/CLK
-/y/_element_3/D_IN
-/y/_element_3/EN
-/y/_element_3/Q_OUT
-/zw/_element_0/CLK
-/zw/_element_0/RST
-/zw/_element_0/D_IN
-/zw/_element_0/EN
-/zw/_element_0/Q_OUT
-/zw/_element_1/CLK
-/zw/_element_1/RST
-/zw/_element_1/D_IN
-/zw/_element_1/EN
-/zw/_element_1/Q_OUT
-/zw/_element_2/CLK
-/zw/_element_2/RST
-/zw/_element_2/D_IN
-/zw/_element_2/EN
-/zw/_element_2/Q_OUT
-/zw/_element_3/CLK
-/zw/_element_3/RST
-/zw/_element_3/D_IN
-/zw/_element_3/EN
-/zw/_element_3/Q_OUT
-/zw/_element_4/CLK
-/zw/_element_4/RST
-/zw/_element_4/D_IN
-/zw/_element_4/EN
-/zw/_element_4/Q_OUT
-/xx/_element_0/V
-/xx/_element_0/I_IN
-/xx/_element_0/WVAL
-/xx/_element_0/WSET
-/xx/_element_0/WGET
-/xx/_element_0/WHAS
-/xx/_element_0/I_OUT
-/xx/_element_1/V
-/xx/_element_1/I_IN
-/xx/_element_1/WVAL
-/xx/_element_1/WSET
-/xx/_element_1/WGET
-/xx/_element_1/WHAS
-/xx/_element_1/I_OUT
-/Loop/x_0/CLK
-/Loop/x_0/D_IN
-/Loop/x_0/EN
-/Loop/x_0/Q_OUT
-/Loop/x_1/CLK
-/Loop/x_1/D_IN
-/Loop/x_1/EN
-/Loop/x_1/Q_OUT
-/Loop/x_2/CLK
-/Loop/x_2/D_IN
-/Loop/x_2/EN
-/Loop/x_2/Q_OUT
-/Loop/x_3/CLK
-/Loop/x_3/D_IN
-/Loop/x_3/EN
-/Loop/x_3/Q_OUT
 /Loop/Body_0/aa_0/CLK
 /Loop/Body_0/aa_0/D_IN
 /Loop/Body_0/aa_0/EN
@@ -337,49 +264,122 @@ Command: signal filter */*
 /Loop/Body_3/bb_3/D_IN
 /Loop/Body_3/bb_3/EN
 /Loop/Body_3/bb_3/Q_OUT
-/subis/_element_0/ax
+/Loop/x_0/CLK
+/Loop/x_0/D_IN
+/Loop/x_0/EN
+/Loop/x_0/Q_OUT
+/Loop/x_1/CLK
+/Loop/x_1/D_IN
+/Loop/x_1/EN
+/Loop/x_1/Q_OUT
+/Loop/x_2/CLK
+/Loop/x_2/D_IN
+/Loop/x_2/EN
+/Loop/x_2/Q_OUT
+/Loop/x_3/CLK
+/Loop/x_3/D_IN
+/Loop/x_3/EN
+/Loop/x_3/Q_OUT
+/RST_N
+/i
 /subis/_element_0/CLK
-/subis/_element_0/RST_N
-/subis/_element_0/foo_x
 /subis/_element_0/EN_foo
-/subis/_element_0/bar
+/subis/_element_0/RST_N
 /subis/_element_0/RadyOnTheReadMethod
-/subis/_element_0/foo2/CLK
-/subis/_element_0/foo2/RST
-/subis/_element_0/foo2/D_IN
-/subis/_element_0/foo2/EN
-/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/ax
+/subis/_element_0/bar
 /subis/_element_0/barx/CLK
-/subis/_element_0/barx/RST
 /subis/_element_0/barx/D_IN
 /subis/_element_0/barx/EN
 /subis/_element_0/barx/Q_OUT
-/subis/_element_1/ax
+/subis/_element_0/barx/RST
+/subis/_element_0/foo2/CLK
+/subis/_element_0/foo2/D_IN
+/subis/_element_0/foo2/EN
+/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/foo2/RST
+/subis/_element_0/foo_x
 /subis/_element_1/CLK
-/subis/_element_1/RST_N
-/subis/_element_1/foo_x
 /subis/_element_1/EN_foo
-/subis/_element_1/bar
+/subis/_element_1/RST_N
 /subis/_element_1/RadyOnTheReadMethod
-/subis/_element_1/foo2/CLK
-/subis/_element_1/foo2/RST
-/subis/_element_1/foo2/D_IN
-/subis/_element_1/foo2/EN
-/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/ax
+/subis/_element_1/bar
 /subis/_element_1/barx/CLK
-/subis/_element_1/barx/RST
 /subis/_element_1/barx/D_IN
 /subis/_element_1/barx/EN
 /subis/_element_1/barx/Q_OUT
+/subis/_element_1/barx/RST
+/subis/_element_1/foo2/CLK
+/subis/_element_1/foo2/D_IN
+/subis/_element_1/foo2/EN
+/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/foo2/RST
+/subis/_element_1/foo_x
+/xx/_element_0/I_IN
+/xx/_element_0/I_OUT
+/xx/_element_0/V
+/xx/_element_0/WGET
+/xx/_element_0/WHAS
+/xx/_element_0/WSET
+/xx/_element_0/WVAL
+/xx/_element_1/I_IN
+/xx/_element_1/I_OUT
+/xx/_element_1/V
+/xx/_element_1/WGET
+/xx/_element_1/WHAS
+/xx/_element_1/WSET
+/xx/_element_1/WVAL
+/y/_element_0/CLK
+/y/_element_0/D_IN
+/y/_element_0/EN
+/y/_element_0/Q_OUT
+/y/_element_1/CLK
+/y/_element_1/D_IN
+/y/_element_1/EN
+/y/_element_1/Q_OUT
+/y/_element_2/CLK
+/y/_element_2/D_IN
+/y/_element_2/EN
+/y/_element_2/Q_OUT
+/y/_element_3/CLK
+/y/_element_3/D_IN
+/y/_element_3/EN
+/y/_element_3/Q_OUT
+/zw/_element_0/CLK
+/zw/_element_0/D_IN
+/zw/_element_0/EN
+/zw/_element_0/Q_OUT
+/zw/_element_0/RST
+/zw/_element_1/CLK
+/zw/_element_1/D_IN
+/zw/_element_1/EN
+/zw/_element_1/Q_OUT
+/zw/_element_1/RST
+/zw/_element_2/CLK
+/zw/_element_2/D_IN
+/zw/_element_2/EN
+/zw/_element_2/Q_OUT
+/zw/_element_2/RST
+/zw/_element_3/CLK
+/zw/_element_3/D_IN
+/zw/_element_3/EN
+/zw/_element_3/Q_OUT
+/zw/_element_3/RST
+/zw/_element_4/CLK
+/zw/_element_4/D_IN
+/zw/_element_4/EN
+/zw/_element_4/Q_OUT
+/zw/_element_4/RST
 ---------
 Command: signal filter */
 ---------
 Command: signal filter /*/
 ---------
 Command: signal filter /*/*
-/i
 /CLK
 /RST_N
+/i
 ---------
 Command: signal filter /r2/*
 ---------
@@ -393,9 +393,8 @@ INST / . kind = Synth
 INST / . position = 
 INST / . module = mkTest
 INST / . class = VInst
-INST / . hiertree = vInst0 mkTest {synth branch}
 INST / . wave_format = {Inout#(Test::Bar) /i}
-INST / . key = 1
+INST / . hiertree = / mkTest {synth branch}
 INST / . ancestors = /
 INST / . name bsv = mkTest
 INST / . name synth = 
@@ -412,9 +411,8 @@ INST /Loop . kind = Inst
 INST /Loop . position = Test2.bsv 19 4
 INST /Loop . module = mkTest
 INST /Loop . class = VInst
-INST /Loop . hiertree = vInst4 Loop {}
 INST /Loop . wave_format = 
-INST /Loop . key = 5
+INST /Loop . hiertree = /Loop Loop {}
 INST /Loop . ancestors = / /Loop
 INST /Loop . name bsv = Loop
 INST /Loop . name synth = Loop
@@ -433,9 +431,8 @@ INST /Loop . kind = Inst
 INST /Loop . position = Test2.bsv 23 4
 INST /Loop . module = mkTest
 INST /Loop . class = VInst
-INST /Loop . hiertree = vInst5 Loop {}
 INST /Loop . wave_format = 
-INST /Loop . key = 6
+INST /Loop . hiertree = /Loop Loop {}
 INST /Loop . ancestors = / /Loop
 INST /Loop . name bsv = Loop
 INST /Loop . name synth = Loop
@@ -454,9 +451,8 @@ INST /Loop/Body_0 . kind = Inst
 INST /Loop/Body_0 . position = Test2.bsv 23 44
 INST /Loop/Body_0 . module = mkTest
 INST /Loop/Body_0 . class = VInst
-INST /Loop/Body_0 . hiertree = vInst22 Body_0 {}
 INST /Loop/Body_0 . wave_format = 
-INST /Loop/Body_0 . key = 23
+INST /Loop/Body_0 . hiertree = /Loop/Body_0 Body_0 {}
 INST /Loop/Body_0 . ancestors = / /Loop /Loop/Body_0
 INST /Loop/Body_0 . name bsv = Body_0
 INST /Loop/Body_0 . name synth = Body_0
@@ -474,9 +470,8 @@ INST /Loop/Body_0/aa_0 . kind = Prim
 INST /Loop/Body_0/aa_0 . position = Test2.bsv 24 6
 INST /Loop/Body_0/aa_0 . module = mkTest
 INST /Loop/Body_0/aa_0 . class = VInst
-INST /Loop/Body_0/aa_0 . hiertree = vInst26 {aa_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/aa_0 . wave_format = {Int#(32) {/aa_0$D_IN}} {Bool {/aa_0$EN}} {Int#(32) /aa_0}
-INST /Loop/Body_0/aa_0 . key = 27
+INST /Loop/Body_0/aa_0 . hiertree = /Loop/Body_0/aa_0 {aa_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/aa_0 . ancestors = / /Loop /Loop/Body_0 /Loop/Body_0/aa_0
 INST /Loop/Body_0/aa_0 . name bsv = aa_0
 INST /Loop/Body_0/aa_0 . name synth = aa_0
@@ -494,9 +489,8 @@ INST /Loop/Body_0/bb_0 . kind = Prim
 INST /Loop/Body_0/bb_0 . position = Test2.bsv 25 6
 INST /Loop/Body_0/bb_0 . module = mkTest
 INST /Loop/Body_0/bb_0 . class = VInst
-INST /Loop/Body_0/bb_0 . hiertree = vInst27 {bb_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/bb_0 . wave_format = {Int#(32) {/bb_0$D_IN}} {Bool {/bb_0$EN}} {Int#(32) /bb_0}
-INST /Loop/Body_0/bb_0 . key = 28
+INST /Loop/Body_0/bb_0 . hiertree = /Loop/Body_0/bb_0 {bb_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/bb_0 . ancestors = / /Loop /Loop/Body_0 /Loop/Body_0/bb_0
 INST /Loop/Body_0/bb_0 . name bsv = bb_0
 INST /Loop/Body_0/bb_0 . name synth = bb_0
@@ -514,9 +508,8 @@ INST /Loop/Body_1 . kind = Inst
 INST /Loop/Body_1 . position = Test2.bsv 23 44
 INST /Loop/Body_1 . module = mkTest
 INST /Loop/Body_1 . class = VInst
-INST /Loop/Body_1 . hiertree = vInst23 Body_1 {}
 INST /Loop/Body_1 . wave_format = 
-INST /Loop/Body_1 . key = 24
+INST /Loop/Body_1 . hiertree = /Loop/Body_1 Body_1 {}
 INST /Loop/Body_1 . ancestors = / /Loop /Loop/Body_1
 INST /Loop/Body_1 . name bsv = Body_1
 INST /Loop/Body_1 . name synth = Body_1
@@ -534,9 +527,8 @@ INST /Loop/Body_1/aa_1 . kind = Prim
 INST /Loop/Body_1/aa_1 . position = Test2.bsv 24 6
 INST /Loop/Body_1/aa_1 . module = mkTest
 INST /Loop/Body_1/aa_1 . class = VInst
-INST /Loop/Body_1/aa_1 . hiertree = vInst28 {aa_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/aa_1 . wave_format = {Int#(32) {/aa_1$D_IN}} {Bool {/aa_1$EN}} {Int#(32) /aa_1}
-INST /Loop/Body_1/aa_1 . key = 29
+INST /Loop/Body_1/aa_1 . hiertree = /Loop/Body_1/aa_1 {aa_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/aa_1 . ancestors = / /Loop /Loop/Body_1 /Loop/Body_1/aa_1
 INST /Loop/Body_1/aa_1 . name bsv = aa_1
 INST /Loop/Body_1/aa_1 . name synth = aa_1
@@ -554,9 +546,8 @@ INST /Loop/Body_1/bb_1 . kind = Prim
 INST /Loop/Body_1/bb_1 . position = Test2.bsv 25 6
 INST /Loop/Body_1/bb_1 . module = mkTest
 INST /Loop/Body_1/bb_1 . class = VInst
-INST /Loop/Body_1/bb_1 . hiertree = vInst29 {bb_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/bb_1 . wave_format = {Int#(32) {/bb_1$D_IN}} {Bool {/bb_1$EN}} {Int#(32) /bb_1}
-INST /Loop/Body_1/bb_1 . key = 30
+INST /Loop/Body_1/bb_1 . hiertree = /Loop/Body_1/bb_1 {bb_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/bb_1 . ancestors = / /Loop /Loop/Body_1 /Loop/Body_1/bb_1
 INST /Loop/Body_1/bb_1 . name bsv = bb_1
 INST /Loop/Body_1/bb_1 . name synth = bb_1
@@ -574,9 +565,8 @@ INST /Loop/Body_2 . kind = Inst
 INST /Loop/Body_2 . position = Test2.bsv 23 44
 INST /Loop/Body_2 . module = mkTest
 INST /Loop/Body_2 . class = VInst
-INST /Loop/Body_2 . hiertree = vInst24 Body_2 {}
 INST /Loop/Body_2 . wave_format = 
-INST /Loop/Body_2 . key = 25
+INST /Loop/Body_2 . hiertree = /Loop/Body_2 Body_2 {}
 INST /Loop/Body_2 . ancestors = / /Loop /Loop/Body_2
 INST /Loop/Body_2 . name bsv = Body_2
 INST /Loop/Body_2 . name synth = Body_2
@@ -594,9 +584,8 @@ INST /Loop/Body_2/aa_2 . kind = Prim
 INST /Loop/Body_2/aa_2 . position = Test2.bsv 24 6
 INST /Loop/Body_2/aa_2 . module = mkTest
 INST /Loop/Body_2/aa_2 . class = VInst
-INST /Loop/Body_2/aa_2 . hiertree = vInst30 {aa_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/aa_2 . wave_format = {Int#(32) {/aa_2$D_IN}} {Bool {/aa_2$EN}} {Int#(32) /aa_2}
-INST /Loop/Body_2/aa_2 . key = 31
+INST /Loop/Body_2/aa_2 . hiertree = /Loop/Body_2/aa_2 {aa_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/aa_2 . ancestors = / /Loop /Loop/Body_2 /Loop/Body_2/aa_2
 INST /Loop/Body_2/aa_2 . name bsv = aa_2
 INST /Loop/Body_2/aa_2 . name synth = aa_2
@@ -614,9 +603,8 @@ INST /Loop/Body_2/bb_2 . kind = Prim
 INST /Loop/Body_2/bb_2 . position = Test2.bsv 25 6
 INST /Loop/Body_2/bb_2 . module = mkTest
 INST /Loop/Body_2/bb_2 . class = VInst
-INST /Loop/Body_2/bb_2 . hiertree = vInst31 {bb_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/bb_2 . wave_format = {Int#(32) {/bb_2$D_IN}} {Bool {/bb_2$EN}} {Int#(32) /bb_2}
-INST /Loop/Body_2/bb_2 . key = 32
+INST /Loop/Body_2/bb_2 . hiertree = /Loop/Body_2/bb_2 {bb_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/bb_2 . ancestors = / /Loop /Loop/Body_2 /Loop/Body_2/bb_2
 INST /Loop/Body_2/bb_2 . name bsv = bb_2
 INST /Loop/Body_2/bb_2 . name synth = bb_2
@@ -634,9 +622,8 @@ INST /Loop/Body_3 . kind = Inst
 INST /Loop/Body_3 . position = Test2.bsv 23 44
 INST /Loop/Body_3 . module = mkTest
 INST /Loop/Body_3 . class = VInst
-INST /Loop/Body_3 . hiertree = vInst25 Body_3 {}
 INST /Loop/Body_3 . wave_format = 
-INST /Loop/Body_3 . key = 26
+INST /Loop/Body_3 . hiertree = /Loop/Body_3 Body_3 {}
 INST /Loop/Body_3 . ancestors = / /Loop /Loop/Body_3
 INST /Loop/Body_3 . name bsv = Body_3
 INST /Loop/Body_3 . name synth = Body_3
@@ -654,9 +641,8 @@ INST /Loop/Body_3/aa_3 . kind = Prim
 INST /Loop/Body_3/aa_3 . position = Test2.bsv 24 6
 INST /Loop/Body_3/aa_3 . module = mkTest
 INST /Loop/Body_3/aa_3 . class = VInst
-INST /Loop/Body_3/aa_3 . hiertree = vInst32 {aa_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/aa_3 . wave_format = {Int#(32) {/aa_3$D_IN}} {Bool {/aa_3$EN}} {Int#(32) /aa_3}
-INST /Loop/Body_3/aa_3 . key = 33
+INST /Loop/Body_3/aa_3 . hiertree = /Loop/Body_3/aa_3 {aa_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/aa_3 . ancestors = / /Loop /Loop/Body_3 /Loop/Body_3/aa_3
 INST /Loop/Body_3/aa_3 . name bsv = aa_3
 INST /Loop/Body_3/aa_3 . name synth = aa_3
@@ -674,9 +660,8 @@ INST /Loop/Body_3/bb_3 . kind = Prim
 INST /Loop/Body_3/bb_3 . position = Test2.bsv 25 6
 INST /Loop/Body_3/bb_3 . module = mkTest
 INST /Loop/Body_3/bb_3 . class = VInst
-INST /Loop/Body_3/bb_3 . hiertree = vInst33 {bb_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/bb_3 . wave_format = {Int#(32) {/bb_3$D_IN}} {Bool {/bb_3$EN}} {Int#(32) /bb_3}
-INST /Loop/Body_3/bb_3 . key = 34
+INST /Loop/Body_3/bb_3 . hiertree = /Loop/Body_3/bb_3 {bb_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/bb_3 . ancestors = / /Loop /Loop/Body_3 /Loop/Body_3/bb_3
 INST /Loop/Body_3/bb_3 . name bsv = bb_3
 INST /Loop/Body_3/bb_3 . name synth = bb_3
@@ -694,9 +679,8 @@ INST /Loop/x_0 . kind = Prim
 INST /Loop/x_0 . position = Test2.bsv 20 7
 INST /Loop/x_0 . module = mkTest
 INST /Loop/x_0 . class = VInst
-INST /Loop/x_0 . hiertree = vInst18 {x_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_0 . wave_format = {Int#(32) {/x_0$D_IN}} {Bool {/x_0$EN}} {Int#(32) /x_0}
-INST /Loop/x_0 . key = 19
+INST /Loop/x_0 . hiertree = /Loop/x_0 {x_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_0 . ancestors = / /Loop /Loop/x_0
 INST /Loop/x_0 . name bsv = x_0
 INST /Loop/x_0 . name synth = x_0
@@ -714,9 +698,8 @@ INST /Loop/x_1 . kind = Prim
 INST /Loop/x_1 . position = Test2.bsv 20 7
 INST /Loop/x_1 . module = mkTest
 INST /Loop/x_1 . class = VInst
-INST /Loop/x_1 . hiertree = vInst19 {x_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_1 . wave_format = {Int#(32) {/x_1$D_IN}} {Bool {/x_1$EN}} {Int#(32) /x_1}
-INST /Loop/x_1 . key = 20
+INST /Loop/x_1 . hiertree = /Loop/x_1 {x_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_1 . ancestors = / /Loop /Loop/x_1
 INST /Loop/x_1 . name bsv = x_1
 INST /Loop/x_1 . name synth = x_1
@@ -734,9 +717,8 @@ INST /Loop/x_2 . kind = Prim
 INST /Loop/x_2 . position = Test2.bsv 20 7
 INST /Loop/x_2 . module = mkTest
 INST /Loop/x_2 . class = VInst
-INST /Loop/x_2 . hiertree = vInst20 {x_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_2 . wave_format = {Int#(32) {/x_2$D_IN}} {Bool {/x_2$EN}} {Int#(32) /x_2}
-INST /Loop/x_2 . key = 21
+INST /Loop/x_2 . hiertree = /Loop/x_2 {x_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_2 . ancestors = / /Loop /Loop/x_2
 INST /Loop/x_2 . name bsv = x_2
 INST /Loop/x_2 . name synth = x_2
@@ -754,9 +736,8 @@ INST /Loop/x_3 . kind = Prim
 INST /Loop/x_3 . position = Test2.bsv 20 7
 INST /Loop/x_3 . module = mkTest
 INST /Loop/x_3 . class = VInst
-INST /Loop/x_3 . hiertree = vInst21 {x_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_3 . wave_format = {Int#(32) {/x_3$D_IN}} {Bool {/x_3$EN}} {Int#(32) /x_3}
-INST /Loop/x_3 . key = 22
+INST /Loop/x_3 . hiertree = /Loop/x_3 {x_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_3 . ancestors = / /Loop /Loop/x_3
 INST /Loop/x_3 . name bsv = x_3
 INST /Loop/x_3 . name synth = x_3
@@ -774,9 +755,8 @@ INST /subis . kind = Inst
 INST /subis . position = Test2.bsv 29 23
 INST /subis . module = mkTest
 INST /subis . class = VInst
-INST /subis . hiertree = vInst6 subis {}
 INST /subis . wave_format = 
-INST /subis . key = 7
+INST /subis . hiertree = /subis subis {}
 INST /subis . ancestors = / /subis
 INST /subis . name bsv = subis
 INST /subis . name synth = subis
@@ -791,12 +771,11 @@ INST /subis . bodymethods =
 INST /subis . portmethods = 
 got path INST /subis/_element_0
 INST /subis/_element_0 . kind = Synth
-INST /subis/_element_0 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /subis/_element_0 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /subis/_element_0 . module = mkSub
 INST /subis/_element_0 . class = VInst
-INST /subis/_element_0 . hiertree = vInst34 {_element_0  Sub_Ifc} {synth branch}
 INST /subis/_element_0 . wave_format = {Bit#(3) /subis_0/ax} {Int#(32) /subis_0/foo_x} {Bool /subis_0/EN_foo} {Int#(32) /subis_0/bar} {Bool /subis_0/RadyOnTheReadMethod}
-INST /subis/_element_0 . key = 35
+INST /subis/_element_0 . hiertree = /subis/_element_0 {_element_0  Sub_Ifc} {synth branch}
 INST /subis/_element_0 . ancestors = / /subis /subis/_element_0
 INST /subis/_element_0 . name bsv = _element_0
 INST /subis/_element_0 . name synth = subis_0
@@ -814,9 +793,8 @@ INST /subis/_element_0/barx . kind = Prim
 INST /subis/_element_0/barx . position = Test2.bsv 42 18
 INST /subis/_element_0/barx . module = mkSub
 INST /subis/_element_0/barx . class = VInst
-INST /subis/_element_0/barx . hiertree = vInst37 {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_0/barx . wave_format = {Bit#(3) {/subis_0/barx$D_IN}} {Bool {/subis_0/barx$EN}} {Bit#(3) /subis_0/barx}
-INST /subis/_element_0/barx . key = 38
+INST /subis/_element_0/barx . hiertree = /subis/_element_0/barx {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_0/barx . ancestors = / /subis /subis/_element_0 /subis/_element_0/barx
 INST /subis/_element_0/barx . name bsv = barx
 INST /subis/_element_0/barx . name synth = barx
@@ -834,9 +812,8 @@ INST /subis/_element_0/foo2 . kind = Prim
 INST /subis/_element_0/foo2 . position = Test2.bsv 41 14
 INST /subis/_element_0/foo2 . module = mkSub
 INST /subis/_element_0/foo2 . class = VInst
-INST /subis/_element_0/foo2 . hiertree = vInst36 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_0/foo2 . wave_format = {Int#(32) {/subis_0/foo2$D_IN}} {Bool {/subis_0/foo2$EN}} {Int#(32) /subis_0/foo2}
-INST /subis/_element_0/foo2 . key = 37
+INST /subis/_element_0/foo2 . hiertree = /subis/_element_0/foo2 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_0/foo2 . ancestors = / /subis /subis/_element_0 /subis/_element_0/foo2
 INST /subis/_element_0/foo2 . name bsv = foo2
 INST /subis/_element_0/foo2 . name synth = foo2
@@ -851,12 +828,11 @@ INST /subis/_element_0/foo2 . bodymethods =
 INST /subis/_element_0/foo2 . portmethods = /subis/_element_0/foo2.read /subis/_element_0/foo2.write
 got path INST /subis/_element_1
 INST /subis/_element_1 . kind = Synth
-INST /subis/_element_1 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /subis/_element_1 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /subis/_element_1 . module = mkSub
 INST /subis/_element_1 . class = VInst
-INST /subis/_element_1 . hiertree = vInst35 {_element_1  Sub_Ifc} {synth branch}
 INST /subis/_element_1 . wave_format = {Bit#(3) /subis_1/ax} {Int#(32) /subis_1/foo_x} {Bool /subis_1/EN_foo} {Int#(32) /subis_1/bar} {Bool /subis_1/RadyOnTheReadMethod}
-INST /subis/_element_1 . key = 36
+INST /subis/_element_1 . hiertree = /subis/_element_1 {_element_1  Sub_Ifc} {synth branch}
 INST /subis/_element_1 . ancestors = / /subis /subis/_element_1
 INST /subis/_element_1 . name bsv = _element_1
 INST /subis/_element_1 . name synth = subis_1
@@ -874,9 +850,8 @@ INST /subis/_element_1/barx . kind = Prim
 INST /subis/_element_1/barx . position = Test2.bsv 42 18
 INST /subis/_element_1/barx . module = mkSub
 INST /subis/_element_1/barx . class = VInst
-INST /subis/_element_1/barx . hiertree = vInst39 {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_1/barx . wave_format = {Bit#(3) {/subis_1/barx$D_IN}} {Bool {/subis_1/barx$EN}} {Bit#(3) /subis_1/barx}
-INST /subis/_element_1/barx . key = 40
+INST /subis/_element_1/barx . hiertree = /subis/_element_1/barx {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_1/barx . ancestors = / /subis /subis/_element_1 /subis/_element_1/barx
 INST /subis/_element_1/barx . name bsv = barx
 INST /subis/_element_1/barx . name synth = barx
@@ -894,9 +869,8 @@ INST /subis/_element_1/foo2 . kind = Prim
 INST /subis/_element_1/foo2 . position = Test2.bsv 41 14
 INST /subis/_element_1/foo2 . module = mkSub
 INST /subis/_element_1/foo2 . class = VInst
-INST /subis/_element_1/foo2 . hiertree = vInst38 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_1/foo2 . wave_format = {Int#(32) {/subis_1/foo2$D_IN}} {Bool {/subis_1/foo2$EN}} {Int#(32) /subis_1/foo2}
-INST /subis/_element_1/foo2 . key = 39
+INST /subis/_element_1/foo2 . hiertree = /subis/_element_1/foo2 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_1/foo2 . ancestors = / /subis /subis/_element_1 /subis/_element_1/foo2
 INST /subis/_element_1/foo2 . name bsv = foo2
 INST /subis/_element_1/foo2 . name synth = foo2
@@ -914,9 +888,8 @@ INST /xx . kind = Inst
 INST /xx . position = Test2.bsv 17 25
 INST /xx . module = mkTest
 INST /xx . class = VInst
-INST /xx . hiertree = vInst3 xx {}
 INST /xx . wave_format = 
-INST /xx . key = 4
+INST /xx . hiertree = /xx xx {}
 INST /xx . ancestors = / /xx
 INST /xx . name bsv = xx
 INST /xx . name synth = xx
@@ -931,12 +904,11 @@ INST /xx . bodymethods =
 INST /xx . portmethods = 
 got path INST /xx/_element_0
 INST /xx/_element_0 . kind = Prim
-INST /xx/_element_0 . position = %/Libraries/List.bs 764 4 {Library List}
+INST /xx/_element_0 . position = %/Libraries/List.bs 784 4 {Library List}
 INST /xx/_element_0 . module = mkTest
 INST /xx/_element_0 . class = VInst
-INST /xx/_element_0 . hiertree = vInst16 {_element_0  Foo#(Bar)} {prim leaf}
 INST /xx/_element_0 . wave_format = {Int#(32) /xx_0/V} {Inout#(Test::Bar) /xx_0/I_IN} {Test::Bar /xx_0/WVAL} {Bool /xx_0/WSET} {Test::Bar /xx_0/WGET} {Bool /xx_0/WHAS} {Inout#(Bool) /xx_0/I_OUT}
-INST /xx/_element_0 . key = 17
+INST /xx/_element_0 . hiertree = /xx/_element_0 {_element_0  Foo#(Bar)} {prim leaf}
 INST /xx/_element_0 . ancestors = / /xx /xx/_element_0
 INST /xx/_element_0 . name bsv = _element_0
 INST /xx/_element_0 . name synth = xx_0
@@ -951,12 +923,11 @@ INST /xx/_element_0 . bodymethods =
 INST /xx/_element_0 . portmethods = /xx/_element_0.wget /xx/_element_0.whas /xx/_element_0.wset
 got path INST /xx/_element_1
 INST /xx/_element_1 . kind = Prim
-INST /xx/_element_1 . position = %/Libraries/List.bs 764 4 {Library List}
+INST /xx/_element_1 . position = %/Libraries/List.bs 784 4 {Library List}
 INST /xx/_element_1 . module = mkTest
 INST /xx/_element_1 . class = VInst
-INST /xx/_element_1 . hiertree = vInst17 {_element_1  Foo#(Bar)} {prim leaf}
 INST /xx/_element_1 . wave_format = {Int#(32) /xx_1/V} {Inout#(Test::Bar) /xx_1/I_IN} {Test::Bar /xx_1/WVAL} {Bool /xx_1/WSET} {Test::Bar /xx_1/WGET} {Bool /xx_1/WHAS} {Inout#(Bool) /xx_1/I_OUT}
-INST /xx/_element_1 . key = 18
+INST /xx/_element_1 . hiertree = /xx/_element_1 {_element_1  Foo#(Bar)} {prim leaf}
 INST /xx/_element_1 . ancestors = / /xx /xx/_element_1
 INST /xx/_element_1 . name bsv = _element_1
 INST /xx/_element_1 . name synth = xx_1
@@ -974,9 +945,8 @@ INST /y . kind = Inst
 INST /y . position = Test2.bsv 9 25
 INST /y . module = mkTest
 INST /y . class = VInst
-INST /y . hiertree = vInst1 y {}
 INST /y . wave_format = 
-INST /y . key = 2
+INST /y . hiertree = /y y {}
 INST /y . ancestors = / /y
 INST /y . name bsv = y
 INST /y . name synth = y
@@ -991,12 +961,11 @@ INST /y . bodymethods =
 INST /y . portmethods = 
 got path INST /y/_element_0
 INST /y/_element_0 . kind = Prim
-INST /y/_element_0 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_0 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_0 . module = mkTest
 INST /y/_element_0 . class = VInst
-INST /y/_element_0 . hiertree = vInst7 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_0 . wave_format = {Int#(32) {/y_0$D_IN}} {Bool {/y_0$EN}} {Int#(32) /y_0}
-INST /y/_element_0 . key = 8
+INST /y/_element_0 . hiertree = /y/_element_0 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_0 . ancestors = / /y /y/_element_0
 INST /y/_element_0 . name bsv = _element_0
 INST /y/_element_0 . name synth = y_0
@@ -1011,12 +980,11 @@ INST /y/_element_0 . bodymethods =
 INST /y/_element_0 . portmethods = /y/_element_0.read /y/_element_0.write
 got path INST /y/_element_1
 INST /y/_element_1 . kind = Prim
-INST /y/_element_1 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_1 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_1 . module = mkTest
 INST /y/_element_1 . class = VInst
-INST /y/_element_1 . hiertree = vInst8 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_1 . wave_format = {Int#(32) {/y_1$D_IN}} {Bool {/y_1$EN}} {Int#(32) /y_1}
-INST /y/_element_1 . key = 9
+INST /y/_element_1 . hiertree = /y/_element_1 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_1 . ancestors = / /y /y/_element_1
 INST /y/_element_1 . name bsv = _element_1
 INST /y/_element_1 . name synth = y_1
@@ -1031,12 +999,11 @@ INST /y/_element_1 . bodymethods =
 INST /y/_element_1 . portmethods = /y/_element_1.read /y/_element_1.write
 got path INST /y/_element_2
 INST /y/_element_2 . kind = Prim
-INST /y/_element_2 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_2 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_2 . module = mkTest
 INST /y/_element_2 . class = VInst
-INST /y/_element_2 . hiertree = vInst9 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_2 . wave_format = {Int#(32) {/y_2$D_IN}} {Bool {/y_2$EN}} {Int#(32) /y_2}
-INST /y/_element_2 . key = 10
+INST /y/_element_2 . hiertree = /y/_element_2 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_2 . ancestors = / /y /y/_element_2
 INST /y/_element_2 . name bsv = _element_2
 INST /y/_element_2 . name synth = y_2
@@ -1051,12 +1018,11 @@ INST /y/_element_2 . bodymethods =
 INST /y/_element_2 . portmethods = /y/_element_2.read /y/_element_2.write
 got path INST /y/_element_3
 INST /y/_element_3 . kind = Prim
-INST /y/_element_3 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_3 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_3 . module = mkTest
 INST /y/_element_3 . class = VInst
-INST /y/_element_3 . hiertree = vInst10 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_3 . wave_format = {Int#(32) {/y_3$D_IN}} {Bool {/y_3$EN}} {Int#(32) /y_3}
-INST /y/_element_3 . key = 11
+INST /y/_element_3 . hiertree = /y/_element_3 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_3 . ancestors = / /y /y/_element_3
 INST /y/_element_3 . name bsv = _element_3
 INST /y/_element_3 . name synth = y_3
@@ -1074,9 +1040,8 @@ INST /zw . kind = Inst
 INST /zw . position = Test2.bsv 14 25
 INST /zw . module = mkTest
 INST /zw . class = VInst
-INST /zw . hiertree = vInst2 zw {}
 INST /zw . wave_format = 
-INST /zw . key = 3
+INST /zw . hiertree = /zw zw {}
 INST /zw . ancestors = / /zw
 INST /zw . name bsv = zw
 INST /zw . name synth = zw
@@ -1091,12 +1056,11 @@ INST /zw . bodymethods =
 INST /zw . portmethods = 
 got path INST /zw/_element_0
 INST /zw/_element_0 . kind = Prim
-INST /zw/_element_0 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_0 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_0 . module = mkTest
 INST /zw/_element_0 . class = VInst
-INST /zw/_element_0 . hiertree = vInst11 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_0 . wave_format = {Int#(32) {/zw_0$D_IN}} {Bool {/zw_0$EN}} {Int#(32) /zw_0}
-INST /zw/_element_0 . key = 12
+INST /zw/_element_0 . hiertree = /zw/_element_0 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_0 . ancestors = / /zw /zw/_element_0
 INST /zw/_element_0 . name bsv = _element_0
 INST /zw/_element_0 . name synth = zw_0
@@ -1111,12 +1075,11 @@ INST /zw/_element_0 . bodymethods =
 INST /zw/_element_0 . portmethods = /zw/_element_0.read /zw/_element_0.write
 got path INST /zw/_element_1
 INST /zw/_element_1 . kind = Prim
-INST /zw/_element_1 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_1 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_1 . module = mkTest
 INST /zw/_element_1 . class = VInst
-INST /zw/_element_1 . hiertree = vInst12 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_1 . wave_format = {Int#(32) {/zw_1$D_IN}} {Bool {/zw_1$EN}} {Int#(32) /zw_1}
-INST /zw/_element_1 . key = 13
+INST /zw/_element_1 . hiertree = /zw/_element_1 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_1 . ancestors = / /zw /zw/_element_1
 INST /zw/_element_1 . name bsv = _element_1
 INST /zw/_element_1 . name synth = zw_1
@@ -1131,12 +1094,11 @@ INST /zw/_element_1 . bodymethods =
 INST /zw/_element_1 . portmethods = /zw/_element_1.read /zw/_element_1.write
 got path INST /zw/_element_2
 INST /zw/_element_2 . kind = Prim
-INST /zw/_element_2 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_2 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_2 . module = mkTest
 INST /zw/_element_2 . class = VInst
-INST /zw/_element_2 . hiertree = vInst13 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_2 . wave_format = {Int#(32) {/zw_2$D_IN}} {Bool {/zw_2$EN}} {Int#(32) /zw_2}
-INST /zw/_element_2 . key = 14
+INST /zw/_element_2 . hiertree = /zw/_element_2 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_2 . ancestors = / /zw /zw/_element_2
 INST /zw/_element_2 . name bsv = _element_2
 INST /zw/_element_2 . name synth = zw_2
@@ -1151,12 +1113,11 @@ INST /zw/_element_2 . bodymethods =
 INST /zw/_element_2 . portmethods = /zw/_element_2.read /zw/_element_2.write
 got path INST /zw/_element_3
 INST /zw/_element_3 . kind = Prim
-INST /zw/_element_3 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_3 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_3 . module = mkTest
 INST /zw/_element_3 . class = VInst
-INST /zw/_element_3 . hiertree = vInst14 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_3 . wave_format = {Int#(32) {/zw_3$D_IN}} {Bool {/zw_3$EN}} {Int#(32) /zw_3}
-INST /zw/_element_3 . key = 15
+INST /zw/_element_3 . hiertree = /zw/_element_3 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_3 . ancestors = / /zw /zw/_element_3
 INST /zw/_element_3 . name bsv = _element_3
 INST /zw/_element_3 . name synth = zw_3
@@ -1171,12 +1132,11 @@ INST /zw/_element_3 . bodymethods =
 INST /zw/_element_3 . portmethods = /zw/_element_3.read /zw/_element_3.write
 got path INST /zw/_element_4
 INST /zw/_element_4 . kind = Prim
-INST /zw/_element_4 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_4 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_4 . module = mkTest
 INST /zw/_element_4 . class = VInst
-INST /zw/_element_4 . hiertree = vInst15 {_element_4  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_4 . wave_format = {Int#(32) {/zw_4$D_IN}} {Bool {/zw_4$EN}} {Int#(32) /zw_4}
-INST /zw/_element_4 . key = 16
+INST /zw/_element_4 . hiertree = /zw/_element_4 {_element_4  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_4 . ancestors = / /zw /zw/_element_4
 INST /zw/_element_4 . name bsv = _element_4
 INST /zw/_element_4 . name synth = zw_4
@@ -1696,7 +1656,7 @@ SIG /subis/_element_0/CLK . path = /subis/_element_0/CLK
 SIG /subis/_element_0/CLK . type = Clock
 SIG /subis/_element_0/CLK . class = VSignal
 SIG /subis/_element_0/CLK . wave_format = {Clock /subis_0/CLK}
-SIG /subis/_element_0/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/CLK . used_by 
 SIG CLK . inst = /subis/_element_0
 SIG /subis/_element_0/EN_foo . kind = Signal
@@ -1705,7 +1665,7 @@ SIG /subis/_element_0/EN_foo . path = /subis/_element_0/EN_foo
 SIG /subis/_element_0/EN_foo . type = Bool
 SIG /subis/_element_0/EN_foo . class = VSignal
 SIG /subis/_element_0/EN_foo . wave_format = {Bool /subis_0/EN_foo}
-SIG /subis/_element_0/EN_foo . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/EN_foo . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/EN_foo . used_by 
 SIG EN_foo . inst = /subis/_element_0
 SIG /subis/_element_0/RST_N . kind = Signal
@@ -1714,7 +1674,7 @@ SIG /subis/_element_0/RST_N . path = /subis/_element_0/RST_N
 SIG /subis/_element_0/RST_N . type = Reset
 SIG /subis/_element_0/RST_N . class = VSignal
 SIG /subis/_element_0/RST_N . wave_format = {Reset /subis_0/RST_N}
-SIG /subis/_element_0/RST_N . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/RST_N . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/RST_N . used_by 
 SIG RST_N . inst = /subis/_element_0
 SIG /subis/_element_0/RadyOnTheReadMethod . kind = Signal
@@ -1723,7 +1683,7 @@ SIG /subis/_element_0/RadyOnTheReadMethod . path = /subis/_element_0/RadyOnTheRe
 SIG /subis/_element_0/RadyOnTheReadMethod . type = Bool
 SIG /subis/_element_0/RadyOnTheReadMethod . class = VSignal
 SIG /subis/_element_0/RadyOnTheReadMethod . wave_format = {Bool /subis_0/RadyOnTheReadMethod}
-SIG /subis/_element_0/RadyOnTheReadMethod . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/RadyOnTheReadMethod . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/RadyOnTheReadMethod . used_by 
 SIG RadyOnTheReadMethod . inst = /subis/_element_0
 SIG /subis/_element_0/ax . kind = Signal
@@ -1732,7 +1692,7 @@ SIG /subis/_element_0/ax . path = /subis/_element_0/ax
 SIG /subis/_element_0/ax . type = Bit#(3)
 SIG /subis/_element_0/ax . class = VSignal
 SIG /subis/_element_0/ax . wave_format = {Bit#(3) /subis_0/ax}
-SIG /subis/_element_0/ax . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/ax . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/ax . used_by 
 SIG ax . inst = /subis/_element_0
 SIG /subis/_element_0/bar . kind = Signal
@@ -1741,7 +1701,7 @@ SIG /subis/_element_0/bar . path = /subis/_element_0/bar
 SIG /subis/_element_0/bar . type = Int#(32)
 SIG /subis/_element_0/bar . class = VSignal
 SIG /subis/_element_0/bar . wave_format = {Int#(32) /subis_0/bar}
-SIG /subis/_element_0/bar . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/bar . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/bar . used_by 
 SIG bar . inst = /subis/_element_0
 SIG /subis/_element_0/barx/CLK . kind = Signal
@@ -1840,7 +1800,7 @@ SIG /subis/_element_0/foo_x . path = /subis/_element_0/foo_x
 SIG /subis/_element_0/foo_x . type = Int#(32)
 SIG /subis/_element_0/foo_x . class = VSignal
 SIG /subis/_element_0/foo_x . wave_format = {Int#(32) /subis_0/foo_x}
-SIG /subis/_element_0/foo_x . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/foo_x . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/foo_x . used_by 
 SIG foo_x . inst = /subis/_element_0
 SIG /subis/_element_1/CLK . kind = Signal
@@ -1849,7 +1809,7 @@ SIG /subis/_element_1/CLK . path = /subis/_element_1/CLK
 SIG /subis/_element_1/CLK . type = Clock
 SIG /subis/_element_1/CLK . class = VSignal
 SIG /subis/_element_1/CLK . wave_format = {Clock /subis_1/CLK}
-SIG /subis/_element_1/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/CLK . used_by 
 SIG CLK . inst = /subis/_element_1
 SIG /subis/_element_1/EN_foo . kind = Signal
@@ -1858,7 +1818,7 @@ SIG /subis/_element_1/EN_foo . path = /subis/_element_1/EN_foo
 SIG /subis/_element_1/EN_foo . type = Bool
 SIG /subis/_element_1/EN_foo . class = VSignal
 SIG /subis/_element_1/EN_foo . wave_format = {Bool /subis_1/EN_foo}
-SIG /subis/_element_1/EN_foo . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/EN_foo . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/EN_foo . used_by 
 SIG EN_foo . inst = /subis/_element_1
 SIG /subis/_element_1/RST_N . kind = Signal
@@ -1867,7 +1827,7 @@ SIG /subis/_element_1/RST_N . path = /subis/_element_1/RST_N
 SIG /subis/_element_1/RST_N . type = Reset
 SIG /subis/_element_1/RST_N . class = VSignal
 SIG /subis/_element_1/RST_N . wave_format = {Reset /subis_1/RST_N}
-SIG /subis/_element_1/RST_N . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/RST_N . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/RST_N . used_by 
 SIG RST_N . inst = /subis/_element_1
 SIG /subis/_element_1/RadyOnTheReadMethod . kind = Signal
@@ -1876,7 +1836,7 @@ SIG /subis/_element_1/RadyOnTheReadMethod . path = /subis/_element_1/RadyOnTheRe
 SIG /subis/_element_1/RadyOnTheReadMethod . type = Bool
 SIG /subis/_element_1/RadyOnTheReadMethod . class = VSignal
 SIG /subis/_element_1/RadyOnTheReadMethod . wave_format = {Bool /subis_1/RadyOnTheReadMethod}
-SIG /subis/_element_1/RadyOnTheReadMethod . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/RadyOnTheReadMethod . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/RadyOnTheReadMethod . used_by 
 SIG RadyOnTheReadMethod . inst = /subis/_element_1
 SIG /subis/_element_1/ax . kind = Signal
@@ -1885,7 +1845,7 @@ SIG /subis/_element_1/ax . path = /subis/_element_1/ax
 SIG /subis/_element_1/ax . type = Bit#(3)
 SIG /subis/_element_1/ax . class = VSignal
 SIG /subis/_element_1/ax . wave_format = {Bit#(3) /subis_1/ax}
-SIG /subis/_element_1/ax . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/ax . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/ax . used_by 
 SIG ax . inst = /subis/_element_1
 SIG /subis/_element_1/bar . kind = Signal
@@ -1894,7 +1854,7 @@ SIG /subis/_element_1/bar . path = /subis/_element_1/bar
 SIG /subis/_element_1/bar . type = Int#(32)
 SIG /subis/_element_1/bar . class = VSignal
 SIG /subis/_element_1/bar . wave_format = {Int#(32) /subis_1/bar}
-SIG /subis/_element_1/bar . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/bar . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/bar . used_by 
 SIG bar . inst = /subis/_element_1
 SIG /subis/_element_1/barx/CLK . kind = Signal
@@ -1993,7 +1953,7 @@ SIG /subis/_element_1/foo_x . path = /subis/_element_1/foo_x
 SIG /subis/_element_1/foo_x . type = Int#(32)
 SIG /subis/_element_1/foo_x . class = VSignal
 SIG /subis/_element_1/foo_x . wave_format = {Int#(32) /subis_1/foo_x}
-SIG /subis/_element_1/foo_x . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/foo_x . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/foo_x . used_by 
 SIG foo_x . inst = /subis/_element_1
 SIG /xx/_element_0/I_IN . kind = Signal
@@ -2002,7 +1962,7 @@ SIG /xx/_element_0/I_IN . path = /xx/_element_0/I_IN
 SIG /xx/_element_0/I_IN . type = Inout#(Test::Bar)
 SIG /xx/_element_0/I_IN . class = VSignal
 SIG /xx/_element_0/I_IN . wave_format = {Inout#(Test::Bar) /xx_0/I_IN}
-SIG /xx/_element_0/I_IN . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/I_IN . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/I_IN . used_by 
 SIG I_IN . inst = /xx/_element_0
 SIG /xx/_element_0/I_OUT . kind = Signal
@@ -2011,7 +1971,7 @@ SIG /xx/_element_0/I_OUT . path = /xx/_element_0/I_OUT
 SIG /xx/_element_0/I_OUT . type = Inout#(Bool)
 SIG /xx/_element_0/I_OUT . class = VSignal
 SIG /xx/_element_0/I_OUT . wave_format = {Inout#(Bool) /xx_0/I_OUT}
-SIG /xx/_element_0/I_OUT . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/I_OUT . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/I_OUT . used_by 
 SIG I_OUT . inst = /xx/_element_0
 SIG /xx/_element_0/V . kind = Signal
@@ -2020,7 +1980,7 @@ SIG /xx/_element_0/V . path = /xx/_element_0/V
 SIG /xx/_element_0/V . type = Int#(32)
 SIG /xx/_element_0/V . class = VSignal
 SIG /xx/_element_0/V . wave_format = {Int#(32) /xx_0/V}
-SIG /xx/_element_0/V . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/V . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/V . used_by 
 SIG V . inst = /xx/_element_0
 SIG /xx/_element_0/WGET . kind = Signal
@@ -2029,7 +1989,7 @@ SIG /xx/_element_0/WGET . path = /xx/_element_0/WGET
 SIG /xx/_element_0/WGET . type = Test::Bar
 SIG /xx/_element_0/WGET . class = VSignal
 SIG /xx/_element_0/WGET . wave_format = {Test::Bar /xx_0/WGET}
-SIG /xx/_element_0/WGET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WGET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WGET . used_by 
 SIG WGET . inst = /xx/_element_0
 SIG /xx/_element_0/WHAS . kind = Signal
@@ -2038,7 +1998,7 @@ SIG /xx/_element_0/WHAS . path = /xx/_element_0/WHAS
 SIG /xx/_element_0/WHAS . type = Bool
 SIG /xx/_element_0/WHAS . class = VSignal
 SIG /xx/_element_0/WHAS . wave_format = {Bool /xx_0/WHAS}
-SIG /xx/_element_0/WHAS . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WHAS . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WHAS . used_by 
 SIG WHAS . inst = /xx/_element_0
 SIG /xx/_element_0/WSET . kind = Signal
@@ -2047,7 +2007,7 @@ SIG /xx/_element_0/WSET . path = /xx/_element_0/WSET
 SIG /xx/_element_0/WSET . type = Bool
 SIG /xx/_element_0/WSET . class = VSignal
 SIG /xx/_element_0/WSET . wave_format = {Bool /xx_0/WSET}
-SIG /xx/_element_0/WSET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WSET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WSET . used_by 
 SIG WSET . inst = /xx/_element_0
 SIG /xx/_element_0/WVAL . kind = Signal
@@ -2056,7 +2016,7 @@ SIG /xx/_element_0/WVAL . path = /xx/_element_0/WVAL
 SIG /xx/_element_0/WVAL . type = Test::Bar
 SIG /xx/_element_0/WVAL . class = VSignal
 SIG /xx/_element_0/WVAL . wave_format = {Test::Bar /xx_0/WVAL}
-SIG /xx/_element_0/WVAL . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WVAL . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WVAL . used_by 
 SIG WVAL . inst = /xx/_element_0
 SIG /xx/_element_1/I_IN . kind = Signal
@@ -2065,7 +2025,7 @@ SIG /xx/_element_1/I_IN . path = /xx/_element_1/I_IN
 SIG /xx/_element_1/I_IN . type = Inout#(Test::Bar)
 SIG /xx/_element_1/I_IN . class = VSignal
 SIG /xx/_element_1/I_IN . wave_format = {Inout#(Test::Bar) /xx_1/I_IN}
-SIG /xx/_element_1/I_IN . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/I_IN . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/I_IN . used_by 
 SIG I_IN . inst = /xx/_element_1
 SIG /xx/_element_1/I_OUT . kind = Signal
@@ -2074,7 +2034,7 @@ SIG /xx/_element_1/I_OUT . path = /xx/_element_1/I_OUT
 SIG /xx/_element_1/I_OUT . type = Inout#(Bool)
 SIG /xx/_element_1/I_OUT . class = VSignal
 SIG /xx/_element_1/I_OUT . wave_format = {Inout#(Bool) /xx_1/I_OUT}
-SIG /xx/_element_1/I_OUT . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/I_OUT . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/I_OUT . used_by 
 SIG I_OUT . inst = /xx/_element_1
 SIG /xx/_element_1/V . kind = Signal
@@ -2083,7 +2043,7 @@ SIG /xx/_element_1/V . path = /xx/_element_1/V
 SIG /xx/_element_1/V . type = Int#(32)
 SIG /xx/_element_1/V . class = VSignal
 SIG /xx/_element_1/V . wave_format = {Int#(32) /xx_1/V}
-SIG /xx/_element_1/V . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/V . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/V . used_by 
 SIG V . inst = /xx/_element_1
 SIG /xx/_element_1/WGET . kind = Signal
@@ -2092,7 +2052,7 @@ SIG /xx/_element_1/WGET . path = /xx/_element_1/WGET
 SIG /xx/_element_1/WGET . type = Test::Bar
 SIG /xx/_element_1/WGET . class = VSignal
 SIG /xx/_element_1/WGET . wave_format = {Test::Bar /xx_1/WGET}
-SIG /xx/_element_1/WGET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WGET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WGET . used_by 
 SIG WGET . inst = /xx/_element_1
 SIG /xx/_element_1/WHAS . kind = Signal
@@ -2101,7 +2061,7 @@ SIG /xx/_element_1/WHAS . path = /xx/_element_1/WHAS
 SIG /xx/_element_1/WHAS . type = Bool
 SIG /xx/_element_1/WHAS . class = VSignal
 SIG /xx/_element_1/WHAS . wave_format = {Bool /xx_1/WHAS}
-SIG /xx/_element_1/WHAS . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WHAS . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WHAS . used_by 
 SIG WHAS . inst = /xx/_element_1
 SIG /xx/_element_1/WSET . kind = Signal
@@ -2110,7 +2070,7 @@ SIG /xx/_element_1/WSET . path = /xx/_element_1/WSET
 SIG /xx/_element_1/WSET . type = Bool
 SIG /xx/_element_1/WSET . class = VSignal
 SIG /xx/_element_1/WSET . wave_format = {Bool /xx_1/WSET}
-SIG /xx/_element_1/WSET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WSET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WSET . used_by 
 SIG WSET . inst = /xx/_element_1
 SIG /xx/_element_1/WVAL . kind = Signal
@@ -2119,7 +2079,7 @@ SIG /xx/_element_1/WVAL . path = /xx/_element_1/WVAL
 SIG /xx/_element_1/WVAL . type = Test::Bar
 SIG /xx/_element_1/WVAL . class = VSignal
 SIG /xx/_element_1/WVAL . wave_format = {Test::Bar /xx_1/WVAL}
-SIG /xx/_element_1/WVAL . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WVAL . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WVAL . used_by 
 SIG WVAL . inst = /xx/_element_1
 SIG /y/_element_0/CLK . kind = Signal
@@ -2128,7 +2088,7 @@ SIG /y/_element_0/CLK . path = /y/_element_0/CLK
 SIG /y/_element_0/CLK . type = Clock
 SIG /y/_element_0/CLK . class = VSignal
 SIG /y/_element_0/CLK . wave_format = 
-SIG /y/_element_0/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/CLK . used_by 
 SIG CLK . inst = /y/_element_0
 SIG /y/_element_0/D_IN . kind = Signal
@@ -2137,7 +2097,7 @@ SIG /y/_element_0/D_IN . path = /y/_element_0/D_IN
 SIG /y/_element_0/D_IN . type = Int#(32)
 SIG /y/_element_0/D_IN . class = VSignal
 SIG /y/_element_0/D_IN . wave_format = {Int#(32) {/y_0$D_IN}}
-SIG /y/_element_0/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/D_IN . used_by 
 SIG D_IN . inst = /y/_element_0
 SIG /y/_element_0/EN . kind = Signal
@@ -2146,7 +2106,7 @@ SIG /y/_element_0/EN . path = /y/_element_0/EN
 SIG /y/_element_0/EN . type = Bool
 SIG /y/_element_0/EN . class = VSignal
 SIG /y/_element_0/EN . wave_format = {Bool {/y_0$EN}}
-SIG /y/_element_0/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/EN . used_by 
 SIG EN . inst = /y/_element_0
 SIG /y/_element_0/Q_OUT . kind = Signal
@@ -2155,7 +2115,7 @@ SIG /y/_element_0/Q_OUT . path = /y/_element_0/Q_OUT
 SIG /y/_element_0/Q_OUT . type = Int#(32)
 SIG /y/_element_0/Q_OUT . class = VSignal
 SIG /y/_element_0/Q_OUT . wave_format = {Int#(32) /y_0}
-SIG /y/_element_0/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_0
 SIG /y/_element_1/CLK . kind = Signal
@@ -2164,7 +2124,7 @@ SIG /y/_element_1/CLK . path = /y/_element_1/CLK
 SIG /y/_element_1/CLK . type = Clock
 SIG /y/_element_1/CLK . class = VSignal
 SIG /y/_element_1/CLK . wave_format = 
-SIG /y/_element_1/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/CLK . used_by 
 SIG CLK . inst = /y/_element_1
 SIG /y/_element_1/D_IN . kind = Signal
@@ -2173,7 +2133,7 @@ SIG /y/_element_1/D_IN . path = /y/_element_1/D_IN
 SIG /y/_element_1/D_IN . type = Int#(32)
 SIG /y/_element_1/D_IN . class = VSignal
 SIG /y/_element_1/D_IN . wave_format = {Int#(32) {/y_1$D_IN}}
-SIG /y/_element_1/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/D_IN . used_by 
 SIG D_IN . inst = /y/_element_1
 SIG /y/_element_1/EN . kind = Signal
@@ -2182,7 +2142,7 @@ SIG /y/_element_1/EN . path = /y/_element_1/EN
 SIG /y/_element_1/EN . type = Bool
 SIG /y/_element_1/EN . class = VSignal
 SIG /y/_element_1/EN . wave_format = {Bool {/y_1$EN}}
-SIG /y/_element_1/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/EN . used_by 
 SIG EN . inst = /y/_element_1
 SIG /y/_element_1/Q_OUT . kind = Signal
@@ -2191,7 +2151,7 @@ SIG /y/_element_1/Q_OUT . path = /y/_element_1/Q_OUT
 SIG /y/_element_1/Q_OUT . type = Int#(32)
 SIG /y/_element_1/Q_OUT . class = VSignal
 SIG /y/_element_1/Q_OUT . wave_format = {Int#(32) /y_1}
-SIG /y/_element_1/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_1
 SIG /y/_element_2/CLK . kind = Signal
@@ -2200,7 +2160,7 @@ SIG /y/_element_2/CLK . path = /y/_element_2/CLK
 SIG /y/_element_2/CLK . type = Clock
 SIG /y/_element_2/CLK . class = VSignal
 SIG /y/_element_2/CLK . wave_format = 
-SIG /y/_element_2/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/CLK . used_by 
 SIG CLK . inst = /y/_element_2
 SIG /y/_element_2/D_IN . kind = Signal
@@ -2209,7 +2169,7 @@ SIG /y/_element_2/D_IN . path = /y/_element_2/D_IN
 SIG /y/_element_2/D_IN . type = Int#(32)
 SIG /y/_element_2/D_IN . class = VSignal
 SIG /y/_element_2/D_IN . wave_format = {Int#(32) {/y_2$D_IN}}
-SIG /y/_element_2/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/D_IN . used_by 
 SIG D_IN . inst = /y/_element_2
 SIG /y/_element_2/EN . kind = Signal
@@ -2218,7 +2178,7 @@ SIG /y/_element_2/EN . path = /y/_element_2/EN
 SIG /y/_element_2/EN . type = Bool
 SIG /y/_element_2/EN . class = VSignal
 SIG /y/_element_2/EN . wave_format = {Bool {/y_2$EN}}
-SIG /y/_element_2/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/EN . used_by 
 SIG EN . inst = /y/_element_2
 SIG /y/_element_2/Q_OUT . kind = Signal
@@ -2227,7 +2187,7 @@ SIG /y/_element_2/Q_OUT . path = /y/_element_2/Q_OUT
 SIG /y/_element_2/Q_OUT . type = Int#(32)
 SIG /y/_element_2/Q_OUT . class = VSignal
 SIG /y/_element_2/Q_OUT . wave_format = {Int#(32) /y_2}
-SIG /y/_element_2/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_2
 SIG /y/_element_3/CLK . kind = Signal
@@ -2236,7 +2196,7 @@ SIG /y/_element_3/CLK . path = /y/_element_3/CLK
 SIG /y/_element_3/CLK . type = Clock
 SIG /y/_element_3/CLK . class = VSignal
 SIG /y/_element_3/CLK . wave_format = 
-SIG /y/_element_3/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/CLK . used_by 
 SIG CLK . inst = /y/_element_3
 SIG /y/_element_3/D_IN . kind = Signal
@@ -2245,7 +2205,7 @@ SIG /y/_element_3/D_IN . path = /y/_element_3/D_IN
 SIG /y/_element_3/D_IN . type = Int#(32)
 SIG /y/_element_3/D_IN . class = VSignal
 SIG /y/_element_3/D_IN . wave_format = {Int#(32) {/y_3$D_IN}}
-SIG /y/_element_3/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/D_IN . used_by 
 SIG D_IN . inst = /y/_element_3
 SIG /y/_element_3/EN . kind = Signal
@@ -2254,7 +2214,7 @@ SIG /y/_element_3/EN . path = /y/_element_3/EN
 SIG /y/_element_3/EN . type = Bool
 SIG /y/_element_3/EN . class = VSignal
 SIG /y/_element_3/EN . wave_format = {Bool {/y_3$EN}}
-SIG /y/_element_3/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/EN . used_by 
 SIG EN . inst = /y/_element_3
 SIG /y/_element_3/Q_OUT . kind = Signal
@@ -2263,7 +2223,7 @@ SIG /y/_element_3/Q_OUT . path = /y/_element_3/Q_OUT
 SIG /y/_element_3/Q_OUT . type = Int#(32)
 SIG /y/_element_3/Q_OUT . class = VSignal
 SIG /y/_element_3/Q_OUT . wave_format = {Int#(32) /y_3}
-SIG /y/_element_3/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_3
 SIG /zw/_element_0/CLK . kind = Signal
@@ -2272,7 +2232,7 @@ SIG /zw/_element_0/CLK . path = /zw/_element_0/CLK
 SIG /zw/_element_0/CLK . type = Clock
 SIG /zw/_element_0/CLK . class = VSignal
 SIG /zw/_element_0/CLK . wave_format = 
-SIG /zw/_element_0/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/CLK . used_by 
 SIG CLK . inst = /zw/_element_0
 SIG /zw/_element_0/D_IN . kind = Signal
@@ -2281,7 +2241,7 @@ SIG /zw/_element_0/D_IN . path = /zw/_element_0/D_IN
 SIG /zw/_element_0/D_IN . type = Int#(32)
 SIG /zw/_element_0/D_IN . class = VSignal
 SIG /zw/_element_0/D_IN . wave_format = {Int#(32) {/zw_0$D_IN}}
-SIG /zw/_element_0/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_0
 SIG /zw/_element_0/EN . kind = Signal
@@ -2290,7 +2250,7 @@ SIG /zw/_element_0/EN . path = /zw/_element_0/EN
 SIG /zw/_element_0/EN . type = Bool
 SIG /zw/_element_0/EN . class = VSignal
 SIG /zw/_element_0/EN . wave_format = {Bool {/zw_0$EN}}
-SIG /zw/_element_0/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/EN . used_by 
 SIG EN . inst = /zw/_element_0
 SIG /zw/_element_0/Q_OUT . kind = Signal
@@ -2299,7 +2259,7 @@ SIG /zw/_element_0/Q_OUT . path = /zw/_element_0/Q_OUT
 SIG /zw/_element_0/Q_OUT . type = Int#(32)
 SIG /zw/_element_0/Q_OUT . class = VSignal
 SIG /zw/_element_0/Q_OUT . wave_format = {Int#(32) /zw_0}
-SIG /zw/_element_0/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_0
 SIG /zw/_element_0/RST . kind = Signal
@@ -2308,7 +2268,7 @@ SIG /zw/_element_0/RST . path = /zw/_element_0/RST
 SIG /zw/_element_0/RST . type = Reset
 SIG /zw/_element_0/RST . class = VSignal
 SIG /zw/_element_0/RST . wave_format = 
-SIG /zw/_element_0/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/RST . used_by 
 SIG RST . inst = /zw/_element_0
 SIG /zw/_element_1/CLK . kind = Signal
@@ -2317,7 +2277,7 @@ SIG /zw/_element_1/CLK . path = /zw/_element_1/CLK
 SIG /zw/_element_1/CLK . type = Clock
 SIG /zw/_element_1/CLK . class = VSignal
 SIG /zw/_element_1/CLK . wave_format = 
-SIG /zw/_element_1/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/CLK . used_by 
 SIG CLK . inst = /zw/_element_1
 SIG /zw/_element_1/D_IN . kind = Signal
@@ -2326,7 +2286,7 @@ SIG /zw/_element_1/D_IN . path = /zw/_element_1/D_IN
 SIG /zw/_element_1/D_IN . type = Int#(32)
 SIG /zw/_element_1/D_IN . class = VSignal
 SIG /zw/_element_1/D_IN . wave_format = {Int#(32) {/zw_1$D_IN}}
-SIG /zw/_element_1/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_1
 SIG /zw/_element_1/EN . kind = Signal
@@ -2335,7 +2295,7 @@ SIG /zw/_element_1/EN . path = /zw/_element_1/EN
 SIG /zw/_element_1/EN . type = Bool
 SIG /zw/_element_1/EN . class = VSignal
 SIG /zw/_element_1/EN . wave_format = {Bool {/zw_1$EN}}
-SIG /zw/_element_1/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/EN . used_by 
 SIG EN . inst = /zw/_element_1
 SIG /zw/_element_1/Q_OUT . kind = Signal
@@ -2344,7 +2304,7 @@ SIG /zw/_element_1/Q_OUT . path = /zw/_element_1/Q_OUT
 SIG /zw/_element_1/Q_OUT . type = Int#(32)
 SIG /zw/_element_1/Q_OUT . class = VSignal
 SIG /zw/_element_1/Q_OUT . wave_format = {Int#(32) /zw_1}
-SIG /zw/_element_1/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_1
 SIG /zw/_element_1/RST . kind = Signal
@@ -2353,7 +2313,7 @@ SIG /zw/_element_1/RST . path = /zw/_element_1/RST
 SIG /zw/_element_1/RST . type = Reset
 SIG /zw/_element_1/RST . class = VSignal
 SIG /zw/_element_1/RST . wave_format = 
-SIG /zw/_element_1/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/RST . used_by 
 SIG RST . inst = /zw/_element_1
 SIG /zw/_element_2/CLK . kind = Signal
@@ -2362,7 +2322,7 @@ SIG /zw/_element_2/CLK . path = /zw/_element_2/CLK
 SIG /zw/_element_2/CLK . type = Clock
 SIG /zw/_element_2/CLK . class = VSignal
 SIG /zw/_element_2/CLK . wave_format = 
-SIG /zw/_element_2/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/CLK . used_by 
 SIG CLK . inst = /zw/_element_2
 SIG /zw/_element_2/D_IN . kind = Signal
@@ -2371,7 +2331,7 @@ SIG /zw/_element_2/D_IN . path = /zw/_element_2/D_IN
 SIG /zw/_element_2/D_IN . type = Int#(32)
 SIG /zw/_element_2/D_IN . class = VSignal
 SIG /zw/_element_2/D_IN . wave_format = {Int#(32) {/zw_2$D_IN}}
-SIG /zw/_element_2/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_2
 SIG /zw/_element_2/EN . kind = Signal
@@ -2380,7 +2340,7 @@ SIG /zw/_element_2/EN . path = /zw/_element_2/EN
 SIG /zw/_element_2/EN . type = Bool
 SIG /zw/_element_2/EN . class = VSignal
 SIG /zw/_element_2/EN . wave_format = {Bool {/zw_2$EN}}
-SIG /zw/_element_2/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/EN . used_by 
 SIG EN . inst = /zw/_element_2
 SIG /zw/_element_2/Q_OUT . kind = Signal
@@ -2389,7 +2349,7 @@ SIG /zw/_element_2/Q_OUT . path = /zw/_element_2/Q_OUT
 SIG /zw/_element_2/Q_OUT . type = Int#(32)
 SIG /zw/_element_2/Q_OUT . class = VSignal
 SIG /zw/_element_2/Q_OUT . wave_format = {Int#(32) /zw_2}
-SIG /zw/_element_2/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_2
 SIG /zw/_element_2/RST . kind = Signal
@@ -2398,7 +2358,7 @@ SIG /zw/_element_2/RST . path = /zw/_element_2/RST
 SIG /zw/_element_2/RST . type = Reset
 SIG /zw/_element_2/RST . class = VSignal
 SIG /zw/_element_2/RST . wave_format = 
-SIG /zw/_element_2/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/RST . used_by 
 SIG RST . inst = /zw/_element_2
 SIG /zw/_element_3/CLK . kind = Signal
@@ -2407,7 +2367,7 @@ SIG /zw/_element_3/CLK . path = /zw/_element_3/CLK
 SIG /zw/_element_3/CLK . type = Clock
 SIG /zw/_element_3/CLK . class = VSignal
 SIG /zw/_element_3/CLK . wave_format = 
-SIG /zw/_element_3/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/CLK . used_by 
 SIG CLK . inst = /zw/_element_3
 SIG /zw/_element_3/D_IN . kind = Signal
@@ -2416,7 +2376,7 @@ SIG /zw/_element_3/D_IN . path = /zw/_element_3/D_IN
 SIG /zw/_element_3/D_IN . type = Int#(32)
 SIG /zw/_element_3/D_IN . class = VSignal
 SIG /zw/_element_3/D_IN . wave_format = {Int#(32) {/zw_3$D_IN}}
-SIG /zw/_element_3/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_3
 SIG /zw/_element_3/EN . kind = Signal
@@ -2425,7 +2385,7 @@ SIG /zw/_element_3/EN . path = /zw/_element_3/EN
 SIG /zw/_element_3/EN . type = Bool
 SIG /zw/_element_3/EN . class = VSignal
 SIG /zw/_element_3/EN . wave_format = {Bool {/zw_3$EN}}
-SIG /zw/_element_3/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/EN . used_by 
 SIG EN . inst = /zw/_element_3
 SIG /zw/_element_3/Q_OUT . kind = Signal
@@ -2434,7 +2394,7 @@ SIG /zw/_element_3/Q_OUT . path = /zw/_element_3/Q_OUT
 SIG /zw/_element_3/Q_OUT . type = Int#(32)
 SIG /zw/_element_3/Q_OUT . class = VSignal
 SIG /zw/_element_3/Q_OUT . wave_format = {Int#(32) /zw_3}
-SIG /zw/_element_3/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_3
 SIG /zw/_element_3/RST . kind = Signal
@@ -2443,7 +2403,7 @@ SIG /zw/_element_3/RST . path = /zw/_element_3/RST
 SIG /zw/_element_3/RST . type = Reset
 SIG /zw/_element_3/RST . class = VSignal
 SIG /zw/_element_3/RST . wave_format = 
-SIG /zw/_element_3/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/RST . used_by 
 SIG RST . inst = /zw/_element_3
 SIG /zw/_element_4/CLK . kind = Signal
@@ -2452,7 +2412,7 @@ SIG /zw/_element_4/CLK . path = /zw/_element_4/CLK
 SIG /zw/_element_4/CLK . type = Clock
 SIG /zw/_element_4/CLK . class = VSignal
 SIG /zw/_element_4/CLK . wave_format = 
-SIG /zw/_element_4/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/CLK . used_by 
 SIG CLK . inst = /zw/_element_4
 SIG /zw/_element_4/D_IN . kind = Signal
@@ -2461,7 +2421,7 @@ SIG /zw/_element_4/D_IN . path = /zw/_element_4/D_IN
 SIG /zw/_element_4/D_IN . type = Int#(32)
 SIG /zw/_element_4/D_IN . class = VSignal
 SIG /zw/_element_4/D_IN . wave_format = {Int#(32) {/zw_4$D_IN}}
-SIG /zw/_element_4/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_4
 SIG /zw/_element_4/EN . kind = Signal
@@ -2470,7 +2430,7 @@ SIG /zw/_element_4/EN . path = /zw/_element_4/EN
 SIG /zw/_element_4/EN . type = Bool
 SIG /zw/_element_4/EN . class = VSignal
 SIG /zw/_element_4/EN . wave_format = {Bool {/zw_4$EN}}
-SIG /zw/_element_4/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/EN . used_by 
 SIG EN . inst = /zw/_element_4
 SIG /zw/_element_4/Q_OUT . kind = Signal
@@ -2479,7 +2439,7 @@ SIG /zw/_element_4/Q_OUT . path = /zw/_element_4/Q_OUT
 SIG /zw/_element_4/Q_OUT . type = Int#(32)
 SIG /zw/_element_4/Q_OUT . class = VSignal
 SIG /zw/_element_4/Q_OUT . wave_format = {Int#(32) /zw_4}
-SIG /zw/_element_4/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_4
 SIG /zw/_element_4/RST . kind = Signal
@@ -2488,7 +2448,7 @@ SIG /zw/_element_4/RST . path = /zw/_element_4/RST
 SIG /zw/_element_4/RST . type = Reset
 SIG /zw/_element_4/RST . class = VSignal
 SIG /zw/_element_4/RST . wave_format = 
-SIG /zw/_element_4/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/RST . used_by 
 SIG RST . inst = /zw/_element_4
 starting method testing
@@ -3060,25 +3020,7 @@ f5 = / /subis/_element_0 /subis/_element_1
 f6 = /Loop /Loop /Loop/Body_0 /Loop/Body_1 /Loop/Body_2 /Loop/Body_3 /subis /xx /y /zw
 Command: inst filter *
 /
-/y
-/y/_element_0
-/y/_element_1
-/y/_element_2
-/y/_element_3
-/zw
-/zw/_element_0
-/zw/_element_1
-/zw/_element_2
-/zw/_element_3
-/zw/_element_4
-/xx
-/xx/_element_0
-/xx/_element_1
 /Loop
-/Loop/x_0
-/Loop/x_1
-/Loop/x_2
-/Loop/x_3
 /Loop
 /Loop/Body_0
 /Loop/Body_0/aa_0
@@ -3092,22 +3034,40 @@ Command: inst filter *
 /Loop/Body_3
 /Loop/Body_3/aa_3
 /Loop/Body_3/bb_3
+/Loop/x_0
+/Loop/x_1
+/Loop/x_2
+/Loop/x_3
 /subis
 /subis/_element_0
-/subis/_element_0/foo2
 /subis/_element_0/barx
+/subis/_element_0/foo2
 /subis/_element_1
-/subis/_element_1/foo2
 /subis/_element_1/barx
+/subis/_element_1/foo2
+/xx
+/xx/_element_0
+/xx/_element_1
+/y
+/y/_element_0
+/y/_element_1
+/y/_element_2
+/y/_element_3
+/zw
+/zw/_element_0
+/zw/_element_1
+/zw/_element_2
+/zw/_element_3
+/zw/_element_4
 ---------
 Command: inst filter /*
 /
-/y
-/zw
-/xx
 /Loop
 /Loop
 /subis
+/xx
+/y
+/zw
 ---------
 Command: inst filter r* g*
 Caught error:  inst filter: Expected a search expression, found `r* g*'
@@ -3142,80 +3102,7 @@ Command: signal filter
 Caught error:  signal filter: Expected a search expression, found `'
 ---------
 Command: signal filter *
-/i
 /CLK
-/RST_N
-/y/_element_0/CLK
-/y/_element_0/D_IN
-/y/_element_0/EN
-/y/_element_0/Q_OUT
-/y/_element_1/CLK
-/y/_element_1/D_IN
-/y/_element_1/EN
-/y/_element_1/Q_OUT
-/y/_element_2/CLK
-/y/_element_2/D_IN
-/y/_element_2/EN
-/y/_element_2/Q_OUT
-/y/_element_3/CLK
-/y/_element_3/D_IN
-/y/_element_3/EN
-/y/_element_3/Q_OUT
-/zw/_element_0/CLK
-/zw/_element_0/RST
-/zw/_element_0/D_IN
-/zw/_element_0/EN
-/zw/_element_0/Q_OUT
-/zw/_element_1/CLK
-/zw/_element_1/RST
-/zw/_element_1/D_IN
-/zw/_element_1/EN
-/zw/_element_1/Q_OUT
-/zw/_element_2/CLK
-/zw/_element_2/RST
-/zw/_element_2/D_IN
-/zw/_element_2/EN
-/zw/_element_2/Q_OUT
-/zw/_element_3/CLK
-/zw/_element_3/RST
-/zw/_element_3/D_IN
-/zw/_element_3/EN
-/zw/_element_3/Q_OUT
-/zw/_element_4/CLK
-/zw/_element_4/RST
-/zw/_element_4/D_IN
-/zw/_element_4/EN
-/zw/_element_4/Q_OUT
-/xx/_element_0/V
-/xx/_element_0/I_IN
-/xx/_element_0/WVAL
-/xx/_element_0/WSET
-/xx/_element_0/WGET
-/xx/_element_0/WHAS
-/xx/_element_0/I_OUT
-/xx/_element_1/V
-/xx/_element_1/I_IN
-/xx/_element_1/WVAL
-/xx/_element_1/WSET
-/xx/_element_1/WGET
-/xx/_element_1/WHAS
-/xx/_element_1/I_OUT
-/Loop/x_0/CLK
-/Loop/x_0/D_IN
-/Loop/x_0/EN
-/Loop/x_0/Q_OUT
-/Loop/x_1/CLK
-/Loop/x_1/D_IN
-/Loop/x_1/EN
-/Loop/x_1/Q_OUT
-/Loop/x_2/CLK
-/Loop/x_2/D_IN
-/Loop/x_2/EN
-/Loop/x_2/Q_OUT
-/Loop/x_3/CLK
-/Loop/x_3/D_IN
-/Loop/x_3/EN
-/Loop/x_3/Q_OUT
 /Loop/Body_0/aa_0/CLK
 /Loop/Body_0/aa_0/D_IN
 /Loop/Body_0/aa_0/EN
@@ -3248,116 +3135,116 @@ Command: signal filter *
 /Loop/Body_3/bb_3/D_IN
 /Loop/Body_3/bb_3/EN
 /Loop/Body_3/bb_3/Q_OUT
-/subis/_element_0/ax
+/Loop/x_0/CLK
+/Loop/x_0/D_IN
+/Loop/x_0/EN
+/Loop/x_0/Q_OUT
+/Loop/x_1/CLK
+/Loop/x_1/D_IN
+/Loop/x_1/EN
+/Loop/x_1/Q_OUT
+/Loop/x_2/CLK
+/Loop/x_2/D_IN
+/Loop/x_2/EN
+/Loop/x_2/Q_OUT
+/Loop/x_3/CLK
+/Loop/x_3/D_IN
+/Loop/x_3/EN
+/Loop/x_3/Q_OUT
+/RST_N
+/i
 /subis/_element_0/CLK
-/subis/_element_0/RST_N
-/subis/_element_0/foo_x
 /subis/_element_0/EN_foo
-/subis/_element_0/bar
+/subis/_element_0/RST_N
 /subis/_element_0/RadyOnTheReadMethod
-/subis/_element_0/foo2/CLK
-/subis/_element_0/foo2/RST
-/subis/_element_0/foo2/D_IN
-/subis/_element_0/foo2/EN
-/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/ax
+/subis/_element_0/bar
 /subis/_element_0/barx/CLK
-/subis/_element_0/barx/RST
 /subis/_element_0/barx/D_IN
 /subis/_element_0/barx/EN
 /subis/_element_0/barx/Q_OUT
-/subis/_element_1/ax
+/subis/_element_0/barx/RST
+/subis/_element_0/foo2/CLK
+/subis/_element_0/foo2/D_IN
+/subis/_element_0/foo2/EN
+/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/foo2/RST
+/subis/_element_0/foo_x
 /subis/_element_1/CLK
-/subis/_element_1/RST_N
-/subis/_element_1/foo_x
 /subis/_element_1/EN_foo
-/subis/_element_1/bar
+/subis/_element_1/RST_N
 /subis/_element_1/RadyOnTheReadMethod
-/subis/_element_1/foo2/CLK
-/subis/_element_1/foo2/RST
-/subis/_element_1/foo2/D_IN
-/subis/_element_1/foo2/EN
-/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/ax
+/subis/_element_1/bar
 /subis/_element_1/barx/CLK
-/subis/_element_1/barx/RST
 /subis/_element_1/barx/D_IN
 /subis/_element_1/barx/EN
 /subis/_element_1/barx/Q_OUT
+/subis/_element_1/barx/RST
+/subis/_element_1/foo2/CLK
+/subis/_element_1/foo2/D_IN
+/subis/_element_1/foo2/EN
+/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/foo2/RST
+/subis/_element_1/foo_x
+/xx/_element_0/I_IN
+/xx/_element_0/I_OUT
+/xx/_element_0/V
+/xx/_element_0/WGET
+/xx/_element_0/WHAS
+/xx/_element_0/WSET
+/xx/_element_0/WVAL
+/xx/_element_1/I_IN
+/xx/_element_1/I_OUT
+/xx/_element_1/V
+/xx/_element_1/WGET
+/xx/_element_1/WHAS
+/xx/_element_1/WSET
+/xx/_element_1/WVAL
+/y/_element_0/CLK
+/y/_element_0/D_IN
+/y/_element_0/EN
+/y/_element_0/Q_OUT
+/y/_element_1/CLK
+/y/_element_1/D_IN
+/y/_element_1/EN
+/y/_element_1/Q_OUT
+/y/_element_2/CLK
+/y/_element_2/D_IN
+/y/_element_2/EN
+/y/_element_2/Q_OUT
+/y/_element_3/CLK
+/y/_element_3/D_IN
+/y/_element_3/EN
+/y/_element_3/Q_OUT
+/zw/_element_0/CLK
+/zw/_element_0/D_IN
+/zw/_element_0/EN
+/zw/_element_0/Q_OUT
+/zw/_element_0/RST
+/zw/_element_1/CLK
+/zw/_element_1/D_IN
+/zw/_element_1/EN
+/zw/_element_1/Q_OUT
+/zw/_element_1/RST
+/zw/_element_2/CLK
+/zw/_element_2/D_IN
+/zw/_element_2/EN
+/zw/_element_2/Q_OUT
+/zw/_element_2/RST
+/zw/_element_3/CLK
+/zw/_element_3/D_IN
+/zw/_element_3/EN
+/zw/_element_3/Q_OUT
+/zw/_element_3/RST
+/zw/_element_4/CLK
+/zw/_element_4/D_IN
+/zw/_element_4/EN
+/zw/_element_4/Q_OUT
+/zw/_element_4/RST
 ---------
 Command: signal filter */*
-/i
 /CLK
-/RST_N
-/y/_element_0/CLK
-/y/_element_0/D_IN
-/y/_element_0/EN
-/y/_element_0/Q_OUT
-/y/_element_1/CLK
-/y/_element_1/D_IN
-/y/_element_1/EN
-/y/_element_1/Q_OUT
-/y/_element_2/CLK
-/y/_element_2/D_IN
-/y/_element_2/EN
-/y/_element_2/Q_OUT
-/y/_element_3/CLK
-/y/_element_3/D_IN
-/y/_element_3/EN
-/y/_element_3/Q_OUT
-/zw/_element_0/CLK
-/zw/_element_0/RST
-/zw/_element_0/D_IN
-/zw/_element_0/EN
-/zw/_element_0/Q_OUT
-/zw/_element_1/CLK
-/zw/_element_1/RST
-/zw/_element_1/D_IN
-/zw/_element_1/EN
-/zw/_element_1/Q_OUT
-/zw/_element_2/CLK
-/zw/_element_2/RST
-/zw/_element_2/D_IN
-/zw/_element_2/EN
-/zw/_element_2/Q_OUT
-/zw/_element_3/CLK
-/zw/_element_3/RST
-/zw/_element_3/D_IN
-/zw/_element_3/EN
-/zw/_element_3/Q_OUT
-/zw/_element_4/CLK
-/zw/_element_4/RST
-/zw/_element_4/D_IN
-/zw/_element_4/EN
-/zw/_element_4/Q_OUT
-/xx/_element_0/V
-/xx/_element_0/I_IN
-/xx/_element_0/WVAL
-/xx/_element_0/WSET
-/xx/_element_0/WGET
-/xx/_element_0/WHAS
-/xx/_element_0/I_OUT
-/xx/_element_1/V
-/xx/_element_1/I_IN
-/xx/_element_1/WVAL
-/xx/_element_1/WSET
-/xx/_element_1/WGET
-/xx/_element_1/WHAS
-/xx/_element_1/I_OUT
-/Loop/x_0/CLK
-/Loop/x_0/D_IN
-/Loop/x_0/EN
-/Loop/x_0/Q_OUT
-/Loop/x_1/CLK
-/Loop/x_1/D_IN
-/Loop/x_1/EN
-/Loop/x_1/Q_OUT
-/Loop/x_2/CLK
-/Loop/x_2/D_IN
-/Loop/x_2/EN
-/Loop/x_2/Q_OUT
-/Loop/x_3/CLK
-/Loop/x_3/D_IN
-/Loop/x_3/EN
-/Loop/x_3/Q_OUT
 /Loop/Body_0/aa_0/CLK
 /Loop/Body_0/aa_0/D_IN
 /Loop/Body_0/aa_0/EN
@@ -3390,49 +3277,122 @@ Command: signal filter */*
 /Loop/Body_3/bb_3/D_IN
 /Loop/Body_3/bb_3/EN
 /Loop/Body_3/bb_3/Q_OUT
-/subis/_element_0/ax
+/Loop/x_0/CLK
+/Loop/x_0/D_IN
+/Loop/x_0/EN
+/Loop/x_0/Q_OUT
+/Loop/x_1/CLK
+/Loop/x_1/D_IN
+/Loop/x_1/EN
+/Loop/x_1/Q_OUT
+/Loop/x_2/CLK
+/Loop/x_2/D_IN
+/Loop/x_2/EN
+/Loop/x_2/Q_OUT
+/Loop/x_3/CLK
+/Loop/x_3/D_IN
+/Loop/x_3/EN
+/Loop/x_3/Q_OUT
+/RST_N
+/i
 /subis/_element_0/CLK
-/subis/_element_0/RST_N
-/subis/_element_0/foo_x
 /subis/_element_0/EN_foo
-/subis/_element_0/bar
+/subis/_element_0/RST_N
 /subis/_element_0/RadyOnTheReadMethod
-/subis/_element_0/foo2/CLK
-/subis/_element_0/foo2/RST
-/subis/_element_0/foo2/D_IN
-/subis/_element_0/foo2/EN
-/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/ax
+/subis/_element_0/bar
 /subis/_element_0/barx/CLK
-/subis/_element_0/barx/RST
 /subis/_element_0/barx/D_IN
 /subis/_element_0/barx/EN
 /subis/_element_0/barx/Q_OUT
-/subis/_element_1/ax
+/subis/_element_0/barx/RST
+/subis/_element_0/foo2/CLK
+/subis/_element_0/foo2/D_IN
+/subis/_element_0/foo2/EN
+/subis/_element_0/foo2/Q_OUT
+/subis/_element_0/foo2/RST
+/subis/_element_0/foo_x
 /subis/_element_1/CLK
-/subis/_element_1/RST_N
-/subis/_element_1/foo_x
 /subis/_element_1/EN_foo
-/subis/_element_1/bar
+/subis/_element_1/RST_N
 /subis/_element_1/RadyOnTheReadMethod
-/subis/_element_1/foo2/CLK
-/subis/_element_1/foo2/RST
-/subis/_element_1/foo2/D_IN
-/subis/_element_1/foo2/EN
-/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/ax
+/subis/_element_1/bar
 /subis/_element_1/barx/CLK
-/subis/_element_1/barx/RST
 /subis/_element_1/barx/D_IN
 /subis/_element_1/barx/EN
 /subis/_element_1/barx/Q_OUT
+/subis/_element_1/barx/RST
+/subis/_element_1/foo2/CLK
+/subis/_element_1/foo2/D_IN
+/subis/_element_1/foo2/EN
+/subis/_element_1/foo2/Q_OUT
+/subis/_element_1/foo2/RST
+/subis/_element_1/foo_x
+/xx/_element_0/I_IN
+/xx/_element_0/I_OUT
+/xx/_element_0/V
+/xx/_element_0/WGET
+/xx/_element_0/WHAS
+/xx/_element_0/WSET
+/xx/_element_0/WVAL
+/xx/_element_1/I_IN
+/xx/_element_1/I_OUT
+/xx/_element_1/V
+/xx/_element_1/WGET
+/xx/_element_1/WHAS
+/xx/_element_1/WSET
+/xx/_element_1/WVAL
+/y/_element_0/CLK
+/y/_element_0/D_IN
+/y/_element_0/EN
+/y/_element_0/Q_OUT
+/y/_element_1/CLK
+/y/_element_1/D_IN
+/y/_element_1/EN
+/y/_element_1/Q_OUT
+/y/_element_2/CLK
+/y/_element_2/D_IN
+/y/_element_2/EN
+/y/_element_2/Q_OUT
+/y/_element_3/CLK
+/y/_element_3/D_IN
+/y/_element_3/EN
+/y/_element_3/Q_OUT
+/zw/_element_0/CLK
+/zw/_element_0/D_IN
+/zw/_element_0/EN
+/zw/_element_0/Q_OUT
+/zw/_element_0/RST
+/zw/_element_1/CLK
+/zw/_element_1/D_IN
+/zw/_element_1/EN
+/zw/_element_1/Q_OUT
+/zw/_element_1/RST
+/zw/_element_2/CLK
+/zw/_element_2/D_IN
+/zw/_element_2/EN
+/zw/_element_2/Q_OUT
+/zw/_element_2/RST
+/zw/_element_3/CLK
+/zw/_element_3/D_IN
+/zw/_element_3/EN
+/zw/_element_3/Q_OUT
+/zw/_element_3/RST
+/zw/_element_4/CLK
+/zw/_element_4/D_IN
+/zw/_element_4/EN
+/zw/_element_4/Q_OUT
+/zw/_element_4/RST
 ---------
 Command: signal filter */
 ---------
 Command: signal filter /*/
 ---------
 Command: signal filter /*/*
-/i
 /CLK
 /RST_N
+/i
 ---------
 Command: signal filter /r2/*
 ---------
@@ -3446,9 +3406,8 @@ INST / . kind = Synth
 INST / . position = 
 INST / . module = mkTest
 INST / . class = VInst
-INST / . hiertree = vInst40 mkTest {synth branch}
 INST / . wave_format = {Inout#(Test::Bar) /i}
-INST / . key = 1
+INST / . hiertree = / mkTest {synth branch}
 INST / . ancestors = /
 INST / . name bsv = mkTest
 INST / . name synth = 
@@ -3465,9 +3424,8 @@ INST /Loop . kind = Inst
 INST /Loop . position = Test2.bsv 19 4
 INST /Loop . module = mkTest
 INST /Loop . class = VInst
-INST /Loop . hiertree = vInst44 Loop {}
 INST /Loop . wave_format = 
-INST /Loop . key = 5
+INST /Loop . hiertree = /Loop Loop {}
 INST /Loop . ancestors = / /Loop
 INST /Loop . name bsv = Loop
 INST /Loop . name synth = Loop
@@ -3486,9 +3444,8 @@ INST /Loop . kind = Inst
 INST /Loop . position = Test2.bsv 23 4
 INST /Loop . module = mkTest
 INST /Loop . class = VInst
-INST /Loop . hiertree = vInst45 Loop {}
 INST /Loop . wave_format = 
-INST /Loop . key = 6
+INST /Loop . hiertree = /Loop Loop {}
 INST /Loop . ancestors = / /Loop
 INST /Loop . name bsv = Loop
 INST /Loop . name synth = Loop
@@ -3507,9 +3464,8 @@ INST /Loop/Body_0 . kind = Inst
 INST /Loop/Body_0 . position = Test2.bsv 23 44
 INST /Loop/Body_0 . module = mkTest
 INST /Loop/Body_0 . class = VInst
-INST /Loop/Body_0 . hiertree = vInst62 Body_0 {}
 INST /Loop/Body_0 . wave_format = 
-INST /Loop/Body_0 . key = 23
+INST /Loop/Body_0 . hiertree = /Loop/Body_0 Body_0 {}
 INST /Loop/Body_0 . ancestors = / /Loop /Loop/Body_0
 INST /Loop/Body_0 . name bsv = Body_0
 INST /Loop/Body_0 . name synth = Body_0
@@ -3527,9 +3483,8 @@ INST /Loop/Body_0/aa_0 . kind = Prim
 INST /Loop/Body_0/aa_0 . position = Test2.bsv 24 6
 INST /Loop/Body_0/aa_0 . module = mkTest
 INST /Loop/Body_0/aa_0 . class = VInst
-INST /Loop/Body_0/aa_0 . hiertree = vInst66 {aa_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/aa_0 . wave_format = {Int#(32) {/aa_0$D_IN}} {Bool {/aa_0$EN}} {Int#(32) /aa_0}
-INST /Loop/Body_0/aa_0 . key = 27
+INST /Loop/Body_0/aa_0 . hiertree = /Loop/Body_0/aa_0 {aa_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/aa_0 . ancestors = / /Loop /Loop/Body_0 /Loop/Body_0/aa_0
 INST /Loop/Body_0/aa_0 . name bsv = aa_0
 INST /Loop/Body_0/aa_0 . name synth = aa_0
@@ -3547,9 +3502,8 @@ INST /Loop/Body_0/bb_0 . kind = Prim
 INST /Loop/Body_0/bb_0 . position = Test2.bsv 25 6
 INST /Loop/Body_0/bb_0 . module = mkTest
 INST /Loop/Body_0/bb_0 . class = VInst
-INST /Loop/Body_0/bb_0 . hiertree = vInst67 {bb_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/bb_0 . wave_format = {Int#(32) {/bb_0$D_IN}} {Bool {/bb_0$EN}} {Int#(32) /bb_0}
-INST /Loop/Body_0/bb_0 . key = 28
+INST /Loop/Body_0/bb_0 . hiertree = /Loop/Body_0/bb_0 {bb_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_0/bb_0 . ancestors = / /Loop /Loop/Body_0 /Loop/Body_0/bb_0
 INST /Loop/Body_0/bb_0 . name bsv = bb_0
 INST /Loop/Body_0/bb_0 . name synth = bb_0
@@ -3567,9 +3521,8 @@ INST /Loop/Body_1 . kind = Inst
 INST /Loop/Body_1 . position = Test2.bsv 23 44
 INST /Loop/Body_1 . module = mkTest
 INST /Loop/Body_1 . class = VInst
-INST /Loop/Body_1 . hiertree = vInst63 Body_1 {}
 INST /Loop/Body_1 . wave_format = 
-INST /Loop/Body_1 . key = 24
+INST /Loop/Body_1 . hiertree = /Loop/Body_1 Body_1 {}
 INST /Loop/Body_1 . ancestors = / /Loop /Loop/Body_1
 INST /Loop/Body_1 . name bsv = Body_1
 INST /Loop/Body_1 . name synth = Body_1
@@ -3587,9 +3540,8 @@ INST /Loop/Body_1/aa_1 . kind = Prim
 INST /Loop/Body_1/aa_1 . position = Test2.bsv 24 6
 INST /Loop/Body_1/aa_1 . module = mkTest
 INST /Loop/Body_1/aa_1 . class = VInst
-INST /Loop/Body_1/aa_1 . hiertree = vInst68 {aa_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/aa_1 . wave_format = {Int#(32) {/aa_1$D_IN}} {Bool {/aa_1$EN}} {Int#(32) /aa_1}
-INST /Loop/Body_1/aa_1 . key = 29
+INST /Loop/Body_1/aa_1 . hiertree = /Loop/Body_1/aa_1 {aa_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/aa_1 . ancestors = / /Loop /Loop/Body_1 /Loop/Body_1/aa_1
 INST /Loop/Body_1/aa_1 . name bsv = aa_1
 INST /Loop/Body_1/aa_1 . name synth = aa_1
@@ -3607,9 +3559,8 @@ INST /Loop/Body_1/bb_1 . kind = Prim
 INST /Loop/Body_1/bb_1 . position = Test2.bsv 25 6
 INST /Loop/Body_1/bb_1 . module = mkTest
 INST /Loop/Body_1/bb_1 . class = VInst
-INST /Loop/Body_1/bb_1 . hiertree = vInst69 {bb_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/bb_1 . wave_format = {Int#(32) {/bb_1$D_IN}} {Bool {/bb_1$EN}} {Int#(32) /bb_1}
-INST /Loop/Body_1/bb_1 . key = 30
+INST /Loop/Body_1/bb_1 . hiertree = /Loop/Body_1/bb_1 {bb_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_1/bb_1 . ancestors = / /Loop /Loop/Body_1 /Loop/Body_1/bb_1
 INST /Loop/Body_1/bb_1 . name bsv = bb_1
 INST /Loop/Body_1/bb_1 . name synth = bb_1
@@ -3627,9 +3578,8 @@ INST /Loop/Body_2 . kind = Inst
 INST /Loop/Body_2 . position = Test2.bsv 23 44
 INST /Loop/Body_2 . module = mkTest
 INST /Loop/Body_2 . class = VInst
-INST /Loop/Body_2 . hiertree = vInst64 Body_2 {}
 INST /Loop/Body_2 . wave_format = 
-INST /Loop/Body_2 . key = 25
+INST /Loop/Body_2 . hiertree = /Loop/Body_2 Body_2 {}
 INST /Loop/Body_2 . ancestors = / /Loop /Loop/Body_2
 INST /Loop/Body_2 . name bsv = Body_2
 INST /Loop/Body_2 . name synth = Body_2
@@ -3647,9 +3597,8 @@ INST /Loop/Body_2/aa_2 . kind = Prim
 INST /Loop/Body_2/aa_2 . position = Test2.bsv 24 6
 INST /Loop/Body_2/aa_2 . module = mkTest
 INST /Loop/Body_2/aa_2 . class = VInst
-INST /Loop/Body_2/aa_2 . hiertree = vInst70 {aa_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/aa_2 . wave_format = {Int#(32) {/aa_2$D_IN}} {Bool {/aa_2$EN}} {Int#(32) /aa_2}
-INST /Loop/Body_2/aa_2 . key = 31
+INST /Loop/Body_2/aa_2 . hiertree = /Loop/Body_2/aa_2 {aa_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/aa_2 . ancestors = / /Loop /Loop/Body_2 /Loop/Body_2/aa_2
 INST /Loop/Body_2/aa_2 . name bsv = aa_2
 INST /Loop/Body_2/aa_2 . name synth = aa_2
@@ -3667,9 +3616,8 @@ INST /Loop/Body_2/bb_2 . kind = Prim
 INST /Loop/Body_2/bb_2 . position = Test2.bsv 25 6
 INST /Loop/Body_2/bb_2 . module = mkTest
 INST /Loop/Body_2/bb_2 . class = VInst
-INST /Loop/Body_2/bb_2 . hiertree = vInst71 {bb_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/bb_2 . wave_format = {Int#(32) {/bb_2$D_IN}} {Bool {/bb_2$EN}} {Int#(32) /bb_2}
-INST /Loop/Body_2/bb_2 . key = 32
+INST /Loop/Body_2/bb_2 . hiertree = /Loop/Body_2/bb_2 {bb_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_2/bb_2 . ancestors = / /Loop /Loop/Body_2 /Loop/Body_2/bb_2
 INST /Loop/Body_2/bb_2 . name bsv = bb_2
 INST /Loop/Body_2/bb_2 . name synth = bb_2
@@ -3687,9 +3635,8 @@ INST /Loop/Body_3 . kind = Inst
 INST /Loop/Body_3 . position = Test2.bsv 23 44
 INST /Loop/Body_3 . module = mkTest
 INST /Loop/Body_3 . class = VInst
-INST /Loop/Body_3 . hiertree = vInst65 Body_3 {}
 INST /Loop/Body_3 . wave_format = 
-INST /Loop/Body_3 . key = 26
+INST /Loop/Body_3 . hiertree = /Loop/Body_3 Body_3 {}
 INST /Loop/Body_3 . ancestors = / /Loop /Loop/Body_3
 INST /Loop/Body_3 . name bsv = Body_3
 INST /Loop/Body_3 . name synth = Body_3
@@ -3707,9 +3654,8 @@ INST /Loop/Body_3/aa_3 . kind = Prim
 INST /Loop/Body_3/aa_3 . position = Test2.bsv 24 6
 INST /Loop/Body_3/aa_3 . module = mkTest
 INST /Loop/Body_3/aa_3 . class = VInst
-INST /Loop/Body_3/aa_3 . hiertree = vInst72 {aa_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/aa_3 . wave_format = {Int#(32) {/aa_3$D_IN}} {Bool {/aa_3$EN}} {Int#(32) /aa_3}
-INST /Loop/Body_3/aa_3 . key = 33
+INST /Loop/Body_3/aa_3 . hiertree = /Loop/Body_3/aa_3 {aa_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/aa_3 . ancestors = / /Loop /Loop/Body_3 /Loop/Body_3/aa_3
 INST /Loop/Body_3/aa_3 . name bsv = aa_3
 INST /Loop/Body_3/aa_3 . name synth = aa_3
@@ -3727,9 +3673,8 @@ INST /Loop/Body_3/bb_3 . kind = Prim
 INST /Loop/Body_3/bb_3 . position = Test2.bsv 25 6
 INST /Loop/Body_3/bb_3 . module = mkTest
 INST /Loop/Body_3/bb_3 . class = VInst
-INST /Loop/Body_3/bb_3 . hiertree = vInst73 {bb_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/bb_3 . wave_format = {Int#(32) {/bb_3$D_IN}} {Bool {/bb_3$EN}} {Int#(32) /bb_3}
-INST /Loop/Body_3/bb_3 . key = 34
+INST /Loop/Body_3/bb_3 . hiertree = /Loop/Body_3/bb_3 {bb_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/Body_3/bb_3 . ancestors = / /Loop /Loop/Body_3 /Loop/Body_3/bb_3
 INST /Loop/Body_3/bb_3 . name bsv = bb_3
 INST /Loop/Body_3/bb_3 . name synth = bb_3
@@ -3747,9 +3692,8 @@ INST /Loop/x_0 . kind = Prim
 INST /Loop/x_0 . position = Test2.bsv 20 7
 INST /Loop/x_0 . module = mkTest
 INST /Loop/x_0 . class = VInst
-INST /Loop/x_0 . hiertree = vInst58 {x_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_0 . wave_format = {Int#(32) {/x_0$D_IN}} {Bool {/x_0$EN}} {Int#(32) /x_0}
-INST /Loop/x_0 . key = 19
+INST /Loop/x_0 . hiertree = /Loop/x_0 {x_0  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_0 . ancestors = / /Loop /Loop/x_0
 INST /Loop/x_0 . name bsv = x_0
 INST /Loop/x_0 . name synth = x_0
@@ -3767,9 +3711,8 @@ INST /Loop/x_1 . kind = Prim
 INST /Loop/x_1 . position = Test2.bsv 20 7
 INST /Loop/x_1 . module = mkTest
 INST /Loop/x_1 . class = VInst
-INST /Loop/x_1 . hiertree = vInst59 {x_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_1 . wave_format = {Int#(32) {/x_1$D_IN}} {Bool {/x_1$EN}} {Int#(32) /x_1}
-INST /Loop/x_1 . key = 20
+INST /Loop/x_1 . hiertree = /Loop/x_1 {x_1  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_1 . ancestors = / /Loop /Loop/x_1
 INST /Loop/x_1 . name bsv = x_1
 INST /Loop/x_1 . name synth = x_1
@@ -3787,9 +3730,8 @@ INST /Loop/x_2 . kind = Prim
 INST /Loop/x_2 . position = Test2.bsv 20 7
 INST /Loop/x_2 . module = mkTest
 INST /Loop/x_2 . class = VInst
-INST /Loop/x_2 . hiertree = vInst60 {x_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_2 . wave_format = {Int#(32) {/x_2$D_IN}} {Bool {/x_2$EN}} {Int#(32) /x_2}
-INST /Loop/x_2 . key = 21
+INST /Loop/x_2 . hiertree = /Loop/x_2 {x_2  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_2 . ancestors = / /Loop /Loop/x_2
 INST /Loop/x_2 . name bsv = x_2
 INST /Loop/x_2 . name synth = x_2
@@ -3807,9 +3749,8 @@ INST /Loop/x_3 . kind = Prim
 INST /Loop/x_3 . position = Test2.bsv 20 7
 INST /Loop/x_3 . module = mkTest
 INST /Loop/x_3 . class = VInst
-INST /Loop/x_3 . hiertree = vInst61 {x_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_3 . wave_format = {Int#(32) {/x_3$D_IN}} {Bool {/x_3$EN}} {Int#(32) /x_3}
-INST /Loop/x_3 . key = 22
+INST /Loop/x_3 . hiertree = /Loop/x_3 {x_3  Reg#(Int#(32))} {prim leaf}
 INST /Loop/x_3 . ancestors = / /Loop /Loop/x_3
 INST /Loop/x_3 . name bsv = x_3
 INST /Loop/x_3 . name synth = x_3
@@ -3827,9 +3768,8 @@ INST /subis . kind = Inst
 INST /subis . position = Test2.bsv 29 23
 INST /subis . module = mkTest
 INST /subis . class = VInst
-INST /subis . hiertree = vInst46 subis {}
 INST /subis . wave_format = 
-INST /subis . key = 7
+INST /subis . hiertree = /subis subis {}
 INST /subis . ancestors = / /subis
 INST /subis . name bsv = subis
 INST /subis . name synth = subis
@@ -3844,12 +3784,11 @@ INST /subis . bodymethods =
 INST /subis . portmethods = 
 got path INST /subis/_element_0
 INST /subis/_element_0 . kind = Synth
-INST /subis/_element_0 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /subis/_element_0 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /subis/_element_0 . module = mkSub
 INST /subis/_element_0 . class = VInst
-INST /subis/_element_0 . hiertree = vInst74 {_element_0  Sub_Ifc} {synth branch}
 INST /subis/_element_0 . wave_format = {Bit#(3) /subis_0/ax} {Int#(32) /subis_0/foo_x} {Bool /subis_0/EN_foo} {Int#(32) /subis_0/bar} {Bool /subis_0/RadyOnTheReadMethod}
-INST /subis/_element_0 . key = 35
+INST /subis/_element_0 . hiertree = /subis/_element_0 {_element_0  Sub_Ifc} {synth branch}
 INST /subis/_element_0 . ancestors = / /subis /subis/_element_0
 INST /subis/_element_0 . name bsv = _element_0
 INST /subis/_element_0 . name synth = subis_0
@@ -3867,9 +3806,8 @@ INST /subis/_element_0/barx . kind = Prim
 INST /subis/_element_0/barx . position = Test2.bsv 42 18
 INST /subis/_element_0/barx . module = mkSub
 INST /subis/_element_0/barx . class = VInst
-INST /subis/_element_0/barx . hiertree = vInst77 {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_0/barx . wave_format = {Bit#(3) {/subis_0/barx$D_IN}} {Bool {/subis_0/barx$EN}} {Bit#(3) /subis_0/barx}
-INST /subis/_element_0/barx . key = 38
+INST /subis/_element_0/barx . hiertree = /subis/_element_0/barx {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_0/barx . ancestors = / /subis /subis/_element_0 /subis/_element_0/barx
 INST /subis/_element_0/barx . name bsv = barx
 INST /subis/_element_0/barx . name synth = barx
@@ -3887,9 +3825,8 @@ INST /subis/_element_0/foo2 . kind = Prim
 INST /subis/_element_0/foo2 . position = Test2.bsv 41 14
 INST /subis/_element_0/foo2 . module = mkSub
 INST /subis/_element_0/foo2 . class = VInst
-INST /subis/_element_0/foo2 . hiertree = vInst76 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_0/foo2 . wave_format = {Int#(32) {/subis_0/foo2$D_IN}} {Bool {/subis_0/foo2$EN}} {Int#(32) /subis_0/foo2}
-INST /subis/_element_0/foo2 . key = 37
+INST /subis/_element_0/foo2 . hiertree = /subis/_element_0/foo2 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_0/foo2 . ancestors = / /subis /subis/_element_0 /subis/_element_0/foo2
 INST /subis/_element_0/foo2 . name bsv = foo2
 INST /subis/_element_0/foo2 . name synth = foo2
@@ -3904,12 +3841,11 @@ INST /subis/_element_0/foo2 . bodymethods =
 INST /subis/_element_0/foo2 . portmethods = /subis/_element_0/foo2.read /subis/_element_0/foo2.write
 got path INST /subis/_element_1
 INST /subis/_element_1 . kind = Synth
-INST /subis/_element_1 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /subis/_element_1 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /subis/_element_1 . module = mkSub
 INST /subis/_element_1 . class = VInst
-INST /subis/_element_1 . hiertree = vInst75 {_element_1  Sub_Ifc} {synth branch}
 INST /subis/_element_1 . wave_format = {Bit#(3) /subis_1/ax} {Int#(32) /subis_1/foo_x} {Bool /subis_1/EN_foo} {Int#(32) /subis_1/bar} {Bool /subis_1/RadyOnTheReadMethod}
-INST /subis/_element_1 . key = 36
+INST /subis/_element_1 . hiertree = /subis/_element_1 {_element_1  Sub_Ifc} {synth branch}
 INST /subis/_element_1 . ancestors = / /subis /subis/_element_1
 INST /subis/_element_1 . name bsv = _element_1
 INST /subis/_element_1 . name synth = subis_1
@@ -3927,9 +3863,8 @@ INST /subis/_element_1/barx . kind = Prim
 INST /subis/_element_1/barx . position = Test2.bsv 42 18
 INST /subis/_element_1/barx . module = mkSub
 INST /subis/_element_1/barx . class = VInst
-INST /subis/_element_1/barx . hiertree = vInst79 {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_1/barx . wave_format = {Bit#(3) {/subis_1/barx$D_IN}} {Bool {/subis_1/barx$EN}} {Bit#(3) /subis_1/barx}
-INST /subis/_element_1/barx . key = 40
+INST /subis/_element_1/barx . hiertree = /subis/_element_1/barx {barx  Reg#(Bit#(3))} {prim leaf}
 INST /subis/_element_1/barx . ancestors = / /subis /subis/_element_1 /subis/_element_1/barx
 INST /subis/_element_1/barx . name bsv = barx
 INST /subis/_element_1/barx . name synth = barx
@@ -3947,9 +3882,8 @@ INST /subis/_element_1/foo2 . kind = Prim
 INST /subis/_element_1/foo2 . position = Test2.bsv 41 14
 INST /subis/_element_1/foo2 . module = mkSub
 INST /subis/_element_1/foo2 . class = VInst
-INST /subis/_element_1/foo2 . hiertree = vInst78 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_1/foo2 . wave_format = {Int#(32) {/subis_1/foo2$D_IN}} {Bool {/subis_1/foo2$EN}} {Int#(32) /subis_1/foo2}
-INST /subis/_element_1/foo2 . key = 39
+INST /subis/_element_1/foo2 . hiertree = /subis/_element_1/foo2 {foo2  Reg#(Int#(32))} {prim leaf}
 INST /subis/_element_1/foo2 . ancestors = / /subis /subis/_element_1 /subis/_element_1/foo2
 INST /subis/_element_1/foo2 . name bsv = foo2
 INST /subis/_element_1/foo2 . name synth = foo2
@@ -3967,9 +3901,8 @@ INST /xx . kind = Inst
 INST /xx . position = Test2.bsv 17 25
 INST /xx . module = mkTest
 INST /xx . class = VInst
-INST /xx . hiertree = vInst43 xx {}
 INST /xx . wave_format = 
-INST /xx . key = 4
+INST /xx . hiertree = /xx xx {}
 INST /xx . ancestors = / /xx
 INST /xx . name bsv = xx
 INST /xx . name synth = xx
@@ -3984,12 +3917,11 @@ INST /xx . bodymethods =
 INST /xx . portmethods = 
 got path INST /xx/_element_0
 INST /xx/_element_0 . kind = Prim
-INST /xx/_element_0 . position = %/Libraries/List.bs 764 4 {Library List}
+INST /xx/_element_0 . position = %/Libraries/List.bs 784 4 {Library List}
 INST /xx/_element_0 . module = mkTest
 INST /xx/_element_0 . class = VInst
-INST /xx/_element_0 . hiertree = vInst56 {_element_0  Foo#(Bar)} {prim leaf}
 INST /xx/_element_0 . wave_format = {Int#(32) /xx_0/V} {Inout#(Test::Bar) /xx_0/I_IN} {Test::Bar /xx_0/WVAL} {Bool /xx_0/WSET} {Test::Bar /xx_0/WGET} {Bool /xx_0/WHAS} {Inout#(Bool) /xx_0/I_OUT}
-INST /xx/_element_0 . key = 17
+INST /xx/_element_0 . hiertree = /xx/_element_0 {_element_0  Foo#(Bar)} {prim leaf}
 INST /xx/_element_0 . ancestors = / /xx /xx/_element_0
 INST /xx/_element_0 . name bsv = _element_0
 INST /xx/_element_0 . name synth = xx_0
@@ -4004,12 +3936,11 @@ INST /xx/_element_0 . bodymethods =
 INST /xx/_element_0 . portmethods = /xx/_element_0.wget /xx/_element_0.whas /xx/_element_0.wset
 got path INST /xx/_element_1
 INST /xx/_element_1 . kind = Prim
-INST /xx/_element_1 . position = %/Libraries/List.bs 764 4 {Library List}
+INST /xx/_element_1 . position = %/Libraries/List.bs 784 4 {Library List}
 INST /xx/_element_1 . module = mkTest
 INST /xx/_element_1 . class = VInst
-INST /xx/_element_1 . hiertree = vInst57 {_element_1  Foo#(Bar)} {prim leaf}
 INST /xx/_element_1 . wave_format = {Int#(32) /xx_1/V} {Inout#(Test::Bar) /xx_1/I_IN} {Test::Bar /xx_1/WVAL} {Bool /xx_1/WSET} {Test::Bar /xx_1/WGET} {Bool /xx_1/WHAS} {Inout#(Bool) /xx_1/I_OUT}
-INST /xx/_element_1 . key = 18
+INST /xx/_element_1 . hiertree = /xx/_element_1 {_element_1  Foo#(Bar)} {prim leaf}
 INST /xx/_element_1 . ancestors = / /xx /xx/_element_1
 INST /xx/_element_1 . name bsv = _element_1
 INST /xx/_element_1 . name synth = xx_1
@@ -4027,9 +3958,8 @@ INST /y . kind = Inst
 INST /y . position = Test2.bsv 9 25
 INST /y . module = mkTest
 INST /y . class = VInst
-INST /y . hiertree = vInst41 y {}
 INST /y . wave_format = 
-INST /y . key = 2
+INST /y . hiertree = /y y {}
 INST /y . ancestors = / /y
 INST /y . name bsv = y
 INST /y . name synth = y
@@ -4044,12 +3974,11 @@ INST /y . bodymethods =
 INST /y . portmethods = 
 got path INST /y/_element_0
 INST /y/_element_0 . kind = Prim
-INST /y/_element_0 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_0 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_0 . module = mkTest
 INST /y/_element_0 . class = VInst
-INST /y/_element_0 . hiertree = vInst47 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_0 . wave_format = {Int#(32) {/y_0$D_IN}} {Bool {/y_0$EN}} {Int#(32) /y_0}
-INST /y/_element_0 . key = 8
+INST /y/_element_0 . hiertree = /y/_element_0 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_0 . ancestors = / /y /y/_element_0
 INST /y/_element_0 . name bsv = _element_0
 INST /y/_element_0 . name synth = y_0
@@ -4064,12 +3993,11 @@ INST /y/_element_0 . bodymethods =
 INST /y/_element_0 . portmethods = /y/_element_0.read /y/_element_0.write
 got path INST /y/_element_1
 INST /y/_element_1 . kind = Prim
-INST /y/_element_1 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_1 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_1 . module = mkTest
 INST /y/_element_1 . class = VInst
-INST /y/_element_1 . hiertree = vInst48 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_1 . wave_format = {Int#(32) {/y_1$D_IN}} {Bool {/y_1$EN}} {Int#(32) /y_1}
-INST /y/_element_1 . key = 9
+INST /y/_element_1 . hiertree = /y/_element_1 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_1 . ancestors = / /y /y/_element_1
 INST /y/_element_1 . name bsv = _element_1
 INST /y/_element_1 . name synth = y_1
@@ -4084,12 +4012,11 @@ INST /y/_element_1 . bodymethods =
 INST /y/_element_1 . portmethods = /y/_element_1.read /y/_element_1.write
 got path INST /y/_element_2
 INST /y/_element_2 . kind = Prim
-INST /y/_element_2 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_2 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_2 . module = mkTest
 INST /y/_element_2 . class = VInst
-INST /y/_element_2 . hiertree = vInst49 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_2 . wave_format = {Int#(32) {/y_2$D_IN}} {Bool {/y_2$EN}} {Int#(32) /y_2}
-INST /y/_element_2 . key = 10
+INST /y/_element_2 . hiertree = /y/_element_2 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_2 . ancestors = / /y /y/_element_2
 INST /y/_element_2 . name bsv = _element_2
 INST /y/_element_2 . name synth = y_2
@@ -4104,12 +4031,11 @@ INST /y/_element_2 . bodymethods =
 INST /y/_element_2 . portmethods = /y/_element_2.read /y/_element_2.write
 got path INST /y/_element_3
 INST /y/_element_3 . kind = Prim
-INST /y/_element_3 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /y/_element_3 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /y/_element_3 . module = mkTest
 INST /y/_element_3 . class = VInst
-INST /y/_element_3 . hiertree = vInst50 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_3 . wave_format = {Int#(32) {/y_3$D_IN}} {Bool {/y_3$EN}} {Int#(32) /y_3}
-INST /y/_element_3 . key = 11
+INST /y/_element_3 . hiertree = /y/_element_3 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /y/_element_3 . ancestors = / /y /y/_element_3
 INST /y/_element_3 . name bsv = _element_3
 INST /y/_element_3 . name synth = y_3
@@ -4127,9 +4053,8 @@ INST /zw . kind = Inst
 INST /zw . position = Test2.bsv 14 25
 INST /zw . module = mkTest
 INST /zw . class = VInst
-INST /zw . hiertree = vInst42 zw {}
 INST /zw . wave_format = 
-INST /zw . key = 3
+INST /zw . hiertree = /zw zw {}
 INST /zw . ancestors = / /zw
 INST /zw . name bsv = zw
 INST /zw . name synth = zw
@@ -4144,12 +4069,11 @@ INST /zw . bodymethods =
 INST /zw . portmethods = 
 got path INST /zw/_element_0
 INST /zw/_element_0 . kind = Prim
-INST /zw/_element_0 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_0 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_0 . module = mkTest
 INST /zw/_element_0 . class = VInst
-INST /zw/_element_0 . hiertree = vInst51 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_0 . wave_format = {Int#(32) {/zw_0$D_IN}} {Bool {/zw_0$EN}} {Int#(32) /zw_0}
-INST /zw/_element_0 . key = 12
+INST /zw/_element_0 . hiertree = /zw/_element_0 {_element_0  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_0 . ancestors = / /zw /zw/_element_0
 INST /zw/_element_0 . name bsv = _element_0
 INST /zw/_element_0 . name synth = zw_0
@@ -4164,12 +4088,11 @@ INST /zw/_element_0 . bodymethods =
 INST /zw/_element_0 . portmethods = /zw/_element_0.read /zw/_element_0.write
 got path INST /zw/_element_1
 INST /zw/_element_1 . kind = Prim
-INST /zw/_element_1 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_1 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_1 . module = mkTest
 INST /zw/_element_1 . class = VInst
-INST /zw/_element_1 . hiertree = vInst52 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_1 . wave_format = {Int#(32) {/zw_1$D_IN}} {Bool {/zw_1$EN}} {Int#(32) /zw_1}
-INST /zw/_element_1 . key = 13
+INST /zw/_element_1 . hiertree = /zw/_element_1 {_element_1  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_1 . ancestors = / /zw /zw/_element_1
 INST /zw/_element_1 . name bsv = _element_1
 INST /zw/_element_1 . name synth = zw_1
@@ -4184,12 +4107,11 @@ INST /zw/_element_1 . bodymethods =
 INST /zw/_element_1 . portmethods = /zw/_element_1.read /zw/_element_1.write
 got path INST /zw/_element_2
 INST /zw/_element_2 . kind = Prim
-INST /zw/_element_2 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_2 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_2 . module = mkTest
 INST /zw/_element_2 . class = VInst
-INST /zw/_element_2 . hiertree = vInst53 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_2 . wave_format = {Int#(32) {/zw_2$D_IN}} {Bool {/zw_2$EN}} {Int#(32) /zw_2}
-INST /zw/_element_2 . key = 14
+INST /zw/_element_2 . hiertree = /zw/_element_2 {_element_2  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_2 . ancestors = / /zw /zw/_element_2
 INST /zw/_element_2 . name bsv = _element_2
 INST /zw/_element_2 . name synth = zw_2
@@ -4204,12 +4126,11 @@ INST /zw/_element_2 . bodymethods =
 INST /zw/_element_2 . portmethods = /zw/_element_2.read /zw/_element_2.write
 got path INST /zw/_element_3
 INST /zw/_element_3 . kind = Prim
-INST /zw/_element_3 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_3 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_3 . module = mkTest
 INST /zw/_element_3 . class = VInst
-INST /zw/_element_3 . hiertree = vInst54 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_3 . wave_format = {Int#(32) {/zw_3$D_IN}} {Bool {/zw_3$EN}} {Int#(32) /zw_3}
-INST /zw/_element_3 . key = 15
+INST /zw/_element_3 . hiertree = /zw/_element_3 {_element_3  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_3 . ancestors = / /zw /zw/_element_3
 INST /zw/_element_3 . name bsv = _element_3
 INST /zw/_element_3 . name synth = zw_3
@@ -4224,12 +4145,11 @@ INST /zw/_element_3 . bodymethods =
 INST /zw/_element_3 . portmethods = /zw/_element_3.read /zw/_element_3.write
 got path INST /zw/_element_4
 INST /zw/_element_4 . kind = Prim
-INST /zw/_element_4 . position = %/Libraries/List.bs 727 4 {Library List}
+INST /zw/_element_4 . position = %/Libraries/List.bs 748 4 {Library List}
 INST /zw/_element_4 . module = mkTest
 INST /zw/_element_4 . class = VInst
-INST /zw/_element_4 . hiertree = vInst55 {_element_4  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_4 . wave_format = {Int#(32) {/zw_4$D_IN}} {Bool {/zw_4$EN}} {Int#(32) /zw_4}
-INST /zw/_element_4 . key = 16
+INST /zw/_element_4 . hiertree = /zw/_element_4 {_element_4  Reg#(Int#(32))} {prim leaf}
 INST /zw/_element_4 . ancestors = / /zw /zw/_element_4
 INST /zw/_element_4 . name bsv = _element_4
 INST /zw/_element_4 . name synth = zw_4
@@ -4749,7 +4669,7 @@ SIG /subis/_element_0/CLK . path = /subis/_element_0/CLK
 SIG /subis/_element_0/CLK . type = Clock
 SIG /subis/_element_0/CLK . class = VSignal
 SIG /subis/_element_0/CLK . wave_format = {Clock /subis_0/CLK}
-SIG /subis/_element_0/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/CLK . used_by 
 SIG CLK . inst = /subis/_element_0
 SIG /subis/_element_0/EN_foo . kind = Signal
@@ -4758,7 +4678,7 @@ SIG /subis/_element_0/EN_foo . path = /subis/_element_0/EN_foo
 SIG /subis/_element_0/EN_foo . type = Bool
 SIG /subis/_element_0/EN_foo . class = VSignal
 SIG /subis/_element_0/EN_foo . wave_format = {Bool /subis_0/EN_foo}
-SIG /subis/_element_0/EN_foo . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/EN_foo . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/EN_foo . used_by 
 SIG EN_foo . inst = /subis/_element_0
 SIG /subis/_element_0/RST_N . kind = Signal
@@ -4767,7 +4687,7 @@ SIG /subis/_element_0/RST_N . path = /subis/_element_0/RST_N
 SIG /subis/_element_0/RST_N . type = Reset
 SIG /subis/_element_0/RST_N . class = VSignal
 SIG /subis/_element_0/RST_N . wave_format = {Reset /subis_0/RST_N}
-SIG /subis/_element_0/RST_N . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/RST_N . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/RST_N . used_by 
 SIG RST_N . inst = /subis/_element_0
 SIG /subis/_element_0/RadyOnTheReadMethod . kind = Signal
@@ -4776,7 +4696,7 @@ SIG /subis/_element_0/RadyOnTheReadMethod . path = /subis/_element_0/RadyOnTheRe
 SIG /subis/_element_0/RadyOnTheReadMethod . type = Bool
 SIG /subis/_element_0/RadyOnTheReadMethod . class = VSignal
 SIG /subis/_element_0/RadyOnTheReadMethod . wave_format = {Bool /subis_0/RadyOnTheReadMethod}
-SIG /subis/_element_0/RadyOnTheReadMethod . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/RadyOnTheReadMethod . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/RadyOnTheReadMethod . used_by 
 SIG RadyOnTheReadMethod . inst = /subis/_element_0
 SIG /subis/_element_0/ax . kind = Signal
@@ -4785,7 +4705,7 @@ SIG /subis/_element_0/ax . path = /subis/_element_0/ax
 SIG /subis/_element_0/ax . type = Bit#(3)
 SIG /subis/_element_0/ax . class = VSignal
 SIG /subis/_element_0/ax . wave_format = {Bit#(3) /subis_0/ax}
-SIG /subis/_element_0/ax . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/ax . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/ax . used_by 
 SIG ax . inst = /subis/_element_0
 SIG /subis/_element_0/bar . kind = Signal
@@ -4794,7 +4714,7 @@ SIG /subis/_element_0/bar . path = /subis/_element_0/bar
 SIG /subis/_element_0/bar . type = Int#(32)
 SIG /subis/_element_0/bar . class = VSignal
 SIG /subis/_element_0/bar . wave_format = {Int#(32) /subis_0/bar}
-SIG /subis/_element_0/bar . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/bar . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/bar . used_by 
 SIG bar . inst = /subis/_element_0
 SIG /subis/_element_0/barx/CLK . kind = Signal
@@ -4893,7 +4813,7 @@ SIG /subis/_element_0/foo_x . path = /subis/_element_0/foo_x
 SIG /subis/_element_0/foo_x . type = Int#(32)
 SIG /subis/_element_0/foo_x . class = VSignal
 SIG /subis/_element_0/foo_x . wave_format = {Int#(32) /subis_0/foo_x}
-SIG /subis/_element_0/foo_x . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_0/foo_x . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_0/foo_x . used_by 
 SIG foo_x . inst = /subis/_element_0
 SIG /subis/_element_1/CLK . kind = Signal
@@ -4902,7 +4822,7 @@ SIG /subis/_element_1/CLK . path = /subis/_element_1/CLK
 SIG /subis/_element_1/CLK . type = Clock
 SIG /subis/_element_1/CLK . class = VSignal
 SIG /subis/_element_1/CLK . wave_format = {Clock /subis_1/CLK}
-SIG /subis/_element_1/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/CLK . used_by 
 SIG CLK . inst = /subis/_element_1
 SIG /subis/_element_1/EN_foo . kind = Signal
@@ -4911,7 +4831,7 @@ SIG /subis/_element_1/EN_foo . path = /subis/_element_1/EN_foo
 SIG /subis/_element_1/EN_foo . type = Bool
 SIG /subis/_element_1/EN_foo . class = VSignal
 SIG /subis/_element_1/EN_foo . wave_format = {Bool /subis_1/EN_foo}
-SIG /subis/_element_1/EN_foo . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/EN_foo . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/EN_foo . used_by 
 SIG EN_foo . inst = /subis/_element_1
 SIG /subis/_element_1/RST_N . kind = Signal
@@ -4920,7 +4840,7 @@ SIG /subis/_element_1/RST_N . path = /subis/_element_1/RST_N
 SIG /subis/_element_1/RST_N . type = Reset
 SIG /subis/_element_1/RST_N . class = VSignal
 SIG /subis/_element_1/RST_N . wave_format = {Reset /subis_1/RST_N}
-SIG /subis/_element_1/RST_N . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/RST_N . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/RST_N . used_by 
 SIG RST_N . inst = /subis/_element_1
 SIG /subis/_element_1/RadyOnTheReadMethod . kind = Signal
@@ -4929,7 +4849,7 @@ SIG /subis/_element_1/RadyOnTheReadMethod . path = /subis/_element_1/RadyOnTheRe
 SIG /subis/_element_1/RadyOnTheReadMethod . type = Bool
 SIG /subis/_element_1/RadyOnTheReadMethod . class = VSignal
 SIG /subis/_element_1/RadyOnTheReadMethod . wave_format = {Bool /subis_1/RadyOnTheReadMethod}
-SIG /subis/_element_1/RadyOnTheReadMethod . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/RadyOnTheReadMethod . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/RadyOnTheReadMethod . used_by 
 SIG RadyOnTheReadMethod . inst = /subis/_element_1
 SIG /subis/_element_1/ax . kind = Signal
@@ -4938,7 +4858,7 @@ SIG /subis/_element_1/ax . path = /subis/_element_1/ax
 SIG /subis/_element_1/ax . type = Bit#(3)
 SIG /subis/_element_1/ax . class = VSignal
 SIG /subis/_element_1/ax . wave_format = {Bit#(3) /subis_1/ax}
-SIG /subis/_element_1/ax . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/ax . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/ax . used_by 
 SIG ax . inst = /subis/_element_1
 SIG /subis/_element_1/bar . kind = Signal
@@ -4947,7 +4867,7 @@ SIG /subis/_element_1/bar . path = /subis/_element_1/bar
 SIG /subis/_element_1/bar . type = Int#(32)
 SIG /subis/_element_1/bar . class = VSignal
 SIG /subis/_element_1/bar . wave_format = {Int#(32) /subis_1/bar}
-SIG /subis/_element_1/bar . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/bar . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/bar . used_by 
 SIG bar . inst = /subis/_element_1
 SIG /subis/_element_1/barx/CLK . kind = Signal
@@ -5046,7 +4966,7 @@ SIG /subis/_element_1/foo_x . path = /subis/_element_1/foo_x
 SIG /subis/_element_1/foo_x . type = Int#(32)
 SIG /subis/_element_1/foo_x . class = VSignal
 SIG /subis/_element_1/foo_x . wave_format = {Int#(32) /subis_1/foo_x}
-SIG /subis/_element_1/foo_x . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /subis/_element_1/foo_x . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /subis/_element_1/foo_x . used_by 
 SIG foo_x . inst = /subis/_element_1
 SIG /xx/_element_0/I_IN . kind = Signal
@@ -5055,7 +4975,7 @@ SIG /xx/_element_0/I_IN . path = /xx/_element_0/I_IN
 SIG /xx/_element_0/I_IN . type = Inout#(Test::Bar)
 SIG /xx/_element_0/I_IN . class = VSignal
 SIG /xx/_element_0/I_IN . wave_format = {Inout#(Test::Bar) /xx_0/I_IN}
-SIG /xx/_element_0/I_IN . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/I_IN . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/I_IN . used_by 
 SIG I_IN . inst = /xx/_element_0
 SIG /xx/_element_0/I_OUT . kind = Signal
@@ -5064,7 +4984,7 @@ SIG /xx/_element_0/I_OUT . path = /xx/_element_0/I_OUT
 SIG /xx/_element_0/I_OUT . type = Inout#(Bool)
 SIG /xx/_element_0/I_OUT . class = VSignal
 SIG /xx/_element_0/I_OUT . wave_format = {Inout#(Bool) /xx_0/I_OUT}
-SIG /xx/_element_0/I_OUT . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/I_OUT . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/I_OUT . used_by 
 SIG I_OUT . inst = /xx/_element_0
 SIG /xx/_element_0/V . kind = Signal
@@ -5073,7 +4993,7 @@ SIG /xx/_element_0/V . path = /xx/_element_0/V
 SIG /xx/_element_0/V . type = Int#(32)
 SIG /xx/_element_0/V . class = VSignal
 SIG /xx/_element_0/V . wave_format = {Int#(32) /xx_0/V}
-SIG /xx/_element_0/V . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/V . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/V . used_by 
 SIG V . inst = /xx/_element_0
 SIG /xx/_element_0/WGET . kind = Signal
@@ -5082,7 +5002,7 @@ SIG /xx/_element_0/WGET . path = /xx/_element_0/WGET
 SIG /xx/_element_0/WGET . type = Test::Bar
 SIG /xx/_element_0/WGET . class = VSignal
 SIG /xx/_element_0/WGET . wave_format = {Test::Bar /xx_0/WGET}
-SIG /xx/_element_0/WGET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WGET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WGET . used_by 
 SIG WGET . inst = /xx/_element_0
 SIG /xx/_element_0/WHAS . kind = Signal
@@ -5091,7 +5011,7 @@ SIG /xx/_element_0/WHAS . path = /xx/_element_0/WHAS
 SIG /xx/_element_0/WHAS . type = Bool
 SIG /xx/_element_0/WHAS . class = VSignal
 SIG /xx/_element_0/WHAS . wave_format = {Bool /xx_0/WHAS}
-SIG /xx/_element_0/WHAS . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WHAS . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WHAS . used_by 
 SIG WHAS . inst = /xx/_element_0
 SIG /xx/_element_0/WSET . kind = Signal
@@ -5100,7 +5020,7 @@ SIG /xx/_element_0/WSET . path = /xx/_element_0/WSET
 SIG /xx/_element_0/WSET . type = Bool
 SIG /xx/_element_0/WSET . class = VSignal
 SIG /xx/_element_0/WSET . wave_format = {Bool /xx_0/WSET}
-SIG /xx/_element_0/WSET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WSET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WSET . used_by 
 SIG WSET . inst = /xx/_element_0
 SIG /xx/_element_0/WVAL . kind = Signal
@@ -5109,7 +5029,7 @@ SIG /xx/_element_0/WVAL . path = /xx/_element_0/WVAL
 SIG /xx/_element_0/WVAL . type = Test::Bar
 SIG /xx/_element_0/WVAL . class = VSignal
 SIG /xx/_element_0/WVAL . wave_format = {Test::Bar /xx_0/WVAL}
-SIG /xx/_element_0/WVAL . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_0/WVAL . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_0/WVAL . used_by 
 SIG WVAL . inst = /xx/_element_0
 SIG /xx/_element_1/I_IN . kind = Signal
@@ -5118,7 +5038,7 @@ SIG /xx/_element_1/I_IN . path = /xx/_element_1/I_IN
 SIG /xx/_element_1/I_IN . type = Inout#(Test::Bar)
 SIG /xx/_element_1/I_IN . class = VSignal
 SIG /xx/_element_1/I_IN . wave_format = {Inout#(Test::Bar) /xx_1/I_IN}
-SIG /xx/_element_1/I_IN . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/I_IN . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/I_IN . used_by 
 SIG I_IN . inst = /xx/_element_1
 SIG /xx/_element_1/I_OUT . kind = Signal
@@ -5127,7 +5047,7 @@ SIG /xx/_element_1/I_OUT . path = /xx/_element_1/I_OUT
 SIG /xx/_element_1/I_OUT . type = Inout#(Bool)
 SIG /xx/_element_1/I_OUT . class = VSignal
 SIG /xx/_element_1/I_OUT . wave_format = {Inout#(Bool) /xx_1/I_OUT}
-SIG /xx/_element_1/I_OUT . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/I_OUT . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/I_OUT . used_by 
 SIG I_OUT . inst = /xx/_element_1
 SIG /xx/_element_1/V . kind = Signal
@@ -5136,7 +5056,7 @@ SIG /xx/_element_1/V . path = /xx/_element_1/V
 SIG /xx/_element_1/V . type = Int#(32)
 SIG /xx/_element_1/V . class = VSignal
 SIG /xx/_element_1/V . wave_format = {Int#(32) /xx_1/V}
-SIG /xx/_element_1/V . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/V . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/V . used_by 
 SIG V . inst = /xx/_element_1
 SIG /xx/_element_1/WGET . kind = Signal
@@ -5145,7 +5065,7 @@ SIG /xx/_element_1/WGET . path = /xx/_element_1/WGET
 SIG /xx/_element_1/WGET . type = Test::Bar
 SIG /xx/_element_1/WGET . class = VSignal
 SIG /xx/_element_1/WGET . wave_format = {Test::Bar /xx_1/WGET}
-SIG /xx/_element_1/WGET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WGET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WGET . used_by 
 SIG WGET . inst = /xx/_element_1
 SIG /xx/_element_1/WHAS . kind = Signal
@@ -5154,7 +5074,7 @@ SIG /xx/_element_1/WHAS . path = /xx/_element_1/WHAS
 SIG /xx/_element_1/WHAS . type = Bool
 SIG /xx/_element_1/WHAS . class = VSignal
 SIG /xx/_element_1/WHAS . wave_format = {Bool /xx_1/WHAS}
-SIG /xx/_element_1/WHAS . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WHAS . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WHAS . used_by 
 SIG WHAS . inst = /xx/_element_1
 SIG /xx/_element_1/WSET . kind = Signal
@@ -5163,7 +5083,7 @@ SIG /xx/_element_1/WSET . path = /xx/_element_1/WSET
 SIG /xx/_element_1/WSET . type = Bool
 SIG /xx/_element_1/WSET . class = VSignal
 SIG /xx/_element_1/WSET . wave_format = {Bool /xx_1/WSET}
-SIG /xx/_element_1/WSET . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WSET . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WSET . used_by 
 SIG WSET . inst = /xx/_element_1
 SIG /xx/_element_1/WVAL . kind = Signal
@@ -5172,7 +5092,7 @@ SIG /xx/_element_1/WVAL . path = /xx/_element_1/WVAL
 SIG /xx/_element_1/WVAL . type = Test::Bar
 SIG /xx/_element_1/WVAL . class = VSignal
 SIG /xx/_element_1/WVAL . wave_format = {Test::Bar /xx_1/WVAL}
-SIG /xx/_element_1/WVAL . position = %/Libraries/List.bs 764 4 {Library List}
+SIG /xx/_element_1/WVAL . position = %/Libraries/List.bs 784 4 {Library List}
 SIG /xx/_element_1/WVAL . used_by 
 SIG WVAL . inst = /xx/_element_1
 SIG /y/_element_0/CLK . kind = Signal
@@ -5181,7 +5101,7 @@ SIG /y/_element_0/CLK . path = /y/_element_0/CLK
 SIG /y/_element_0/CLK . type = Clock
 SIG /y/_element_0/CLK . class = VSignal
 SIG /y/_element_0/CLK . wave_format = 
-SIG /y/_element_0/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/CLK . used_by 
 SIG CLK . inst = /y/_element_0
 SIG /y/_element_0/D_IN . kind = Signal
@@ -5190,7 +5110,7 @@ SIG /y/_element_0/D_IN . path = /y/_element_0/D_IN
 SIG /y/_element_0/D_IN . type = Int#(32)
 SIG /y/_element_0/D_IN . class = VSignal
 SIG /y/_element_0/D_IN . wave_format = {Int#(32) {/y_0$D_IN}}
-SIG /y/_element_0/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/D_IN . used_by 
 SIG D_IN . inst = /y/_element_0
 SIG /y/_element_0/EN . kind = Signal
@@ -5199,7 +5119,7 @@ SIG /y/_element_0/EN . path = /y/_element_0/EN
 SIG /y/_element_0/EN . type = Bool
 SIG /y/_element_0/EN . class = VSignal
 SIG /y/_element_0/EN . wave_format = {Bool {/y_0$EN}}
-SIG /y/_element_0/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/EN . used_by 
 SIG EN . inst = /y/_element_0
 SIG /y/_element_0/Q_OUT . kind = Signal
@@ -5208,7 +5128,7 @@ SIG /y/_element_0/Q_OUT . path = /y/_element_0/Q_OUT
 SIG /y/_element_0/Q_OUT . type = Int#(32)
 SIG /y/_element_0/Q_OUT . class = VSignal
 SIG /y/_element_0/Q_OUT . wave_format = {Int#(32) /y_0}
-SIG /y/_element_0/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_0/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_0/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_0
 SIG /y/_element_1/CLK . kind = Signal
@@ -5217,7 +5137,7 @@ SIG /y/_element_1/CLK . path = /y/_element_1/CLK
 SIG /y/_element_1/CLK . type = Clock
 SIG /y/_element_1/CLK . class = VSignal
 SIG /y/_element_1/CLK . wave_format = 
-SIG /y/_element_1/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/CLK . used_by 
 SIG CLK . inst = /y/_element_1
 SIG /y/_element_1/D_IN . kind = Signal
@@ -5226,7 +5146,7 @@ SIG /y/_element_1/D_IN . path = /y/_element_1/D_IN
 SIG /y/_element_1/D_IN . type = Int#(32)
 SIG /y/_element_1/D_IN . class = VSignal
 SIG /y/_element_1/D_IN . wave_format = {Int#(32) {/y_1$D_IN}}
-SIG /y/_element_1/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/D_IN . used_by 
 SIG D_IN . inst = /y/_element_1
 SIG /y/_element_1/EN . kind = Signal
@@ -5235,7 +5155,7 @@ SIG /y/_element_1/EN . path = /y/_element_1/EN
 SIG /y/_element_1/EN . type = Bool
 SIG /y/_element_1/EN . class = VSignal
 SIG /y/_element_1/EN . wave_format = {Bool {/y_1$EN}}
-SIG /y/_element_1/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/EN . used_by 
 SIG EN . inst = /y/_element_1
 SIG /y/_element_1/Q_OUT . kind = Signal
@@ -5244,7 +5164,7 @@ SIG /y/_element_1/Q_OUT . path = /y/_element_1/Q_OUT
 SIG /y/_element_1/Q_OUT . type = Int#(32)
 SIG /y/_element_1/Q_OUT . class = VSignal
 SIG /y/_element_1/Q_OUT . wave_format = {Int#(32) /y_1}
-SIG /y/_element_1/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_1/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_1/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_1
 SIG /y/_element_2/CLK . kind = Signal
@@ -5253,7 +5173,7 @@ SIG /y/_element_2/CLK . path = /y/_element_2/CLK
 SIG /y/_element_2/CLK . type = Clock
 SIG /y/_element_2/CLK . class = VSignal
 SIG /y/_element_2/CLK . wave_format = 
-SIG /y/_element_2/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/CLK . used_by 
 SIG CLK . inst = /y/_element_2
 SIG /y/_element_2/D_IN . kind = Signal
@@ -5262,7 +5182,7 @@ SIG /y/_element_2/D_IN . path = /y/_element_2/D_IN
 SIG /y/_element_2/D_IN . type = Int#(32)
 SIG /y/_element_2/D_IN . class = VSignal
 SIG /y/_element_2/D_IN . wave_format = {Int#(32) {/y_2$D_IN}}
-SIG /y/_element_2/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/D_IN . used_by 
 SIG D_IN . inst = /y/_element_2
 SIG /y/_element_2/EN . kind = Signal
@@ -5271,7 +5191,7 @@ SIG /y/_element_2/EN . path = /y/_element_2/EN
 SIG /y/_element_2/EN . type = Bool
 SIG /y/_element_2/EN . class = VSignal
 SIG /y/_element_2/EN . wave_format = {Bool {/y_2$EN}}
-SIG /y/_element_2/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/EN . used_by 
 SIG EN . inst = /y/_element_2
 SIG /y/_element_2/Q_OUT . kind = Signal
@@ -5280,7 +5200,7 @@ SIG /y/_element_2/Q_OUT . path = /y/_element_2/Q_OUT
 SIG /y/_element_2/Q_OUT . type = Int#(32)
 SIG /y/_element_2/Q_OUT . class = VSignal
 SIG /y/_element_2/Q_OUT . wave_format = {Int#(32) /y_2}
-SIG /y/_element_2/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_2/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_2/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_2
 SIG /y/_element_3/CLK . kind = Signal
@@ -5289,7 +5209,7 @@ SIG /y/_element_3/CLK . path = /y/_element_3/CLK
 SIG /y/_element_3/CLK . type = Clock
 SIG /y/_element_3/CLK . class = VSignal
 SIG /y/_element_3/CLK . wave_format = 
-SIG /y/_element_3/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/CLK . used_by 
 SIG CLK . inst = /y/_element_3
 SIG /y/_element_3/D_IN . kind = Signal
@@ -5298,7 +5218,7 @@ SIG /y/_element_3/D_IN . path = /y/_element_3/D_IN
 SIG /y/_element_3/D_IN . type = Int#(32)
 SIG /y/_element_3/D_IN . class = VSignal
 SIG /y/_element_3/D_IN . wave_format = {Int#(32) {/y_3$D_IN}}
-SIG /y/_element_3/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/D_IN . used_by 
 SIG D_IN . inst = /y/_element_3
 SIG /y/_element_3/EN . kind = Signal
@@ -5307,7 +5227,7 @@ SIG /y/_element_3/EN . path = /y/_element_3/EN
 SIG /y/_element_3/EN . type = Bool
 SIG /y/_element_3/EN . class = VSignal
 SIG /y/_element_3/EN . wave_format = {Bool {/y_3$EN}}
-SIG /y/_element_3/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/EN . used_by 
 SIG EN . inst = /y/_element_3
 SIG /y/_element_3/Q_OUT . kind = Signal
@@ -5316,7 +5236,7 @@ SIG /y/_element_3/Q_OUT . path = /y/_element_3/Q_OUT
 SIG /y/_element_3/Q_OUT . type = Int#(32)
 SIG /y/_element_3/Q_OUT . class = VSignal
 SIG /y/_element_3/Q_OUT . wave_format = {Int#(32) /y_3}
-SIG /y/_element_3/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /y/_element_3/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /y/_element_3/Q_OUT . used_by 
 SIG Q_OUT . inst = /y/_element_3
 SIG /zw/_element_0/CLK . kind = Signal
@@ -5325,7 +5245,7 @@ SIG /zw/_element_0/CLK . path = /zw/_element_0/CLK
 SIG /zw/_element_0/CLK . type = Clock
 SIG /zw/_element_0/CLK . class = VSignal
 SIG /zw/_element_0/CLK . wave_format = 
-SIG /zw/_element_0/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/CLK . used_by 
 SIG CLK . inst = /zw/_element_0
 SIG /zw/_element_0/D_IN . kind = Signal
@@ -5334,7 +5254,7 @@ SIG /zw/_element_0/D_IN . path = /zw/_element_0/D_IN
 SIG /zw/_element_0/D_IN . type = Int#(32)
 SIG /zw/_element_0/D_IN . class = VSignal
 SIG /zw/_element_0/D_IN . wave_format = {Int#(32) {/zw_0$D_IN}}
-SIG /zw/_element_0/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_0
 SIG /zw/_element_0/EN . kind = Signal
@@ -5343,7 +5263,7 @@ SIG /zw/_element_0/EN . path = /zw/_element_0/EN
 SIG /zw/_element_0/EN . type = Bool
 SIG /zw/_element_0/EN . class = VSignal
 SIG /zw/_element_0/EN . wave_format = {Bool {/zw_0$EN}}
-SIG /zw/_element_0/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/EN . used_by 
 SIG EN . inst = /zw/_element_0
 SIG /zw/_element_0/Q_OUT . kind = Signal
@@ -5352,7 +5272,7 @@ SIG /zw/_element_0/Q_OUT . path = /zw/_element_0/Q_OUT
 SIG /zw/_element_0/Q_OUT . type = Int#(32)
 SIG /zw/_element_0/Q_OUT . class = VSignal
 SIG /zw/_element_0/Q_OUT . wave_format = {Int#(32) /zw_0}
-SIG /zw/_element_0/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_0
 SIG /zw/_element_0/RST . kind = Signal
@@ -5361,7 +5281,7 @@ SIG /zw/_element_0/RST . path = /zw/_element_0/RST
 SIG /zw/_element_0/RST . type = Reset
 SIG /zw/_element_0/RST . class = VSignal
 SIG /zw/_element_0/RST . wave_format = 
-SIG /zw/_element_0/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_0/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_0/RST . used_by 
 SIG RST . inst = /zw/_element_0
 SIG /zw/_element_1/CLK . kind = Signal
@@ -5370,7 +5290,7 @@ SIG /zw/_element_1/CLK . path = /zw/_element_1/CLK
 SIG /zw/_element_1/CLK . type = Clock
 SIG /zw/_element_1/CLK . class = VSignal
 SIG /zw/_element_1/CLK . wave_format = 
-SIG /zw/_element_1/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/CLK . used_by 
 SIG CLK . inst = /zw/_element_1
 SIG /zw/_element_1/D_IN . kind = Signal
@@ -5379,7 +5299,7 @@ SIG /zw/_element_1/D_IN . path = /zw/_element_1/D_IN
 SIG /zw/_element_1/D_IN . type = Int#(32)
 SIG /zw/_element_1/D_IN . class = VSignal
 SIG /zw/_element_1/D_IN . wave_format = {Int#(32) {/zw_1$D_IN}}
-SIG /zw/_element_1/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_1
 SIG /zw/_element_1/EN . kind = Signal
@@ -5388,7 +5308,7 @@ SIG /zw/_element_1/EN . path = /zw/_element_1/EN
 SIG /zw/_element_1/EN . type = Bool
 SIG /zw/_element_1/EN . class = VSignal
 SIG /zw/_element_1/EN . wave_format = {Bool {/zw_1$EN}}
-SIG /zw/_element_1/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/EN . used_by 
 SIG EN . inst = /zw/_element_1
 SIG /zw/_element_1/Q_OUT . kind = Signal
@@ -5397,7 +5317,7 @@ SIG /zw/_element_1/Q_OUT . path = /zw/_element_1/Q_OUT
 SIG /zw/_element_1/Q_OUT . type = Int#(32)
 SIG /zw/_element_1/Q_OUT . class = VSignal
 SIG /zw/_element_1/Q_OUT . wave_format = {Int#(32) /zw_1}
-SIG /zw/_element_1/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_1
 SIG /zw/_element_1/RST . kind = Signal
@@ -5406,7 +5326,7 @@ SIG /zw/_element_1/RST . path = /zw/_element_1/RST
 SIG /zw/_element_1/RST . type = Reset
 SIG /zw/_element_1/RST . class = VSignal
 SIG /zw/_element_1/RST . wave_format = 
-SIG /zw/_element_1/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_1/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_1/RST . used_by 
 SIG RST . inst = /zw/_element_1
 SIG /zw/_element_2/CLK . kind = Signal
@@ -5415,7 +5335,7 @@ SIG /zw/_element_2/CLK . path = /zw/_element_2/CLK
 SIG /zw/_element_2/CLK . type = Clock
 SIG /zw/_element_2/CLK . class = VSignal
 SIG /zw/_element_2/CLK . wave_format = 
-SIG /zw/_element_2/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/CLK . used_by 
 SIG CLK . inst = /zw/_element_2
 SIG /zw/_element_2/D_IN . kind = Signal
@@ -5424,7 +5344,7 @@ SIG /zw/_element_2/D_IN . path = /zw/_element_2/D_IN
 SIG /zw/_element_2/D_IN . type = Int#(32)
 SIG /zw/_element_2/D_IN . class = VSignal
 SIG /zw/_element_2/D_IN . wave_format = {Int#(32) {/zw_2$D_IN}}
-SIG /zw/_element_2/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_2
 SIG /zw/_element_2/EN . kind = Signal
@@ -5433,7 +5353,7 @@ SIG /zw/_element_2/EN . path = /zw/_element_2/EN
 SIG /zw/_element_2/EN . type = Bool
 SIG /zw/_element_2/EN . class = VSignal
 SIG /zw/_element_2/EN . wave_format = {Bool {/zw_2$EN}}
-SIG /zw/_element_2/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/EN . used_by 
 SIG EN . inst = /zw/_element_2
 SIG /zw/_element_2/Q_OUT . kind = Signal
@@ -5442,7 +5362,7 @@ SIG /zw/_element_2/Q_OUT . path = /zw/_element_2/Q_OUT
 SIG /zw/_element_2/Q_OUT . type = Int#(32)
 SIG /zw/_element_2/Q_OUT . class = VSignal
 SIG /zw/_element_2/Q_OUT . wave_format = {Int#(32) /zw_2}
-SIG /zw/_element_2/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_2
 SIG /zw/_element_2/RST . kind = Signal
@@ -5451,7 +5371,7 @@ SIG /zw/_element_2/RST . path = /zw/_element_2/RST
 SIG /zw/_element_2/RST . type = Reset
 SIG /zw/_element_2/RST . class = VSignal
 SIG /zw/_element_2/RST . wave_format = 
-SIG /zw/_element_2/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_2/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_2/RST . used_by 
 SIG RST . inst = /zw/_element_2
 SIG /zw/_element_3/CLK . kind = Signal
@@ -5460,7 +5380,7 @@ SIG /zw/_element_3/CLK . path = /zw/_element_3/CLK
 SIG /zw/_element_3/CLK . type = Clock
 SIG /zw/_element_3/CLK . class = VSignal
 SIG /zw/_element_3/CLK . wave_format = 
-SIG /zw/_element_3/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/CLK . used_by 
 SIG CLK . inst = /zw/_element_3
 SIG /zw/_element_3/D_IN . kind = Signal
@@ -5469,7 +5389,7 @@ SIG /zw/_element_3/D_IN . path = /zw/_element_3/D_IN
 SIG /zw/_element_3/D_IN . type = Int#(32)
 SIG /zw/_element_3/D_IN . class = VSignal
 SIG /zw/_element_3/D_IN . wave_format = {Int#(32) {/zw_3$D_IN}}
-SIG /zw/_element_3/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_3
 SIG /zw/_element_3/EN . kind = Signal
@@ -5478,7 +5398,7 @@ SIG /zw/_element_3/EN . path = /zw/_element_3/EN
 SIG /zw/_element_3/EN . type = Bool
 SIG /zw/_element_3/EN . class = VSignal
 SIG /zw/_element_3/EN . wave_format = {Bool {/zw_3$EN}}
-SIG /zw/_element_3/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/EN . used_by 
 SIG EN . inst = /zw/_element_3
 SIG /zw/_element_3/Q_OUT . kind = Signal
@@ -5487,7 +5407,7 @@ SIG /zw/_element_3/Q_OUT . path = /zw/_element_3/Q_OUT
 SIG /zw/_element_3/Q_OUT . type = Int#(32)
 SIG /zw/_element_3/Q_OUT . class = VSignal
 SIG /zw/_element_3/Q_OUT . wave_format = {Int#(32) /zw_3}
-SIG /zw/_element_3/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_3
 SIG /zw/_element_3/RST . kind = Signal
@@ -5496,7 +5416,7 @@ SIG /zw/_element_3/RST . path = /zw/_element_3/RST
 SIG /zw/_element_3/RST . type = Reset
 SIG /zw/_element_3/RST . class = VSignal
 SIG /zw/_element_3/RST . wave_format = 
-SIG /zw/_element_3/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_3/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_3/RST . used_by 
 SIG RST . inst = /zw/_element_3
 SIG /zw/_element_4/CLK . kind = Signal
@@ -5505,7 +5425,7 @@ SIG /zw/_element_4/CLK . path = /zw/_element_4/CLK
 SIG /zw/_element_4/CLK . type = Clock
 SIG /zw/_element_4/CLK . class = VSignal
 SIG /zw/_element_4/CLK . wave_format = 
-SIG /zw/_element_4/CLK . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/CLK . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/CLK . used_by 
 SIG CLK . inst = /zw/_element_4
 SIG /zw/_element_4/D_IN . kind = Signal
@@ -5514,7 +5434,7 @@ SIG /zw/_element_4/D_IN . path = /zw/_element_4/D_IN
 SIG /zw/_element_4/D_IN . type = Int#(32)
 SIG /zw/_element_4/D_IN . class = VSignal
 SIG /zw/_element_4/D_IN . wave_format = {Int#(32) {/zw_4$D_IN}}
-SIG /zw/_element_4/D_IN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/D_IN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/D_IN . used_by 
 SIG D_IN . inst = /zw/_element_4
 SIG /zw/_element_4/EN . kind = Signal
@@ -5523,7 +5443,7 @@ SIG /zw/_element_4/EN . path = /zw/_element_4/EN
 SIG /zw/_element_4/EN . type = Bool
 SIG /zw/_element_4/EN . class = VSignal
 SIG /zw/_element_4/EN . wave_format = {Bool {/zw_4$EN}}
-SIG /zw/_element_4/EN . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/EN . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/EN . used_by 
 SIG EN . inst = /zw/_element_4
 SIG /zw/_element_4/Q_OUT . kind = Signal
@@ -5532,7 +5452,7 @@ SIG /zw/_element_4/Q_OUT . path = /zw/_element_4/Q_OUT
 SIG /zw/_element_4/Q_OUT . type = Int#(32)
 SIG /zw/_element_4/Q_OUT . class = VSignal
 SIG /zw/_element_4/Q_OUT . wave_format = {Int#(32) /zw_4}
-SIG /zw/_element_4/Q_OUT . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/Q_OUT . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/Q_OUT . used_by 
 SIG Q_OUT . inst = /zw/_element_4
 SIG /zw/_element_4/RST . kind = Signal
@@ -5541,7 +5461,7 @@ SIG /zw/_element_4/RST . path = /zw/_element_4/RST
 SIG /zw/_element_4/RST . type = Reset
 SIG /zw/_element_4/RST . class = VSignal
 SIG /zw/_element_4/RST . wave_format = 
-SIG /zw/_element_4/RST . position = %/Libraries/List.bs 727 4 {Library List}
+SIG /zw/_element_4/RST . position = %/Libraries/List.bs 748 4 {Library List}
 SIG /zw/_element_4/RST . used_by 
 SIG RST . inst = /zw/_element_4
 starting method testing
